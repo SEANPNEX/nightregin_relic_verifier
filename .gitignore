@@ -332,3 +332,8 @@ sftp-config.json
 
 ## database
 *.db
+
+#project specific
+*.js
+*.sl2
+*.txt
