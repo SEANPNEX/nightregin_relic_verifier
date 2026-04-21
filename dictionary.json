@@ -1,0 +1,7694 @@
+{
+  "7031800": {
+    "en": "[Duchess] Become difficult to spot and silence footsteps after landing critical from behind",
+    "zh": "【女爵】从背后使出致命一击后，自己的身影会变得难以辨识，并消除脚步声"
+  },
+  "7300000": {
+    "en": "[Duchess] Character Skill inflicts sleep upon enemies",
+    "zh": "duchessCharacterSkillInflictsSleep"
+  },
+  "7010700": {
+    "en": "[Duchess] Dagger chain attack reprises event upon nearby enemies",
+    "zh": "【女爵】以短剑使出连续攻击时，能对着周围的敌人，再次上演最近做过的行动"
+  },
+  "7032700": {
+    "en": "[Duchess] Defeating enemies while Art is active ups attack power",
+    "zh": "【女爵】在绝招发动期间，打倒敌人时能提升攻击力"
+  },
+  "7033600": {
+    "en": "[Duchess] Duration of Ultimate Art extended",
+    "zh": "duchessDurationOfUltimateArtExtended"
+  },
+  "7290000": {
+    "en": "[Duchess] Improved Character Skill Attack Power",
+    "zh": "【女爵】提升技艺造成的伤害"
+  },
+  "7034200": {
+    "en": "[Executor] Attack power up while Ultimate Art is active",
+    "zh": "executorAttackPowerUpWhileUltimateArtActive"
+  },
+  "7034400": {
+    "en": "[Executor] Character Skill Boosts Attack but Attacking Drains HP",
+    "zh": "【执行者】提升技艺发动期间的攻击力但攻击时会减少血量"
+  },
+  "7034300": {
+    "en": "[Executor] Improves effect of ability but lowers resistance to status ailments",
+    "zh": "executorImprovesEffectButLowersResistance"
+  },
+  "7011700": {
+    "en": "[Executor] Roaring restores HP while Art is active",
+    "zh": "【执行者】在绝招发动期间，能以咆哮恢复血量"
+  },
+  "7034500": {
+    "en": "[Executor] While Character Skill is active, unlocking use of cursed sword restores HP",
+    "zh": "【执行者】在技艺发动期间，妖刀进入解放状态时，能恢复血量"
+  },
+  "7033300": {
+    "en": "[Guardian] Become the target of enemy aggression when ability is activated",
+    "zh": "【守护者】在能力发动期间，会变得容易受敌人攻击"
+  },
+  "7011900": {
+    "en": "[Guardian] Character Skill inflicts Holy damage",
+    "zh": "guardianCharacterSkillInflictsHolyDamage"
+  },
+  "7011600": {
+    "en": "[Guardian] Creates whirlwind when charging halberd attacks",
+    "zh": "【守护者】以戟蓄力攻击时，能引发旋风"
+  },
+  "7011100": {
+    "en": "[Guardian] Damage negation for allies improved when using Ultimate Art",
+    "zh": "guardianDamageNegationForAlliesImproved"
+  },
+  "7010000": {
+    "en": "[Guardian] Improved Character Skill range",
+    "zh": "guardianImprovedCharacterSkillRange"
+  },
+  "7011000": {
+    "en": "[Guardian] Increased duration for Character Skill",
+    "zh": "【守护者】延长技艺的有效时间"
+  },
+  "7033400": {
+    "en": "[Guardian] Reflect a portion of damage received when ability is activated",
+    "zh": "【守护者】在能力发动期间，能反弹受到的部分损伤"
+  },
+  "7011400": {
+    "en": "[Guardian] Restores allies' HP when Character Skill is used",
+    "zh": "guardianRestoresAlliesHPWhenCharacterSkillUsed"
+  },
+  "12002": {
+    "en": "Witch's Brooch",
+    "zh": "魔女胸针"
+  },
+  "7012000": {
+    "en": "[Guardian] Slowly restores nearby allies' HP while Art is active",
+    "zh": "【守护者】发动绝招时，能缓慢恢复周围我方人物的血量"
+  },
+  "7270100": {
+    "en": "[Ironeye] +1 additional Character Skill use",
+    "zh": "【铁之眼】技艺的使用次数＋１"
+  },
+  "7034600": {
+    "en": "[Ironeye] Art Charge Activation Adds Poison Effect",
+    "zh": "【铁之眼】蓄力发动绝招时，附加异常状态中毒"
+  },
+  "7034700": {
+    "en": "[Ironeye] Boosts thrusting counterattacks after executing Art",
+    "zh": "【铁之眼】发动绝招后，强化突刺反击"
+  },
+  "7280000": {
+    "en": "[Ironeye] Extends duration of weak point",
+    "zh": "【铁之眼】延长弱点显露的时间"
+  },
+  "7010800": {
+    "en": "[Raider] Character Skill damage up, damage negation impaired during use",
+    "zh": "raiderCharacterSkillDamageUp"
+  },
+  "7031300": {
+    "en": "[Raider] Damage taken while using Character Skill improves attack power and stamina",
+    "zh": "【无赖】在技艺发动期间，受到攻击时能提升攻击力与精力上限"
+  },
+  "7310000": {
+    "en": "[Raider] Duration of Ultimate Art extended",
+    "zh": "【无赖】延长绝招的有效时间"
+  },
+  "7033800": {
+    "en": "[Raider] Permanently increase attack power when performing Character Skill's final attack",
+    "zh": "raiderPermanentlyIncreaseAttackPower"
+  },
+  "7034100": {
+    "en": "[Recluse] Activating Ultimate Art raises Max HP",
+    "zh": "【隐士】发动绝招时，能提升血量上限"
+  },
+  "7034000": {
+    "en": "[Recluse] Collecting 4 Affinity Residues Improves Affinity Attack Power",
+    "zh": "recluseCollecting4AffinityResiduesImprovesAffinityAttackPower"
+  },
+  "7032800": {
+    "en": "[Recluse] Collecting affinity residue activates Terra Magica",
+    "zh": "【隐士】收集属性痕时，能触发“魔法之境”"
+  },
+  "7033900": {
+    "en": "[Recluse] Extends duration of blood sigils",
+    "zh": "recluseExtendsDurationOfBloodSigils"
+  },
+  "17002": {
+    "en": "Bone-Like Stone",
+    "zh": "似骨石"
+  },
+  "7032900": {
+    "en": "[Recluse] Suffer blood loss and increase attack power upon Art activation",
+    "zh": "【隐士】发动绝招时，自己陷入异常状态出血，提升攻击力"
+  },
+  "7320000": {
+    "en": "[Revenant] Ability activation chance increased",
+    "zh": "revenantAbilityActivationChanceIncreased"
+  },
+  "16002": {
+    "en": "Old Portrait",
+    "zh": "老旧袖珍画"
+  },
+  "7010900": {
+    "en": "[Revenant] Expend own HP to fully heal nearby allies when activating Art",
+    "zh": "【复仇者】发动绝招时，能以自己的血量为代价"
+  },
+  "7220000": {
+    "en": "[Revenant] Power up while fighting alongside family",
+    "zh": "【复仇者】与家人并肩战斗期间，能强化自身"
+  },
+  "7031200": {
+    "en": "[Revenant] Strengthens family and allies when Ultimate Art is activated",
+    "zh": "【复仇者】发动绝招时，能强化家人与我方人物"
+  },
+  "7011200": {
+    "en": "[Revenant] Trigger ghostflame explosion during Ultimate Art activation",
+    "zh": "【复仇者】发动绝招时，能引发灵火爆炸"
+  },
+  "8500102": {
+    "en": "[Runes] 60k at start, 30k on death",
+    "zh": "runes60kAtStart30kOnDeath"
+  },
+  "11000": {
+    "en": "Slate Whetstone",
+    "zh": "深灰色砥石"
+  },
+  "7033200": {
+    "en": "[Wylder] +1 additional Character Skill use",
+    "zh": "【追踪者】技艺的使用次数＋１"
+  },
+  "7010500": {
+    "en": "[Wylder] Art activation spreads fire in area",
+    "zh": "【追踪者】发动绝招时，能燃起火焰、蔓延周围"
+  },
+  "11002": {
+    "en": "Silver Tear",
+    "zh": "银色泪滴"
+  },
+  "7032400": {
+    "en": "[Wylder] Art gauge greatly filled when ability is activated",
+    "zh": "【追踪者】发动能力时，能累积绝招量表"
+  },
+  "7011500": {
+    "en": "[Wylder] Character Skill inflicts Blood Loss",
+    "zh": "wylderCharacterSkillInflictsBloodLoss"
+  },
+  "7020000": {
+    "en": "[Wylder] Follow-up attacks possible when using Character Skill (greatsword only)",
+    "zh": "【追踪者】发动技艺时，能使出追加攻击(仅限大剑)"
+  },
+  "7030500": {
+    "en": "[Wylder] Impaired damage negation, improved attack power & stamina after Art activation",
+    "zh": "wylderImpairedDamageNegationImprovedAttackPowerStaminaAfterArtActivation"
+  },
+  "7033000": {
+    "en": "[Wylder] Improved attack power when ability is activated",
+    "zh": "wylderImprovedAttackPowerWhenAbilityActivated"
+  },
+  "7032300": {
+    "en": "[Wylder] Improved attack power when Character Skill is activated",
+    "zh": "wylderImprovedAttackPowerWhenCharacterSkillActivated"
+  },
+  "7031400": {
+    "en": "[Wylder] Reduced cooldown time for Character Skill",
+    "zh": "wylderReducedCooldownTimeForCharacterSkill"
+  },
+  "8882200": {
+    "en": "Acid Mist upon Charged Thrust",
+    "zh": "acidMistUponChargedThrust"
+  },
+  "8110700": {
+    "en": "Add Fire to Weapon",
+    "zh": "addFireToWeapon"
+  },
+  "8111000": {
+    "en": "Add Holy to Weapon",
+    "zh": "addHolyToWeapon"
+  },
+  "8110900": {
+    "en": "Add Lightning to Weapon",
+    "zh": "addLightningToWeapon"
+  },
+  "8110800": {
+    "en": "Add Magic to Weapon",
+    "zh": "addMagicToWeapon"
+  },
+  "7000700": {
+    "en": "Arcane +1",
+    "zh": "感应＋１"
+  },
+  "7000701": {
+    "en": "Arcane +2",
+    "zh": "感应＋２"
+  },
+  "7000702": {
+    "en": "Arcane +3",
+    "zh": "感应＋３"
+  },
+  "7120101": {
+    "en": "Armament deals fire damage +1 at start of expedition",
+    "zh": "armamentDealsFireDamagePlus1AtStartOfExpedition"
+  },
+  "7030600": {
+    "en": "Art gauge charged from successful guarding",
+    "zh": "防御成功时，能累积绝招量表"
+  },
+  "7030800": {
+    "en": "Art gauge fills moderately upon critical hit",
+    "zh": "使出致命一击时，加快累积绝招量表"
+  },
+  "8150300": {
+    "en": "Attack Boost [Dragons]",
+    "zh": "attackBoostDragons"
+  },
+  "8150000": {
+    "en": "Attack Boost [Lifeforms Born of Falling Stars]",
+    "zh": "attackBoostLifeformsBornOfFallingStars"
+  },
+  "8150100": {
+    "en": "Attack Boost [Those Who Live in Death]",
+    "zh": "attackBoostThoseWhoLiveInDeath"
+  },
+  "7012600": {
+    "en": "Attack Boost from Nearby Allies",
+    "zh": "attackBoostFromNearbyAllies"
+  },
+  "7030900": {
+    "en": "Attack power increases after using grease items",
+    "zh": "涂抹油脂类道具时，能额外提升攻击力"
+  },
+  "7060000": {
+    "en": "Attack power permanently increased for each evergaol prisoner defeated",
+    "zh": "每次打倒封印监牢里的囚犯，能永久性提升攻击力"
+  },
+  "7060200": {
+    "en": "Attack power up after defeating a Night Invader",
+    "zh": "每次打倒黑夜入侵者，能提升攻击力"
+  },
+  "7260400": {
+    "en": "Attack power up when facing frostbite-afflicted enemy",
+    "zh": "对陷入冻伤的敌人，能强化攻击"
+  },
+  "7260000": {
+    "en": "Attack power up when facing poison-afflicted enemy",
+    "zh": "对陷入中毒的敌人，能强化攻击"
+  },
+  "7260300": {
+    "en": "Attack power up when facing scarlet rot-afflicted enemy",
+    "zh": "对陷入猩红腐败的敌人，能强化攻击"
+  },
+  "7260200": {
+    "en": "Attack power up when facing sleep-afflicted enemy",
+    "zh": "attackPowerUpWhenFacingSleepAfflictedEnemy"
+  },
+  "8310000": {
+    "en": "Attack Up when Wielding Two Armaments",
+    "zh": "attackUpWhenWieldingTwoArmaments"
+  },
+  "7260600": {
+    "en": "Attacks Create Magic Bursts Versus Sleeping Enemies",
+    "zh": "attacksCreateMagicBurstsVersusSleepingEnemies"
+  },
+  "7002000": {
+    "en": "Attacks Inflict Blood Loss",
+    "zh": "attacksInflictBloodLoss"
+  },
+  "8110100": {
+    "en": "Attacks Inflict Blood Loss",
+    "zh": "attacksInflictBloodLoss"
+  },
+  "7002001": {
+    "en": "Attacks Inflict Blood Loss +1",
+    "zh": "attacksInflictBloodLossPlus1"
+  },
+  "7002002": {
+    "en": "Attacks Inflict Blood Loss +2",
+    "zh": "attacksInflictBloodLossPlus2"
+  },
+  "7002200": {
+    "en": "Attacks Inflict Death Blight",
+    "zh": "attacksInflictDeathBlight"
+  },
+  "8110300": {
+    "en": "Attacks Inflict Death Blight",
+    "zh": "attacksInflictDeathBlight"
+  },
+  "7002400": {
+    "en": "Attacks Inflict Frost",
+    "zh": "attacksInflictFrost"
+  },
+  "8110500": {
+    "en": "Attacks Inflict Frost",
+    "zh": "attacksInflictFrost"
+  },
+  "7002401": {
+    "en": "Attacks Inflict Frost +1",
+    "zh": "attacksInflictFrostPlus1"
+  },
+  "7002402": {
+    "en": "Attacks Inflict Frost +2",
+    "zh": "attacksInflictFrostPlus2"
+  },
+  "7002403": {
+    "en": "Attacks Inflict Frost +3",
+    "zh": "attacksInflictFrostPlus3"
+  },
+  "7002500": {
+    "en": "Attacks Inflict Madness",
+    "zh": "attacksInflictMadness"
+  },
+  "8110600": {
+    "en": "Attacks Inflict Madness",
+    "zh": "attacksInflictMadness"
+  },
+  "7001900": {
+    "en": "Attacks Inflict Poison",
+    "zh": "attacksInflictPoison"
+  },
+  "8110000": {
+    "en": "Attacks Inflict Poison",
+    "zh": "attacksInflictPoison"
+  },
+  "7001901": {
+    "en": "Attacks Inflict Poison +1",
+    "zh": "attacksInflictPoisonPlus1"
+  },
+  "7001902": {
+    "en": "Attacks Inflict Poison +2",
+    "zh": "attacksInflictPoisonPlus2"
+  },
+  "8110400": {
+    "en": "Attacks Inflict Rot",
+    "zh": "attacksInflictRot"
+  },
+  "7002300": {
+    "en": "Attacks Inflict Scarlet Rot",
+    "zh": "attacksInflictScarletRot"
+  },
+  "7002301": {
+    "en": "Attacks Inflict Scarlet Rot +1",
+    "zh": "attacksInflictScarletRotPlus1"
+  },
+  "7002302": {
+    "en": "Attacks Inflict Scarlet Rot +2",
+    "zh": "attacksInflictScarletRotPlus2"
+  },
+  "7002100": {
+    "en": "Attacks Inflict Sleep",
+    "zh": "attacksInflictSleep"
+  },
+  "8110200": {
+    "en": "Attacks Inflict Sleep",
+    "zh": "attacksInflictSleep"
+  },
+  "7002101": {
+    "en": "Attacks Inflict Sleep +1",
+    "zh": "attacksInflictSleepPlus1"
+  },
+  "7002102": {
+    "en": "Attacks Inflict Sleep +2",
+    "zh": "attacksInflictSleepPlus2"
+  },
+  "7002103": {
+    "en": "Attacks Inflict Sleep +3",
+    "zh": "attacksInflictSleepPlus3"
+  },
+  "7006500": {
+    "en": "continuousFpRecovery",
+    "zh": "持续恢复专注值"
+  },
+  "7122000": {
+    "en": "Bewitching Branches in possession at start of expedition",
+    "zh": "出击时，会持有“魅惑树枝”"
+  },
+  "8880200": {
+    "en": "Black Flames upon Charged Slash",
+    "zh": "blackFlamesUponChargedSlash"
+  },
+  "8640800": {
+    "en": "Blood Loss Crit: Thorns of Punishment",
+    "zh": "bloodLossCritThornsOfPunishment"
+  },
+  "321600": {
+    "en": "Blood Loss in Vicinity Increases Attack Power",
+    "zh": "bloodLossInVicinityIncreasesAttackPower"
+  },
+  "8710000": {
+    "en": "Blood Loss Increases Attack Power",
+    "zh": "bloodLossIncreasesAttackPower"
+  },
+  "8883400": {
+    "en": "Bloodflies upon Precision Aiming",
+    "zh": "bloodfliesUponPrecisionAiming"
+  },
+  "7035800": {
+    "en": "Boosts Attack Power of Added Affinity Attacks",
+    "zh": "附加属性攻击力时，能提升属性攻击力"
+  },
+  "8884300": {
+    "en": "Broken Stance Activates Endure",
+    "zh": "brokenStanceActivatesEndure"
+  },
+  "8960100": {
+    "en": "Changed Strong Attacks",
+    "zh": "changedStrongAttacks"
+  },
+  "7123700": {
+    "en": "Changes compatible armament's skill to Blood Blade at start of expedition",
+    "zh": "出击时，武器战技改为“血刃”"
+  },
+  "7123900": {
+    "en": "Changes compatible armament's skill to Chilling Mist at start of expedition",
+    "zh": "出击时，武器战技改为“寒气冻雾”"
+  },
+  "7124600": {
+    "en": "Changes compatible armament's skill to Determination at start of expedition",
+    "zh": "出击时，武器战技改为“决心”"
+  },
+  "7124300": {
+    "en": "Changes compatible armament's skill to Endure at start of expedition",
+    "zh": "出击时，武器战技改为“忍耐”"
+  },
+  "7123000": {
+    "en": "Changes compatible armament's skill to Eruption at start of expedition",
+    "zh": "出击时，武器战技改为“熔岩火浆”"
+  },
+  "7122900": {
+    "en": "Changes compatible armament's skill to Flaming Strike at start of expedition",
+    "zh": "出击时，武器战技改为“炎击”"
+  },
+  "7122700": {
+    "en": "Changes compatible armament's skill to Glintblade Phalanx at start of expedition",
+    "zh": "出击时，武器战技改为“辉剑圆阵”"
+  },
+  "7122800": {
+    "en": "Changes compatible armament's skill to Gravitas at start of expedition",
+    "zh": "出击时，武器战技改为“重力”"
+  },
+  "7124000": {
+    "en": "Changes compatible armament's skill to Hoarfrost Stomp at start of expedition",
+    "zh": "出击时，武器战技改为“冻霜踏地”"
+  },
+  "7123200": {
+    "en": "Changes compatible armament's skill to Lightning Slash at start of expedition",
+    "zh": "出击时，武器战技改为“雷击斩”"
+  },
+  "7123600": {
+    "en": "Changes compatible armament's skill to Poison Moth Flight at start of expedition",
+    "zh": "出击时，武器战技改为“双吻毒蛾”"
+  },
+  "7123500": {
+    "en": "Changes compatible armament's skill to Poisonous Mist at start of expedition",
+    "zh": "出击时，武器战技改为“毒雾”"
+  },
+  "7123400": {
+    "en": "Changes compatible armament's skill to Prayerful Strike at start of expedition",
+    "zh": "出击时，武器战技改为“祈祷一击”"
+  },
+  "7124400": {
+    "en": "Changes compatible armament's skill to Quickstep at start of expedition",
+    "zh": "出击时，武器战技改为“碎步”"
+  },
+  "7124700": {
+    "en": "Changes compatible armament's skill to Rain of Arrows at start of expedition",
+    "zh": "出击时，武器战技改为“箭雨”"
+  },
+  "7123300": {
+    "en": "Changes compatible armament's skill to Sacred Blade at start of expedition",
+    "zh": "出击时，武器战技改为“神圣刀刃”"
+  },
+  "7123800": {
+    "en": "Changes compatible armament's skill to Seppuku at start of expedition",
+    "zh": "出击时，武器战技改为“切腹”"
+  },
+  "7124500": {
+    "en": "Changes compatible armament's skill to Storm Stomp at start of expedition",
+    "zh": "出击时，武器战技改为“风暴足”"
+  },
+  "7123100": {
+    "en": "Changes compatible armament's skill to Thunderbolt at start of expedition",
+    "zh": "出击时，武器战技改为“落雷”"
+  },
+  "7124100": {
+    "en": "Changes compatible armament's skill to White Shadow's Lure at start of expedition",
+    "zh": "出击时，武器战技改为“白影诱惑”"
+  },
+  "8370000": {
+    "en": "Character Skill Cooldown Reduction",
+    "zh": "characterSkillCooldownReduction"
+  },
+  "7000800": {
+    "en": "Character Skill Cooldown Reduction +1",
+    "zh": "缩短技艺的冷却时间＋１"
+  },
+  "7000801": {
+    "en": "Character Skill Cooldown Reduction +2",
+    "zh": "缩短技艺的冷却时间＋２"
+  },
+  "7000802": {
+    "en": "Character Skill Cooldown Reduction +3",
+    "zh": "缩短技艺的冷却时间＋３"
+  },
+  "8882500": {
+    "en": "Charged Thrust Invokes Sleep Mist",
+    "zh": "chargedThrustInvokesSleepMist"
+  },
+  "7033700": {
+    "en": "Colossal armaments are coated in rock when performing charged attacks",
+    "zh": "colossalArmamentsCoatedInRockWhenPerformingChargedAttacks"
+  },
+  "8330700": {
+    "en": "Communion Grants Anti-Dragon Effect",
+    "zh": "communionGrantsAntiDragonEffect"
+  },
+  "7035200": {
+    "en": "Consecutive Guards Harden Skin",
+    "zh": "consecutiveGuardsHardenSkin"
+  },
+  "350200": {
+    "en": "Continuous HP Recovery",
+    "zh": "持续恢复血量"
+  },
+  "7001100": {
+    "en": "Continuous HP Recovery",
+    "zh": "持续恢复血量"
+  },
+  "8540000": {
+    "en": "Continuous HP Recovery",
+    "zh": "持续恢复血量"
+  },
+  "8660300": {
+    "en": "Creates Holy Ground at Low HP",
+    "zh": "createsHolyGroundAtLowHP"
+  },
+  "7035000": {
+    "en": "Critical Hit Adds Lightning Effect",
+    "zh": "criticalHitAddsLightningEffect"
+  },
+  "7035100": {
+    "en": "Critical Hit Boosts Stamina Recovery Speed",
+    "zh": "使出致命一击时，能提升精力的恢复速度"
+  },
+  "7035300": {
+    "en": "Critical Hit Creates Sleep Mist",
+    "zh": "criticalHitCreatesSleepMist"
+  },
+  "350600": {
+    "en": "Critical Hit FP Restoration",
+    "zh": "criticalHitFPRestoration"
+  },
+  "8640100": {
+    "en": "Critical Hit FP Restoration",
+    "zh": "criticalHitFPRestoration"
+  },
+  "350500": {
+    "en": "Critical Hit HP Restoration",
+    "zh": "criticalHitHPRestoration"
+  },
+  "7034900": {
+    "en": "Critical Hit HP Restoration",
+    "zh": "criticalHitHPRestoration"
+  },
+  "8640000": {
+    "en": "Critical Hit HP Restoration",
+    "zh": "criticalHitHPRestoration"
+  },
+  "8921400": {
+    "en": "Critical Hits Boost Attack Power",
+    "zh": "criticalHitsBoostAttackPower"
+  },
+  "7100000": {
+    "en": "Critical hits deal huge damage on poisoned enemies",
+    "zh": "criticalHitsDealHugeDamageOnPoisonedEnemies"
+  },
+  "7031900": {
+    "en": "Critical Hits Earn Runes",
+    "zh": "使出致命一击时，能获得卢恩"
+  },
+  "8660200": {
+    "en": "Critical Hits Inflict Blood Loss",
+    "zh": "criticalHitsInflictBloodLoss"
+  },
+  "7121600": {
+    "en": "Crystal Darts in possession at start of expedition",
+    "zh": "出击时，会持有“结晶飞刀”"
+  },
+  "8640600": {
+    "en": "Crystal Shards upon Magic Critical Hit",
+    "zh": "crystalShardsUponMagicCriticalHit"
+  },
+  "8640200": {
+    "en": "Damage Boosted after Critical Hit",
+    "zh": "damageBoostedAfterCriticalHit"
+  },
+  "8460000": {
+    "en": "Darkness Conceals Caster While Walking",
+    "zh": "darknessConcealsCasterWhileWalking"
+  },
+  "8641200": {
+    "en": "Death Crit. Hit Calls Death Lightning",
+    "zh": "deathCritHitCallsDeathLightning"
+  },
+  "7090000": {
+    "en": "Defeating enemies fills more of the Art gauge",
+    "zh": "提升打倒敌人时，绝招量表的累积量表"
+  },
+  "7090300": {
+    "en": "Defeating enemies near Totem Stela restores HP",
+    "zh": "在图腾碑石周围打倒敌人时，能恢复血量"
+  },
+  "361100": {
+    "en": "Defeating Enemies Restores FP",
+    "zh": "defeatingEnemiesRestoresFP"
+  },
+  "8630100": {
+    "en": "Defeating Enemies Restores FP",
+    "zh": "defeatingEnemiesRestoresFP"
+  },
+  "350300": {
+    "en": "Defeating Enemies Restores HP",
+    "zh": "defeatingEnemiesRestoresHP"
+  },
+  "8630000": {
+    "en": "Defeating Enemies Restores HP",
+    "zh": "defeatingEnemiesRestoresHP"
+  },
+  "7090100": {
+    "en": "Defeating enemies restores HP for allies but not for self",
+    "zh": "打倒敌人时，除了自己恢复周围我方人物的血量"
+  },
+  "8630400": {
+    "en": "Defeating Group Calls Vengeful Spirits",
+    "zh": "defeatingGroupCallsVengefulSpirits"
+  },
+  "8630800": {
+    "en": "Defeating Group Fires Golden Shockwave",
+    "zh": "defeatingGroupFiresGoldenShockwave"
+  },
+  "8630300": {
+    "en": "Defeating Group Releases Mist of Charm",
+    "zh": "defeatingGroupReleasesMistOfCharm"
+  },
+  "8630600": {
+    "en": "Defeating Group Releases Mist of Frost",
+    "zh": "defeatingGroupReleasesMistOfFrost"
+  },
+  "8630200": {
+    "en": "Defeating Group Summons Wraiths",
+    "zh": "defeatingGroupSummonsWraiths"
+  },
+  "8630700": {
+    "en": "Defeating Group Unleashes Lightning",
+    "zh": "defeatingGroupUnleashesLightning"
+  },
+  "7000400": {
+    "en": "Dexterity +1",
+    "zh": "灵巧＋１"
+  },
+  "7000401": {
+    "en": "Dexterity +2",
+    "zh": "灵巧＋２"
+  },
+  "7000402": {
+    "en": "Dexterity +3",
+    "zh": "灵巧＋３"
+  },
+  "8330900": {
+    "en": "Dmg Negation Up While Casting Spells",
+    "zh": "dmgNegationUpWhileCastingSpells"
+  },
+  "8320400": {
+    "en": "Dmg Negation Up while Charging Attacks",
+    "zh": "dmgNegationUpWhileChargingAttacks"
+  },
+  "7030700": {
+    "en": "Draw enemy attention while guarding",
+    "zh": "防御时，变得容易被敌人攻击"
+  },
+  "7000200": {
+    "en": "Endurance +1",
+    "zh": "耐力＋１"
+  },
+  "7000201": {
+    "en": "Endurance +2",
+    "zh": "耐力＋２"
+  },
+  "7000202": {
+    "en": "Endurance +3",
+    "zh": "耐力＋３"
+  },
+  "330600": {
+    "en": "Extended Spell Duration",
+    "zh": "extendedSpellDuration"
+  },
+  "7006400": {
+    "en": "Extended Spell Duration",
+    "zh": "extendedSpellDuration"
+  },
+  "8330500": {
+    "en": "Extended Spell Duration",
+    "zh": "extendedSpellDuration"
+  },
+  "8885100": {
+    "en": "Failing to Cast Sorcery Restores FP",
+    "zh": "failingToCastSorceryRestoresFP"
+  },
+  "7000600": {
+    "en": "Faith +1",
+    "zh": "信仰＋１"
+  },
+  "7000601": {
+    "en": "Faith +2",
+    "zh": "信仰＋２"
+  },
+  "7000602": {
+    "en": "Faith +3",
+    "zh": "信仰＋３"
+  },
+  "8610400": {
+    "en": "Fire Attack Follows Charge Attacks",
+    "zh": "fireAttackFollowsChargeAttacks"
+  },
+  "7001600": {
+    "en": "Fire Attack Power Up",
+    "zh": "提升火属性攻击力"
+  },
+  "7001601": {
+    "en": "Fire Attack Power Up +1",
+    "zh": "提升火属性攻击力＋１"
+  },
+  "7001602": {
+    "en": "Fire Attack Power Up +2",
+    "zh": "提升火属性攻击力＋２"
+  },
+  "7034800": {
+    "en": "Fire Critical Hit Grants Max Stamina Boost",
+    "zh": "fireCriticalHitGrantsMaxStaminaBoost"
+  },
+  "7002700": {
+    "en": "Fire Damage Negation Up",
+    "zh": "提升火属性减伤率"
+  },
+  "7122200": {
+    "en": "Fire Grease in possession at start of expedition",
+    "zh": "出击时，会持有“火油脂”"
+  },
+  "7121100": {
+    "en": "Fire Pots in possession at start of expedition",
+    "zh": "出击时，会持有“火焰壶”"
+  },
+  "8460200": {
+    "en": "Flame of Frenzy While Walking",
+    "zh": "flameOfFrenzyWhileWalking"
+  },
+  "7010200": {
+    "en": "Flask Also Heals Allies",
+    "zh": "使用圣杯瓶时，连同恢复周围我方人物"
+  },
+  "8440100": {
+    "en": "Flask Also Heals Allies",
+    "zh": "使用圣杯瓶时，连同恢复周围我方人物"
+  },
+  "8885000": {
+    "en": "Flask Healing Also Restores FP",
+    "zh": "flaskHealingAlsoRestoresFP"
+  },
+  "8650100": {
+    "en": "FP Recovery From Successful Guarding",
+    "zh": "fpRecoveryFromSuccessfulGuarding"
+  },
+  "8600200": {
+    "en": "FP Restoration upon Attacks",
+    "zh": "fpRestorationUponAttacks"
+  },
+  "7351000": {
+    "en": "FP Restoration upon Axe Attacks",
+    "zh": "以斧攻击时，恢复专注值"
+  },
+  "7352400": {
+    "en": "FP Restoration upon Bow Attacks",
+    "zh": "以弓攻击时，恢复专注值"
+  },
+  "7352100": {
+    "en": "FP Restoration upon Claw Attacks",
+    "zh": "以钩爪攻击时，恢复专注值"
+  },
+  "7350300": {
+    "en": "FP Restoration upon Colossal Sword Attacks",
+    "zh": "以特大剑攻击时，恢复专注值"
+  },
+  "7352300": {
+    "en": "FP Restoration upon Colossal Weapon Attacks",
+    "zh": "以特大武器攻击时，恢复专注值"
+  },
+  "7350500": {
+    "en": "FP Restoration upon Curved Greatsword Attacks",
+    "zh": "以大曲剑攻击时，恢复专注值"
+  },
+  "7350400": {
+    "en": "FP Restoration upon Curved Sword Attacks",
+    "zh": "以曲剑攻击时，恢复专注值"
+  },
+  "7350000": {
+    "en": "FP Restoration upon Dagger Attacks",
+    "zh": "以短剑攻击时，恢复专注值"
+  },
+  "7352000": {
+    "en": "FP Restoration upon Fist Attacks",
+    "zh": "以拳头攻击时，恢复专注值"
+  },
+  "7351400": {
+    "en": "FP Restoration upon Flail Attacks",
+    "zh": "以连枷攻击时，恢复专注值"
+  },
+  "7351300": {
+    "en": "FP Restoration upon Great Hammer Attacks",
+    "zh": "以大槌攻击时，恢复专注值"
+  },
+  "7351700": {
+    "en": "FP Restoration upon Great Spear Attacks",
+    "zh": "以大矛攻击时，恢复专注值"
+  },
+  "7351100": {
+    "en": "FP Restoration upon Greataxe Attacks",
+    "zh": "以大斧攻击时，恢复专注值"
+  },
+  "7350200": {
+    "en": "FP Restoration upon Greatsword Attacks",
+    "zh": "以大剑攻击时，恢复专注值"
+  },
+  "7351800": {
+    "en": "FP Restoration upon Halberd Attacks",
+    "zh": "以戟攻击时，恢复专注值"
+  },
+  "7351200": {
+    "en": "FP Restoration upon Hammer Attacks",
+    "zh": "以槌攻击时，恢复专注值"
+  },
+  "7350900": {
+    "en": "FP Restoration upon Heavy Thrusting Sword Attacks",
+    "zh": "以重刺剑攻击时，恢复专注值"
+  },
+  "7350600": {
+    "en": "FP Restoration upon Katana Attacks",
+    "zh": "以刀攻击时，恢复专注值"
+  },
+  "7351600": {
+    "en": "FP Restoration upon Pike Attacks",
+    "zh": "fpRestorationUponPikeAttacks"
+  },
+  "7351900": {
+    "en": "FP Restoration upon Reaper Attacks",
+    "zh": "以镰刀攻击时，恢复专注值"
+  },
+  "7351500": {
+    "en": "FP Restoration upon Spear Attacks",
+    "zh": "以矛攻击时，恢复专注值"
+  },
+  "7350100": {
+    "en": "FP Restoration upon Straight Sword Attacks",
+    "zh": "以直剑攻击时，恢复专注值"
+  },
+  "10000": {
+    "en": "Old Pocketwatch",
+    "zh": "老旧怀表"
+  },
+  "7036000": {
+    "en": "FP Restoration upon Successive Attacks",
+    "zh": "连续攻击时，恢复专注值"
+  },
+  "8610100": {
+    "en": "FP Restoration upon Successive Attacks",
+    "zh": "连续攻击时，恢复专注值"
+  },
+  "7350800": {
+    "en": "FP Restoration upon Thrusting Sword Attacks",
+    "zh": "以刺剑攻击时，恢复专注值"
+  },
+  "7350700": {
+    "en": "FP Restoration upon Twinblade Attacks",
+    "zh": "以双头剑攻击时，恢复专注值"
+  },
+  "7352200": {
+    "en": "FP Restoration upon Whip Attacks",
+    "zh": "以软鞭攻击时，恢复专注值"
+  },
+  "8740000": {
+    "en": "Frostbite Increases Attack Power",
+    "zh": "frostbiteIncreasesAttackPower"
+  },
+  "8690300": {
+    "en": "Frostbite Produces a Mist of Frost",
+    "zh": "frostbiteProducesAMistOfFrost"
+  },
+  "7035400": {
+    "en": "Gesture Crossed Legs Builds Up Madness",
+    "zh": "通过肢体动作“盘腿坐”，能累积发狂量表"
+  },
+  "7035410": {
+    "en": "Gesture Crossed Legs Builds Up Madness",
+    "zh": "通过肢体动作“盘腿坐”，能累积发狂量表"
+  },
+  "7121800": {
+    "en": "Glintstone Scraps in possession at start of expedition",
+    "zh": "出击时，会持有“崩裂辉石”"
+  },
+  "8440200": {
+    "en": "Gradual Restoration by Flask",
+    "zh": "gradualRestorationByFlask"
+  },
+  "7121900": {
+    "en": "Gravity Stone Chunks in possession at start of expedition",
+    "zh": "出击时，会持有“块状重力石”"
+  },
+  "7150000": {
+    "en": "Guard counter is given a boost based on current HP",
+    "zh": "防御反击成功时，能额外提升自己目前的血量"
+  },
+  "8420100": {
+    "en": "Guard Counters Activate Holy Attacks",
+    "zh": "guardCountersActivateHolyAttacks"
+  },
+  "7012700": {
+    "en": "Guard Counters Cast Light Pillar",
+    "zh": "guardCountersCastLightPillar"
+  },
+  "8420200": {
+    "en": "Guard Counters Launch Summoning Attack",
+    "zh": "guardCountersLaunchSummoningAttack"
+  },
+  "8885200": {
+    "en": "Guarding Ups Attack & Casting Speeds",
+    "zh": "guardingUpsAttackAndCastingSpeeds"
+  },
+  "8610600": {
+    "en": "Holy Attack Follows Charge Attacks",
+    "zh": "holyAttackFollowsChargeAttacks"
+  },
+  "7001800": {
+    "en": "Holy Attack Power Up",
+    "zh": "提升圣属性攻击力"
+  },
+  "7001801": {
+    "en": "Holy Attack Power Up +1",
+    "zh": "提升圣属性攻击力＋１"
+  },
+  "7001802": {
+    "en": "Holy Attack Power Up +2",
+    "zh": "提升圣属性攻击力＋２"
+  },
+  "7002900": {
+    "en": "Holy Damage Negation Up",
+    "zh": "提升圣属性减伤率"
+  },
+  "7122500": {
+    "en": "Holy Grease in possession at start of expedition",
+    "zh": "出击时，会持有“圣油脂”"
+  },
+  "8881000": {
+    "en": "Holy Shockwave upon Charged Strike",
+    "zh": "holyShockwaveUponChargedStrike"
+  },
+  "7121400": {
+    "en": "Holy Water Pots in possession at start of expedition",
+    "zh": "出击时，会持有“圣水壶”"
+  },
+  "7036100": {
+    "en": "HP Recovery from Successful Guarding",
+    "zh": "防御成功时，恢复血量"
+  },
+  "8650000": {
+    "en": "HP Recovery From Successful Guarding",
+    "zh": "hpRecoveryFromSuccessfulGuardingPlus"
+  },
+  "8600100": {
+    "en": "HP Restoration upon Attacks",
+    "zh": "hpRestorationUponAttacks"
+  },
+  "7341000": {
+    "en": "HP Restoration upon Axe Attacks",
+    "zh": "以斧攻击时，恢复血量"
+  },
+  "7342400": {
+    "en": "HP Restoration upon Bow Attacks",
+    "zh": "以弓攻击时，恢复血量"
+  },
+  "7342100": {
+    "en": "HP Restoration upon Claw Attacks",
+    "zh": "以钩爪攻击时，恢复血量"
+  },
+  "7340300": {
+    "en": "HP Restoration upon Colossal Sword Attacks",
+    "zh": "以特大剑攻击时，恢复血量"
+  },
+  "7342300": {
+    "en": "HP Restoration upon Colossal Weapon Attacks",
+    "zh": "以特大武器攻击时，恢复血量"
+  },
+  "7340500": {
+    "en": "HP Restoration upon Curved Greatsword Attacks",
+    "zh": "以大曲剑攻击时，恢复血量"
+  },
+  "7340400": {
+    "en": "HP Restoration upon Curved Sword Attacks",
+    "zh": "以曲剑攻击时，恢复血量"
+  },
+  "7340000": {
+    "en": "HP Restoration upon Dagger Attacks",
+    "zh": "以短剑攻击时，恢复血量"
+  },
+  "7342000": {
+    "en": "HP Restoration upon Fist Attacks",
+    "zh": "以拳头攻击时，恢复血量"
+  },
+  "7341400": {
+    "en": "HP Restoration upon Flail Attacks",
+    "zh": "以连枷攻击时，恢复血量"
+  },
+  "7341300": {
+    "en": "HP Restoration upon Great Hammer Attacks",
+    "zh": "以大槌攻击时，恢复血量"
+  },
+  "7341700": {
+    "en": "HP Restoration upon Great Spear Attacks",
+    "zh": "以大矛攻击时，恢复血量"
+  },
+  "7341100": {
+    "en": "HP Restoration upon Greataxe Attacks",
+    "zh": "以大斧攻击时，恢复血量"
+  },
+  "7340200": {
+    "en": "HP Restoration upon Greatsword Attacks",
+    "zh": "以大剑攻击时，恢复血量"
+  },
+  "7341800": {
+    "en": "HP Restoration upon Halberd Attacks",
+    "zh": "以戟攻击时，恢复血量"
+  },
+  "7341200": {
+    "en": "HP Restoration upon Hammer Attacks",
+    "zh": "以槌攻击时，恢复血量"
+  },
+  "7340900": {
+    "en": "HP Restoration upon Heavy Thrusting Sword Attacks",
+    "zh": "以重刺剑攻击时，恢复血量"
+  },
+  "7340600": {
+    "en": "HP Restoration upon Katana Attacks",
+    "zh": "以刀攻击时，恢复血量"
+  },
+  "7341600": {
+    "en": "HP Restoration upon Pike Attacks",
+    "zh": "hpRestorationUponPikeAttacks"
+  },
+  "7341900": {
+    "en": "HP Restoration upon Reaper Attacks",
+    "zh": "以镰刀攻击时，恢复血量"
+  },
+  "7341500": {
+    "en": "HP Restoration upon Spear Attacks",
+    "zh": "以矛攻击时，恢复血量"
+  },
+  "7340100": {
+    "en": "HP Restoration upon Straight Sword Attacks",
+    "zh": "以直剑攻击时，恢复血量"
+  },
+  "8610000": {
+    "en": "HP Restoration upon Successive Attacks",
+    "zh": "hpRestorationUponSuccessiveAttacks"
+  },
+  "7160000": {
+    "en": "HP Restoration upon Thrusting Counterattack",
+    "zh": "突刺反击成功时，能恢复血量"
+  },
+  "7340800": {
+    "en": "HP Restoration upon Thrusting Sword Attacks",
+    "zh": "以刺剑攻击时，恢复血量"
+  },
+  "7340700": {
+    "en": "HP Restoration upon Twinblade Attacks",
+    "zh": "以双头剑攻击时，恢复血量"
+  },
+  "7342200": {
+    "en": "HP Restoration upon Whip Attacks",
+    "zh": "以软鞭攻击时，恢复血量"
+  },
+  "7200000": {
+    "en": "HP Restoration with Head Shots",
+    "zh": "hpRestorationWithHeadShots"
+  },
+  "7030200": {
+    "en": "HP restored when using cured meats, medicinal boluses, etc.",
+    "zh": "食用苔药、肉干等等道具时，能恢复血量"
+  },
+  "7230001": {
+    "en": "Huge rune discount for shop purchases while on expedition",
+    "zh": "在出击期间，大幅减少于商店购物时所需的卢恩"
+  },
+  "8450100": {
+    "en": "Ice Storm Surge Sprint",
+    "zh": "iceStormSurgeSprint"
+  },
+  "8880000": {
+    "en": "Ice Storm upon Charged Slash",
+    "zh": "iceStormUponChargedSlash"
+  },
+  "8641000": {
+    "en": "Ice Storm upon Critical Hit with Frost",
+    "zh": "iceStormUponCriticalHitWithFrost"
+  },
+  "340701": {
+    "en": "Impaired Damage Negation",
+    "zh": "impairedDamageNegation"
+  },
+  "320001": {
+    "en": "ImpairedPhysicalDamageNegation",
+    "zh": "降低物理减伤率"
+  },
+  "320101": {
+    "en": "ImpairedPhysicalDamageNegation",
+    "zh": "降低物理减伤率"
+  },
+  "320201": {
+    "en": "ImpairedPhysicalDamageNegation",
+    "zh": "降低物理减伤率"
+  },
+  "320301": {
+    "en": "ImpairedPhysicalDamageNegation",
+    "zh": "降低物理减伤率"
+  },
+  "320500": {
+    "en": "Improved Attack Power at Full HP",
+    "zh": "improvedAttackPowerAtFullHP"
+  },
+  "8670000": {
+    "en": "Improved Attack Power at Full HP",
+    "zh": "improvedAttackPowerAtFullHP"
+  },
+  "320400": {
+    "en": "Improved Attack Power at Low HP",
+    "zh": "improvedAttackPowerAtLowHP"
+  },
+  "8660000": {
+    "en": "Improved Attack Power at Low HP",
+    "zh": "improvedAttackPowerAtLowHP"
+  },
+  "8300000": {
+    "en": "Improved Attack Power when Two-Handing",
+    "zh": "improvedAttackPowerWhenTwoHanding"
+  },
+  "7081000": {
+    "en": "Improved Attack Power with 3+ Axes Equipped",
+    "zh": "装备三把以上类别为斧的武器，能提升攻击力"
+  },
+  "7082400": {
+    "en": "Improved Attack Power with 3+ Bows Equipped",
+    "zh": "装备三把以上类别为弓的武器，能提升攻击力"
+  },
+  "7082100": {
+    "en": "Improved Attack Power with 3+ Claws Equipped",
+    "zh": "装备三把以上类别为钩爪的武器，能提升攻击力"
+  },
+  "7080300": {
+    "en": "Improved Attack Power with 3+ Colossal Swords Equipped",
+    "zh": "装备三把以上类别为特大剑的武器，能提升攻击力"
+  },
+  "7082300": {
+    "en": "Improved Attack Power with 3+ Colossal Weapons Equipped",
+    "zh": "装备三把以上类别为特大武器的武器，能提升攻击力"
+  },
+  "7080500": {
+    "en": "Improved Attack Power with 3+ Curved Greatswords Equipped",
+    "zh": "装备三把以上类别为大曲剑的武器，能提升攻击力"
+  },
+  "7080400": {
+    "en": "Improved Attack Power with 3+ Curved Swords Equipped",
+    "zh": "装备三把以上类别为曲剑的武器，能提升攻击力"
+  },
+  "7080000": {
+    "en": "Improved Attack Power with 3+ Daggers Equipped",
+    "zh": "装备三把以上类别为短剑的武器，能提升攻击力"
+  },
+  "7082000": {
+    "en": "Improved Attack Power with 3+ Fists Equipped",
+    "zh": "装备三把以上类别为拳头的武器，能提升攻击力"
+  },
+  "7081400": {
+    "en": "Improved Attack Power with 3+ Flails Equipped",
+    "zh": "装备三把以上类别为连枷的武器，能提升攻击力"
+  },
+  "7081300": {
+    "en": "Improved Attack Power with 3+ Great Hammers Equipped",
+    "zh": "装备三把以上类别为大槌的武器，能提升攻击力"
+  },
+  "7081700": {
+    "en": "Improved Attack Power with 3+ Great Spears Equipped",
+    "zh": "装备三把以上类别为大矛的武器，能提升攻击力"
+  },
+  "7081100": {
+    "en": "Improved Attack Power with 3+ Greataxes Equipped",
+    "zh": "装备三把以上类别为大斧的武器，能提升攻击力"
+  },
+  "7080200": {
+    "en": "Improved Attack Power with 3+ Greatswords Equipped",
+    "zh": "装备三把以上类别为大剑的武器，能提升攻击力"
+  },
+  "7081800": {
+    "en": "Improved Attack Power with 3+ Halberds Equipped",
+    "zh": "装备三把以上类别为戟的武器，能提升攻击力"
+  },
+  "7081200": {
+    "en": "Improved Attack Power with 3+ Hammers Equipped",
+    "zh": "装备三把以上类别为槌的武器，能提升攻击力"
+  },
+  "7080900": {
+    "en": "Improved Attack Power with 3+ Heavy Thrusting Swords Equipped",
+    "zh": "装备三把以上类别为重刺剑的武器，能提升攻击力"
+  },
+  "7080600": {
+    "en": "Improved Attack Power with 3+ Katana Equipped",
+    "zh": "装备三把以上类别为刀的武器，能提升攻击力"
+  },
+  "7081900": {
+    "en": "Improved Attack Power with 3+ Reapers Equipped",
+    "zh": "装备三把以上类别为镰刀的武器，能提升攻击力"
+  },
+  "7081500": {
+    "en": "Improved Attack Power with 3+ Spears Equipped",
+    "zh": "装备三把以上类别为矛的武器，能提升攻击力"
+  },
+  "7080100": {
+    "en": "Improved Attack Power with 3+ Straight Swords Equipped",
+    "zh": "装备三把以上类别为直剑的武器，能提升攻击力"
+  },
+  "7080800": {
+    "en": "Improved Attack Power with 3+ Thrusting Swords Equipped",
+    "zh": "装备三把以上类别为刺剑的武器，能提升攻击力"
+  },
+  "7080700": {
+    "en": "Improved Attack Power with 3+ Twinblades Equipped",
+    "zh": "装备三把以上类别为双头剑的武器，能提升攻击力"
+  },
+  "7082200": {
+    "en": "Improved Attack Power with 3+ Whips Equipped",
+    "zh": "装备三把以上类别为软鞭的武器，能提升攻击力"
+  },
+  "7331000": {
+    "en": "Improved Axe Attack Power",
+    "zh": "提升斧的攻击力"
+  },
+  "7044400": {
+    "en": "Improved Bestial Incantations",
+    "zh": "强化野兽的祷告"
+  },
+  "312001": {
+    "en": "Improved Blood Loss & Frost Resistance",
+    "zh": "improvedBloodLossAndFrostResistance"
+  },
+  "311600": {
+    "en": "Improved Blood Loss Resistance",
+    "zh": "提升对出血的抵抗力"
+  },
+  "7003100": {
+    "en": "Improved Blood Loss Resistance",
+    "zh": "提升对出血的抵抗力"
+  },
+  "8210100": {
+    "en": "Improved Blood Loss Resistance",
+    "zh": "提升对出血的抵抗力"
+  },
+  "7332400": {
+    "en": "Improved Bow Attack Power",
+    "zh": "提升弓的攻击力"
+  },
+  "7043300": {
+    "en": "Improved Carian Sword Sorcery",
+    "zh": "强化卡利亚剑的魔法"
+  },
+  "321200": {
+    "en": "Improved Chain Attack Finishers",
+    "zh": "improvedChainAttackFinishers"
+  },
+  "8320000": {
+    "en": "Improved Chain Attack Finishers",
+    "zh": "improvedChainAttackFinishers"
+  },
+  "321300": {
+    "en": "Improved Charge Attacks",
+    "zh": "improvedChargeAttacks"
+  },
+  "8320100": {
+    "en": "Improved Charge Attacks",
+    "zh": "improvedChargeAttacks"
+  },
+  "8330300": {
+    "en": "Improved Charged Incantation",
+    "zh": "improvedChargedIncantation"
+  },
+  "8350100": {
+    "en": "Improved Charged Skill Attack Power",
+    "zh": "improvedChargedSkillAttackPower"
+  },
+  "8330200": {
+    "en": "Improved Charged Sorceries",
+    "zh": "improvedChargedSorceries"
+  },
+  "330900": {
+    "en": "Improved Charged Spells & Skills",
+    "zh": "improvedChargedSpellsAndSkills"
+  },
+  "7332100": {
+    "en": "Improved Claw Attack Power",
+    "zh": "提升钩爪的攻击力"
+  },
+  "7330300": {
+    "en": "Improved Colossal Sword Attack Power",
+    "zh": "提升特大剑的攻击力"
+  },
+  "7332300": {
+    "en": "Improved Colossal Weapon Attack Power",
+    "zh": "提升特大武器的攻击力"
+  },
+  "320900": {
+    "en": "Improved Critical Hits",
+    "zh": "强化致命一击"
+  },
+  "7040200": {
+    "en": "Improved Critical Hits",
+    "zh": "强化致命一击"
+  },
+  "8130000": {
+    "en": "Improved Critical Hits",
+    "zh": "强化致命一击"
+  },
+  "7040201": {
+    "en": "Improved Critical Hits +1",
+    "zh": "强化致命一击+1"
+  },
+  "7040290": {
+    "en": "Improved Critical Hits +1",
+    "zh": "强化致命一击+1"
+  },
+  "7043600": {
+    "en": "Improved Crystalian sorcery",
+    "zh": "强化结晶人的魔法"
+  },
+  "7330500": {
+    "en": "Improved Curved Greatsword Attack Power",
+    "zh": "提升大曲剑的攻击力"
+  },
+  "7330400": {
+    "en": "Improved Curved Sword Attack Power",
+    "zh": "提升曲剑的攻击力"
+  },
+  "7330000": {
+    "en": "Improved Dagger Attack Power",
+    "zh": "提升短剑的攻击力"
+  },
+  "340900": {
+    "en": "Improved Damage Negation at Full HP",
+    "zh": "improvedDamageNegationAtFullHP"
+  },
+  "8670101": {
+    "en": "Improved Damage Negation at Full HP",
+    "zh": "improvedDamageNegationAtFullHP"
+  },
+  "340800": {
+    "en": "Improved Damage Negation at Low HP",
+    "zh": "血量偏低时，能提升减伤率"
+  },
+  "7012300": {
+    "en": "Improved Damage Negation at Low HP",
+    "zh": "血量偏低时，能提升减伤率"
+  },
+  "8660101": {
+    "en": "Improved Damage Negation at Low HP",
+    "zh": "血量偏低时，能提升减伤率"
+  },
+  "311900": {
+    "en": "Improved Death Blight Resistance",
+    "zh": "提升对死亡的抵抗力"
+  },
+  "7003300": {
+    "en": "Improved Death Blight Resistance",
+    "zh": "提升对死亡的抵抗力"
+  },
+  "8210300": {
+    "en": "Improved Death Blight Resistance",
+    "zh": "提升对死亡的抵抗力"
+  },
+  "312500": {
+    "en": "Improved Dexterity",
+    "zh": "improvedDexterity"
+  },
+  "340700": {
+    "en": "Improved Dodging",
+    "zh": "improvedDodging"
+  },
+  "8410000": {
+    "en": "Improved Dodging",
+    "zh": "improvedDodging"
+  },
+  "7044600": {
+    "en": "Improved Dragon Communion Incantations",
+    "zh": "强化龙飨的祷告"
+  },
+  "7044100": {
+    "en": "Improved Dragon Cult Incantations",
+    "zh": "强化王城古龙信仰的祷告"
+  },
+  "320200": {
+    "en": "Improved Fire Attack Power",
+    "zh": "improvedFireAttackPower"
+  },
+  "8100200": {
+    "en": "Improved Fire Attack Power",
+    "zh": "improvedFireAttackPower"
+  },
+  "340200": {
+    "en": "Improved Fire Damage Negation",
+    "zh": "improvedFireDamageNegation"
+  },
+  "8200200": {
+    "en": "Improved Fire Damage Negation",
+    "zh": "improvedFireDamageNegation"
+  },
+  "7332000": {
+    "en": "Improved Fist Attack Power",
+    "zh": "提升拳头的攻击力"
+  },
+  "7331400": {
+    "en": "Improved Flail Attack Power",
+    "zh": "提升连枷的攻击力"
+  },
+  "350000": {
+    "en": "ImprovedFlaskHPRestoration",
+    "zh": "提升圣杯瓶恢复量"
+  },
+  "8440000": {
+    "en": "ImprovedFlaskHPRestoration",
+    "zh": "提升圣杯瓶恢复量"
+  },
+  "7044500": {
+    "en": "Improved Frenzied Flame Incantations",
+    "zh": "强化癫火的祷告"
+  },
+  "311601": {
+    "en": "Improved Frost Resistance",
+    "zh": "提升对冻伤的抵抗力"
+  },
+  "7003500": {
+    "en": "Improved Frost Resistance",
+    "zh": "提升对冻伤的抵抗力"
+  },
+  "8210500": {
+    "en": "Improved Frost Resistance",
+    "zh": "提升对冻伤的抵抗力"
+  },
+  "7044000": {
+    "en": "Improved Fundamentalist Incantations",
+    "zh": "强化黄金律法基本主义的祷告"
+  },
+  "7044200": {
+    "en": "Improved Giants' Flame Incantations",
+    "zh": "强化巨人火焰的祷告"
+  },
+  "7043400": {
+    "en": "Improved Glintblade Sorcery",
+    "zh": "强化辉剑的魔法"
+  },
+  "7044300": {
+    "en": "Improved Godslayer Incantations",
+    "zh": "强化狩猎神祇的祷告"
+  },
+  "7043700": {
+    "en": "Improved Gravity Sorcery",
+    "zh": "强化重力的魔法"
+  },
+  "7331300": {
+    "en": "Improved Great Hammer Attack Power",
+    "zh": "提升大槌的攻击力"
+  },
+  "7331700": {
+    "en": "Improved Great Spear Attack Power",
+    "zh": "提升大矛的攻击力"
+  },
+  "7331100": {
+    "en": "Improved Greataxe Attack Power",
+    "zh": "提升大斧的攻击力"
+  },
+  "7330200": {
+    "en": "Improved Greatsword Attack Power",
+    "zh": "提升大剑的攻击力"
+  },
+  "320700": {
+    "en": "Improved Guard Breaking",
+    "zh": "improvedGuardBreaking"
+  },
+  "8140000": {
+    "en": "Improved Guard Breaking",
+    "zh": "improvedGuardBreaking"
+  },
+  "322000": {
+    "en": "Improved Guard Counters",
+    "zh": "强化防御反击"
+  },
+  "7040100": {
+    "en": "Improved Guard Counters",
+    "zh": "强化防御反击"
+  },
+  "8420000": {
+    "en": "Improved Guard Counters",
+    "zh": "强化防御反击"
+  },
+  "341000": {
+    "en": "Improved Guarding Ability",
+    "zh": "improvedGuardingAbility"
+  },
+  "8220000": {
+    "en": "Improved Guarding Ability",
+    "zh": "improvedGuardingAbility"
+  },
+  "8220001": {
+    "en": "Improved Guarding Ability +1",
+    "zh": "improvedGuardingAbilityPlus1"
+  },
+  "8220002": {
+    "en": "Improved Guarding Ability +2",
+    "zh": "improvedGuardingAbilityPlus2"
+  },
+  "7331800": {
+    "en": "Improved Halberd Attack Power",
+    "zh": "提升戟的攻击力"
+  },
+  "7331200": {
+    "en": "Improved Hammer Attack Power",
+    "zh": "提升槌的攻击力"
+  },
+  "7330900": {
+    "en": "Improved Heavy Thrusting Sword Attack Power",
+    "zh": "提升重刺剑的攻击力"
+  },
+  "320300": {
+    "en": "Improved Holy Attack Power",
+    "zh": "improvedHolyAttackPower"
+  },
+  "8100400": {
+    "en": "Improved Holy Attack Power",
+    "zh": "improvedHolyAttackPower"
+  },
+  "340400": {
+    "en": "Improved Holy Damage Negation",
+    "zh": "improvedHolyDamageNegation"
+  },
+  "8200400": {
+    "en": "Improved Holy Damage Negation",
+    "zh": "improvedHolyDamageNegation"
+  },
+  "330400": {
+    "en": "Improved Incantations",
+    "zh": "improvedIncantations"
+  },
+  "8330100": {
+    "en": "Improved Incantations",
+    "zh": "improvedIncantations"
+  },
+  "7040000": {
+    "en": "Improved Initial Standard Attack",
+    "zh": "强化轻攻击的第一记攻击"
+  },
+  "7043500": {
+    "en": "Improved Invisibility Sorcery",
+    "zh": "强化隐形的魔法"
+  },
+  "311000": {
+    "en": "Improved Item Discovery",
+    "zh": "improvedItemDiscovery"
+  },
+  "370000": {
+    "en": "Improved Item Discovery",
+    "zh": "improvedItemDiscovery"
+  },
+  "8510000": {
+    "en": "Improved Item Discovery",
+    "zh": "improvedItemDiscovery"
+  },
+  "321800": {
+    "en": "Improved Jump Attacks",
+    "zh": "improvedJumpAttacks"
+  },
+  "8320300": {
+    "en": "Improved Jump Attacks",
+    "zh": "improvedJumpAttacks"
+  },
+  "7330600": {
+    "en": "Improved Katana Attack Power",
+    "zh": "提升刀的攻击力"
+  },
+  "320100": {
+    "en": "Improved Lightning Attack Power",
+    "zh": "improvedLightningAttackPower"
+  },
+  "8100300": {
+    "en": "Improved Lightning Attack Power",
+    "zh": "improvedLightningAttackPower"
+  },
+  "340300": {
+    "en": "Improved Lightning Damage Negation",
+    "zh": "improvedLightningDamageNegation"
+  },
+  "8200300": {
+    "en": "Improved Lightning Damage Negation",
+    "zh": "improvedLightningDamageNegation"
+  },
+  "311801": {
+    "en": "Improved Madness Resistance",
+    "zh": "提升对发狂的抵抗力"
+  },
+  "7003600": {
+    "en": "Improved Madness Resistance",
+    "zh": "提升对发狂的抵抗力"
+  },
+  "8210600": {
+    "en": "Improved Madness Resistance",
+    "zh": "提升对发狂的抵抗力"
+  },
+  "320000": {
+    "en": "Improved Magic Attack Power",
+    "zh": "improvedMagicAttackPower"
+  },
+  "8100100": {
+    "en": "Improved Magic Attack Power",
+    "zh": "improvedMagicAttackPower"
+  },
+  "340100": {
+    "en": "Improved Magic Damage Negation",
+    "zh": "improvedMagicDamageNegation"
+  },
+  "8200100": {
+    "en": "Improved Magic Damage Negation",
+    "zh": "improvedMagicDamageNegation"
+  },
+  "7043900": {
+    "en": "Improved Night Sorcery",
+    "zh": "improvedNightSorcery"
+  },
+  "8920100": {
+    "en": "Improved Non-Physical Attack Power",
+    "zh": "improvedNonPhysicalAttackPower"
+  },
+  "340500": {
+    "en": "Improved Non-Physical Damage Negation",
+    "zh": "improvedNonPhysicalDamageNegation"
+  },
+  "8200500": {
+    "en": "Improved Non-Physical Damage Negation",
+    "zh": "improvedNonPhysicalDamageNegation"
+  },
+  "322200": {
+    "en": "Improved Perfuming Arts",
+    "zh": "强化调香术"
+  },
+  "7043100": {
+    "en": "Improved Perfuming Arts",
+    "zh": "强化调香术"
+  },
+  "8400000": {
+    "en": "Improved Perfuming Arts",
+    "zh": "强化调香术"
+  },
+  "8100000": {
+    "en": "Improved Physical Attack Power",
+    "zh": "improvedPhysicalAttackPower"
+  },
+  "340000": {
+    "en": "ImprovedPhysicalDamageNegation",
+    "zh": "提升物理减伤率"
+  },
+  "7006200": {
+    "en": "ImprovedPhysicalDamageNegation",
+    "zh": "提升物理减伤率"
+  },
+  "8200000": {
+    "en": "ImprovedPhysicalDamageNegation",
+    "zh": "提升物理减伤率"
+  },
+  "7331600": {
+    "en": "Improved Pike Attack Power",
+    "zh": "improvedPikeAttackPower"
+  },
+  "312100": {
+    "en": "Improved Poise",
+    "zh": "improvedPoise"
+  },
+  "8230000": {
+    "en": "Improved Poise",
+    "zh": "improvedPoise"
+  },
+  "7240000": {
+    "en": "Improved Poise & Damage Negation When Knocked Back by Damage",
+    "zh": "受到损伤并被弹飞时，能提升强韧度与减伤率"
+  },
+  "7030000": {
+    "en": "Improved Poise Near Totem Stela",
+    "zh": "身在图腾碑石周围时，能提升强韧度"
+  },
+  "312000": {
+    "en": "Improved Poison & Rot Resistance",
+    "zh": "improvedPoisonRotResistance"
+  },
+  "311700": {
+    "en": "Improved Poison Resistance",
+    "zh": "提升对中毒的抵抗力"
+  },
+  "7003000": {
+    "en": "Improved Poison Resistance",
+    "zh": "提升对中毒的抵抗力"
+  },
+  "8210000": {
+    "en": "Improved Poison Resistance",
+    "zh": "提升对中毒的抵抗力"
+  },
+  "321500": {
+    "en": "Improved Ranged Weapon Attacks",
+    "zh": "improvedRangedWeaponAttacks"
+  },
+  "8340000": {
+    "en": "Improved Ranged Weapon Attacks",
+    "zh": "improvedRangedWeaponAttacks"
+  },
+  "7331900": {
+    "en": "Improved Reaper Attack Power",
+    "zh": "提升镰刀的攻击力"
+  },
+  "321900": {
+    "en": "Improved Roar & Breath Attacks",
+    "zh": "强化咆哮与吐息"
+  },
+  "7043000": {
+    "en": "Improved Roar & Breath Attacks",
+    "zh": "强化咆哮与吐息"
+  },
+  "8380000": {
+    "en": "Improved Roar & Breath Attacks",
+    "zh": "强化咆哮与吐息"
+  },
+  "311701": {
+    "en": "Improved Rot Resistance",
+    "zh": "提升对猩红腐败的抵抗力"
+  },
+  "7003400": {
+    "en": "Improved Rot Resistance",
+    "zh": "提升对猩红腐败的抵抗力"
+  },
+  "8210400": {
+    "en": "Improved Rot Resistance",
+    "zh": "提升对猩红腐败的抵抗力"
+  },
+  "312300": {
+    "en": "Improved Skill Attack Power",
+    "zh": "improvedSkillAttackPower"
+  },
+  "8350000": {
+    "en": "Improved Skill Attack Power",
+    "zh": "improvedSkillAttackPower"
+  },
+  "312002": {
+    "en": "Improved Sleep & Madness Resistance",
+    "zh": "improvedSleepMadnessResistance"
+  },
+  "311800": {
+    "en": "Improved Sleep Resistance",
+    "zh": "提升对催眠的抵抗力"
+  },
+  "7003200": {
+    "en": "Improved Sleep Resistance",
+    "zh": "提升对催眠的抵抗力"
+  },
+  "8210200": {
+    "en": "Improved Sleep Resistance",
+    "zh": "提升对催眠的抵抗力"
+  },
+  "330000": {
+    "en": "Improved Sorceries",
+    "zh": "improvedSorceries"
+  },
+  "8330000": {
+    "en": "Improved Sorceries",
+    "zh": "improvedSorceries"
+  },
+  "7331500": {
+    "en": "Improved Spear Attack Power",
+    "zh": "提升矛的攻击力"
+  },
+  "330700": {
+    "en": "Improved Spell Casting Speed",
+    "zh": "improvedSpellCastingSpeed"
+  },
+  "8330400": {
+    "en": "Improved Spell Casting Speed",
+    "zh": "improvedSpellCastingSpeed"
+  },
+  "311500": {
+    "en": "Improved Stamina Recovery",
+    "zh": "improvedStaminaRecovery"
+  },
+  "8020200": {
+    "en": "Improved Stamina Recovery",
+    "zh": "improvedStaminaRecovery"
+  },
+  "8020201": {
+    "en": "Improved stamina recovery +1",
+    "zh": "improvedStaminaRecoveryPlus1"
+  },
+  "8120000": {
+    "en": "Improved Stance-Breaking",
+    "zh": "improvedStanceBreaking"
+  },
+  "7006000": {
+    "en": "Improved Stance-Breaking when Two-Handing",
+    "zh": "提升双手共持时，造成失去平衡的能力"
+  },
+  "7006001": {
+    "en": "Improved Stance-Breaking when Two-Handing",
+    "zh": "提升双手共持时，造成失去平衡的能力"
+  },
+  "8300100": {
+    "en": "Improved Stance-Breaking when Two-Handing",
+    "zh": "提升双手共持时，造成失去平衡的能力"
+  },
+  "7006100": {
+    "en": "Improved Stance-Breaking when Wielding Two Armaments",
+    "zh": "提升双手各持时，造成失去平衡的能力"
+  },
+  "7006101": {
+    "en": "Improved Stance-Breaking when Wielding Two Armaments",
+    "zh": "提升双手各持时，造成失去平衡的能力"
+  },
+  "8310100": {
+    "en": "Improved Stance-Breaking when Wielding Two Armaments",
+    "zh": "提升双手各持时，造成失去平衡的能力"
+  },
+  "7200100": {
+    "en": "Improved Stance-Breaking with Head Shots",
+    "zh": "improvedStanceBreakingWithHeadShots"
+  },
+  "7043200": {
+    "en": "Improved Stonedigger Sorcery",
+    "zh": "强化挖石的魔法"
+  },
+  "7330100": {
+    "en": "Improved Straight Sword Attack Power",
+    "zh": "提升直剑的攻击力"
+  },
+  "7043800": {
+    "en": "Improved Thorn Sorcery",
+    "zh": "强化荆棘的魔法"
+  },
+  "7040400": {
+    "en": "Improved Throwing Knife Damage",
+    "zh": "提升投掷小刀的攻击力"
+  },
+  "7040300": {
+    "en": "Improved Throwing Pot Damage",
+    "zh": "提升投掷壶的攻击力"
+  },
+  "322100": {
+    "en": "Improved Throwing Pots",
+    "zh": "improvedThrowingPots"
+  },
+  "8390000": {
+    "en": "Improved Throwing Pots",
+    "zh": "improvedThrowingPots"
+  },
+  "7040500": {
+    "en": "Improved Glintstone and Gravity Stone Damage",
+    "zh": "提升投掷石头的攻击力"
+  },
+  "320600": {
+    "en": "Improved Thrusting Counterattack",
+    "zh": "improvedThrustingCounterattack"
+  },
+  "8430000": {
+    "en": "Improved Thrusting Counterattack",
+    "zh": "improvedThrustingCounterattack"
+  },
+  "7330800": {
+    "en": "Improved Thrusting Sword Attack Power",
+    "zh": "提升刺剑的攻击力"
+  },
+  "7330700": {
+    "en": "Improved Twinblade Attack Power",
+    "zh": "提升双头剑的攻击力"
+  },
+  "7332200": {
+    "en": "Improved Whip Attack Power",
+    "zh": "提升软鞭的攻击力"
+  },
+  "310100": {
+    "en": "Increased Maximum FP",
+    "zh": "提升专注值上限"
+  },
+  "7000190": {
+    "en": "Increased Maximum FP",
+    "zh": "提升专注值上限"
+  },
+  "8010000": {
+    "en": "Increased Maximum FP",
+    "zh": "提升专注值上限"
+  },
+  "310000": {
+    "en": "Increased Maximum HP",
+    "zh": "提升血量上限"
+  },
+  "310400": {
+    "en": "Increased Maximum HP",
+    "zh": "提升血量上限"
+  },
+  "7000090": {
+    "en": "Increased Maximum HP",
+    "zh": "提升血量上限"
+  },
+  "8000000": {
+    "en": "Increased Maximum HP",
+    "zh": "提升血量上限"
+  },
+  "310200": {
+    "en": "Increased Maximum Stamina",
+    "zh": "提升精力上限"
+  },
+  "310401": {
+    "en": "Increased Maximum Stamina",
+    "zh": "提升精力上限"
+  },
+  "7000290": {
+    "en": "Increased Maximum Stamina",
+    "zh": "提升精力上限"
+  },
+  "8020000": {
+    "en": "Increased Maximum Stamina",
+    "zh": "提升精力上限"
+  },
+  "7110000": {
+    "en": "Increased rune acquisition for self and allies",
+    "zh": "增加自己与我方人物获得的卢恩"
+  },
+  "7000500": {
+    "en": "Intelligence +1",
+    "zh": "智力＋１"
+  },
+  "7000501": {
+    "en": "Intelligence +2",
+    "zh": "智力＋２"
+  },
+  "7000502": {
+    "en": "Intelligence +3",
+    "zh": "智力＋３"
+  },
+  "7050100": {
+    "en": "Items confer effect to all nearby allies",
+    "zh": "道具效用能扩及我方人物"
+  },
+  "7012500": {
+    "en": "Jumping Conjures Magic Projectiles",
+    "zh": "jumpingConjuresMagicProjectiles"
+  },
+  "8520000": {
+    "en": "Less Likely to Be Targeted",
+    "zh": "lessLikelyToBeTargeted"
+  },
+  "7001700": {
+    "en": "Lightning Attack Power Up",
+    "zh": "提升雷属性攻击力"
+  },
+  "7001701": {
+    "en": "Lightning Attack Power Up +1",
+    "zh": "提升雷属性攻击力＋１"
+  },
+  "7001702": {
+    "en": "Lightning Attack Power Up +2",
+    "zh": "提升雷属性攻击力＋２"
+  },
+  "8640500": {
+    "en": "Lightning Critical Hit Imbues Armament",
+    "zh": "lightningCriticalHitImbuesArmament"
+  },
+  "7002800": {
+    "en": "Lightning Damage Negation Up",
+    "zh": "提升雷属性减伤率"
+  },
+  "8610500": {
+    "en": "Lightning Follows Charge Attacks",
+    "zh": "lightningFollowsChargeAttacks"
+  },
+  "7122400": {
+    "en": "Lightning Grease in possession at start of expedition",
+    "zh": "出击时，会持有“雷油脂”"
+  },
+  "7121300": {
+    "en": "Lightning Pots in possession at start of expedition",
+    "zh": "出击时，会持有“雷电壶”"
+  },
+  "8882100": {
+    "en": "Lightning upon Charged Thrust",
+    "zh": "lightningUponChargedThrust"
+  },
+  "8410100": {
+    "en": "Lightning upon Dodging",
+    "zh": "lightningUponDodging"
+  },
+  "8883100": {
+    "en": "Lightning upon Precision Aiming",
+    "zh": "lightningUponPrecisionAiming"
+  },
+  "8660400": {
+    "en": "Low HP Crit. Hit Fully Restores HP",
+    "zh": "lowHpCritHitFullyRestoresHP"
+  },
+  "8881200": {
+    "en": "Luring Enemies upon Charged Strike",
+    "zh": "luringEnemiesUponChargedStrike"
+  },
+  "7035500": {
+    "en": "Madness Continually Recovers FP",
+    "zh": "引发异常状态发狂后，能持续恢复专注值"
+  },
+  "7035510": {
+    "en": "Madness Continually Recovers FP",
+    "zh": "引发异常状态发狂后，能持续恢复专注值"
+  },
+  "8641100": {
+    "en": "Madness Crit. Hit Fires Frenzied Flame",
+    "zh": "madnessCritHitFiresFrenziedFlame"
+  },
+  "8750000": {
+    "en": "Madness Increases Attack Power",
+    "zh": "madnessIncreasesAttackPower"
+  },
+  "8690100": {
+    "en": "Madness Produces a Flame of Frenzy",
+    "zh": "madnessProducesAFlameOfFrenzy"
+  },
+  "8610300": {
+    "en": "Magic Attack Follows Charge Attacks",
+    "zh": "magicAttackFollowsChargeAttacks"
+  },
+  "7001500": {
+    "en": "Magic Attack Power Up",
+    "zh": "提升魔力属性攻击力"
+  },
+  "7001501": {
+    "en": "Magic Attack Power Up +1",
+    "zh": "提升魔力属性攻击力＋１"
+  },
+  "7001502": {
+    "en": "Magic Attack Power Up +2",
+    "zh": "提升魔力属性攻击力＋２"
+  },
+  "8881600": {
+    "en": "Magic Bubbles upon Charged Strike",
+    "zh": "magicBubblesUponChargedStrike"
+  },
+  "7002600": {
+    "en": "Magic Damage Negation Up",
+    "zh": "提升魔力属性减伤率"
+  },
+  "7122300": {
+    "en": "Magic Grease in possession at start of expedition",
+    "zh": "出击时，会持有“魔力油脂”"
+  },
+  "7121200": {
+    "en": "Magic Pots in possession at start of expedition",
+    "zh": "出击时，会持有“魔力壶”"
+  },
+  "8450000": {
+    "en": "Magma Surge Sprint",
+    "zh": "magmaSurgeSprint"
+  },
+  "8881500": {
+    "en": "Magma upon Charged Strike",
+    "zh": "magmaUponChargedStrike"
+  },
+  "8630500": {
+    "en": "Magma upon Defeating Multiple Enemies",
+    "zh": "magmaUponDefeatingMultipleEnemies"
+  },
+  "8640400": {
+    "en": "Magma upon Fire Critical Hit",
+    "zh": "magmaUponFireCriticalHit"
+  },
+  "8530100": {
+    "en": "Many Periodical Glintblades",
+    "zh": "manyPeriodicalGlintblades"
+  },
+  "7060100": {
+    "en": "Max FP permanently increased after releasing Sorcerer's Rise mechanism",
+    "zh": "每次解开魔法师塔的机关，能永久性提升专注值上限"
+  },
+  "7082600": {
+    "en": "Max FP Up with 3+ Sacred Seals Equipped",
+    "zh": "装备三把以上类别为圣印记的武器，能提升专注值上限"
+  },
+  "7082500": {
+    "en": "Max FP Up with 3+ Staves Equipped",
+    "zh": "装备三把以上类别为手杖的武器，能提升专注值上限"
+  },
+  "7082900": {
+    "en": "Max HP Up with 3+ Greatshields Equipped",
+    "zh": "装备三把以上类别为大盾的武器，能提升血量上限"
+  },
+  "7082800": {
+    "en": "Max HP Up with 3+ Medium Shields Equipped",
+    "zh": "装备三把以上类别为中盾的武器，能提升血量上限"
+  },
+  "7082700": {
+    "en": "Max HP Up with 3+ Small Shields Equipped",
+    "zh": "装备三把以上类别为小盾的武器，能提升血量上限"
+  },
+  "330801": {
+    "en": "Maximum HP Down",
+    "zh": "maximumHpDown"
+  },
+  "7000100": {
+    "en": "Mind +1",
+    "zh": "集中力＋１"
+  },
+  "7000101": {
+    "en": "Mind +2",
+    "zh": "集中力＋２"
+  },
+  "7000102": {
+    "en": "Mind +3",
+    "zh": "集中力＋３"
+  },
+  "311100": {
+    "en": "More Runes From Defeated Enemies",
+    "zh": "moreRunesFromDefeatedEnemies"
+  },
+  "370001": {
+    "en": "More Runes From Defeated Enemies",
+    "zh": "moreRunesFromDefeatedEnemies"
+  },
+  "8500000": {
+    "en": "More Runes From Defeated Enemies",
+    "zh": "moreRunesFromDefeatedEnemies"
+  },
+  "8530000": {
+    "en": "Multiple Periodical Glintblades",
+    "zh": "multiplePeriodicalGlintblades"
+  },
+  "7260700": {
+    "en": "Nearby Frostbite Conceals Self",
+    "zh": "周围人物陷入异常状态冻伤时，能隐藏自己的身影"
+  },
+  "360700": {
+    "en": "No Rune Loss or Level Down Upon Death",
+    "zh": "noRuneLossOrLevelDownUponDeath"
+  },
+  "8350400": {
+    "en": "Parries Activate Golden Retaliation",
+    "zh": "parriesActivateGoldenRetaliation"
+  },
+  "7005600": {
+    "en": "Partial HP Restoration upon Post-Damage Attacks",
+    "zh": "受到损伤的当下，能通过攻击恢复部分血量"
+  },
+  "7031600": {
+    "en": "Performing consecutive successful guards improves guard ability and deflects big attacks",
+    "zh": "performingConsecutiveSuccessfulGuardsImprovesGuardAbilityAndDeflectsBigAttacks"
+  },
+  "8530200": {
+    "en": "Periodical Giant Glintblades",
+    "zh": "periodicalGiantGlintblades"
+  },
+  "8882300": {
+    "en": "Pest Threads upon Charged Thrust",
+    "zh": "pestThreadsUponChargedThrust"
+  },
+  "8880300": {
+    "en": "Phantom Attack upon Charged Slash",
+    "zh": "phantomAttackUponChargedSlash"
+  },
+  "8881400": {
+    "en": "Phantom Attack upon Charged Strike",
+    "zh": "phantomAttackUponChargedStrike"
+  },
+  "8882000": {
+    "en": "Phantom Attack upon Charged Thrust",
+    "zh": "phantomAttackUponChargedThrust"
+  },
+  "7001400": {
+    "en": "Physical Attack Up",
+    "zh": "提升物理攻击力"
+  },
+  "7001409": {
+    "en": "Physical Attack Up",
+    "zh": "提升物理攻击力"
+  },
+  "7001401": {
+    "en": "Physical Attack Up +1",
+    "zh": "提升物理攻击力＋１"
+  },
+  "7001402": {
+    "en": "Physical Attack Up +2",
+    "zh": "提升物理攻击力＋２"
+  },
+  "7001403": {
+    "en": "Physical Attack Up +3",
+    "zh": "physicalAttackUpPlus3"
+  },
+  "7001000": {
+    "en": "Poise +1",
+    "zh": "强韧度＋１"
+  },
+  "7001001": {
+    "en": "Poise +2",
+    "zh": "强韧度＋２"
+  },
+  "7001002": {
+    "en": "Poise +3",
+    "zh": "强韧度＋３"
+  },
+  "321700": {
+    "en": "Poison & Rot Improves Attack Power",
+    "zh": "poisonAndRotImprovesAttackPower"
+  },
+  "7260710": {
+    "en": "Poison & Rot in Vicinity Increases Attack Power",
+    "zh": "周围人物陷入中毒、腐败时，能提升攻击力 (智的黑夜)"
+  },
+  "7260800": {
+    "en": "Poison & Rot in Vicinity Increases Attack Power",
+    "zh": "周围人物陷入中毒、腐败时，能提升攻击力 (智的黑夜)"
+  },
+  "8700000": {
+    "en": "Poison Increases Attack Power",
+    "zh": "poisonIncreasesAttackPower"
+  },
+  "8882400": {
+    "en": "Poison Mist upon Charged Thrust",
+    "zh": "poisonMistUponChargedThrust"
+  },
+  "8640700": {
+    "en": "Poison Mist upon Poison Critical Hit",
+    "zh": "poisonMistUponPoisonCriticalHit"
+  },
+  "8883200": {
+    "en": "Poison Mist upon Precision Aiming",
+    "zh": "poisonMistUponPrecisionAiming"
+  },
+  "8690000": {
+    "en": "Poison Produces a Mist of Poison",
+    "zh": "poisonProducesAMistOfPoison"
+  },
+  "7121500": {
+    "en": "Poisonbone Darts in possession at start of expedition",
+    "zh": "出击时，会持有“兽骨毒飞刀”"
+  },
+  "9030900": {
+    "en": "Power of Dark Moon",
+    "zh": "powerOfDarkMoon"
+  },
+  "9071000": {
+    "en": "Power of Despair",
+    "zh": "powerOfDespair"
+  },
+  "9040200": {
+    "en": "Power of Destined Death",
+    "zh": "powerOfDestinedDeath"
+  },
+  "9040800": {
+    "en": "Power of Destruction",
+    "zh": "powerOfDestruction"
+  },
+  "9330900": {
+    "en": "Power of Full Moon",
+    "zh": "powerOfFullMoon"
+  },
+  "9031500": {
+    "en": "Power of House Marais",
+    "zh": "powerOfHouseMarais"
+  },
+  "9021400": {
+    "en": "Power of Night and Flame",
+    "zh": "powerOfNightAndFlame"
+  },
+  "9151100": {
+    "en": "Power of the Ancestral Spirit",
+    "zh": "powerOfTheAncestralSpirit"
+  },
+  "9031400": {
+    "en": "Power of the Blasphemous",
+    "zh": "powerOfTheBlasphemous"
+  },
+  "9122000": {
+    "en": "Power of the Blasphemous",
+    "zh": "powerOfTheBlasphemous"
+  },
+  "9170100": {
+    "en": "Power of the Blood Lord",
+    "zh": "powerOfTheBloodLord"
+  },
+  "9060400": {
+    "en": "Power of the Dragonlord",
+    "zh": "powerOfTheDragonlord"
+  },
+  "9230500": {
+    "en": "Power of the First Lord",
+    "zh": "powerOfTheFirstLord"
+  },
+  "9210600": {
+    "en": "Power of the Flying Dragon",
+    "zh": "powerOfTheFlyingDragon"
+  },
+  "9420000": {
+    "en": "Power of the General",
+    "zh": "powerOfTheGeneral"
+  },
+  "9200600": {
+    "en": "Power of the Giant",
+    "zh": "powerOfTheGiant"
+  },
+  "9150400": {
+    "en": "Power of the Golden Lineage",
+    "zh": "powerOfTheGoldenLineage"
+  },
+  "9031700": {
+    "en": "Power of the Golden Order",
+    "zh": "powerOfTheGoldenOrder"
+  },
+  "9160900": {
+    "en": "Power of the Great Ancient Dragon",
+    "zh": "powerOfTheGreatAncientDragon"
+  },
+  "9031000": {
+    "en": "Power of the Greater Will",
+    "zh": "powerOfTheGreaterWill"
+  },
+  "9130300": {
+    "en": "Power of the Lightless Void",
+    "zh": "powerOfTheLightlessVoid"
+  },
+  "9081000": {
+    "en": "Power of the Omen King",
+    "zh": "powerOfTheOmenKing"
+  },
+  "9111500": {
+    "en": "Power of the Queen",
+    "zh": "powerOfTheQueen"
+  },
+  "9040500": {
+    "en": "Power of the Starscourge",
+    "zh": "powerOfTheStarscourge"
+  },
+  "9090200": {
+    "en": "Power of the Undefeated",
+    "zh": "powerOfTheUndefeated"
+  },
+  "9041000": {
+    "en": "Power of Vengeance",
+    "zh": "powerOfVengeance"
+  },
+  "321000": {
+    "en": "Projectile Damage Drop-Off Reduced",
+    "zh": "projectileDamageDropOffReduced"
+  },
+  "8340100": {
+    "en": "Projectile Damage Drop-Off Reduced",
+    "zh": "projectileDamageDropOffReduced"
+  },
+  "8340102": {
+    "en": "Projectile damage drop-off reduced +1",
+    "zh": "projectileDamageDropOffReducedPlus1"
+  },
+  "8883000": {
+    "en": "Projectiles Launched upon Attacks",
+    "zh": "projectilesLaunchedUponAttacks"
+  },
+  "8881100": {
+    "en": "Projectiles upon Charged Strike",
+    "zh": "projectilesUponChargedStrike"
+  },
+  "7050000": {
+    "en": "Raised stamina recovery for nearby allies, but not for self",
+    "zh": "不包含自己，提升周围我方人物的精力恢复速度"
+  },
+  "8010001": {
+    "en": "Raises maximum FP +1",
+    "zh": "raisesMaximumFpPlus1"
+  },
+  "8200501": {
+    "en": "Raises non-physical damage negation +1",
+    "zh": "raisesNonPhysicalDamageNegationPlus1"
+  },
+  "8100001": {
+    "en": "Raises physical attack power +1",
+    "zh": "raisesPhysicalAttackPowerPlus1"
+  },
+  "8200001": {
+    "en": "Raises physical damage negation +1",
+    "zh": "raisesPhysicalDamageNegationPlus1"
+  },
+  "8210700": {
+    "en": "Raises resistance to all ailments",
+    "zh": "raisesResistanceToAllAilments"
+  },
+  "8330104": {
+    "en": "Raises sorcery/incantation potency",
+    "zh": "raisesSorceryIncantationPotency"
+  },
+  "8010100": {
+    "en": "ReducedFPConsumption",
+    "zh": "减少专注值消耗"
+  },
+  "360200": {
+    "en": "Reduced Skill FP Cost",
+    "zh": "reducedSkillFpCost"
+  },
+  "8350200": {
+    "en": "Reduced Skill FP Cost",
+    "zh": "reducedSkillFpCost"
+  },
+  "330800": {
+    "en": "Reduced Spell FP Cost",
+    "zh": "reducedSpellFpCost"
+  },
+  "8330600": {
+    "en": "Reduced Spell FP Cost",
+    "zh": "reducedSpellFpCost"
+  },
+  "8330602": {
+    "en": "Reduced Spell FP Cost",
+    "zh": "reducedSpellFpCost"
+  },
+  "8020100": {
+    "en": "Reduced Stamina Consumption",
+    "zh": "reducedStaminaConsumption"
+  },
+  "8880100": {
+    "en": "Ring of Light upon Charged Slash",
+    "zh": "ringOfLightUponChargedSlash"
+  },
+  "8880400": {
+    "en": "Roaring Flames upon Charged Slash",
+    "zh": "roaringFlamesUponChargedSlash"
+  },
+  "8640900": {
+    "en": "Rot Critical Hit Fires Pest Threads",
+    "zh": "rotCriticalHitFiresPestThreads"
+  },
+  "8883300": {
+    "en": "Rot Mist upon Precision Aiming",
+    "zh": "rotMistUponPrecisionAiming"
+  },
+  "8690200": {
+    "en": "Rot Produces a Mist of Scarlet Rot",
+    "zh": "rotProducesAMistOfScarletRot"
+  },
+  "7230000": {
+    "en": "Rune discount for shop purchases while on expedition",
+    "zh": "在出击期间，减少于商店购物时所需的卢恩"
+  },
+  "8640300": {
+    "en": "Sacred Order upon Holy Critical Hit",
+    "zh": "sacredOrderUponHolyCriticalHit"
+  },
+  "8460100": {
+    "en": "Savage Flames Roar While Walking",
+    "zh": "savageFlamesRoarWhileWalking"
+  },
+  "7122600": {
+    "en": "Shield Grease in possession at start of expedition",
+    "zh": "出击时，会持有“坚盾油脂”"
+  },
+  "8884200": {
+    "en": "Shielding Creates Holy Ground",
+    "zh": "shieldingCreatesHolyGround"
+  },
+  "8884000": {
+    "en": "Shielding Improves Damage Negation",
+    "zh": "shieldingImprovesDamageNegation"
+  },
+  "8884100": {
+    "en": "Shielding Invokes Indomitable Vow",
+    "zh": "shieldingInvokesIndomitableVow"
+  },
+  "7031700": {
+    "en": "Shockwave Produced From Successful Guarding",
+    "zh": "shockwaveProducedFromSuccessfulGuarding"
+  },
+  "8881300": {
+    "en": "Shockwave upon Charged Strike",
+    "zh": "shockwaveUponChargedStrike"
+  },
+  "8350300": {
+    "en": "Skill Activation Improves Poise",
+    "zh": "skillActivationImprovesPoise"
+  },
+  "8720000": {
+    "en": "Sleep Increases Attack Power",
+    "zh": "sleepIncreasesAttackPower"
+  },
+  "8690400": {
+    "en": "Sleep Produces a Mist of Sleep",
+    "zh": "sleepProducesAMistOfSleep"
+  },
+  "7012200": {
+    "en": "Slowly restore HP for self and nearby allies when HP is low",
+    "zh": "血量偏低时，包含周围我方人物缓慢恢复血量"
+  },
+  "7121000": {
+    "en": "Small Pouch in possession at start of expedition",
+    "zh": "出击时，会持有“小型随身包包”"
+  },
+  "7100100": {
+    "en": "Stamina Recovery upon Landing Attacks",
+    "zh": "攻击成功时，能恢复精力"
+  },
+  "7100110": {
+    "en": "Stamina Recovery upon Landing Attacks +1",
+    "zh": "攻击成功时，能恢复精力+1"
+  },
+  "7100190": {
+    "en": "Stamina Recovery upon Landing Attacks +1",
+    "zh": "攻击成功时，能恢复精力+1"
+  },
+  "7126000": {
+    "en": "Starlight Shards in possession at start of expedition",
+    "zh": "出击时，会持有“星光碎片”"
+  },
+  "7126001": {
+    "en": "Starlight Shards in possession at start of expedition",
+    "zh": "出击时，会持有“星光碎片”"
+  },
+  "7126002": {
+    "en": "Starlight Shards in possession at start of expedition",
+    "zh": "出击时，会持有“星光碎片”"
+  },
+  "7120100": {
+    "en": "Starting armament deals fire damage",
+    "zh": "出击时的武器，附加火属性攻击力"
+  },
+  "7120300": {
+    "en": "Starting armament deals holy damage",
+    "zh": "出击时的武器，附加圣属性攻击力"
+  },
+  "7120200": {
+    "en": "Starting armament deals lightning damage",
+    "zh": "出击时的武器，附加雷属性攻击力"
+  },
+  "7120000": {
+    "en": "Starting armament deals magic damage",
+    "zh": "出击时的武器，附加魔力属性攻击力"
+  },
+  "7120600": {
+    "en": "Starting armament inflicts blood loss",
+    "zh": "出击时的武器，附加异常状态出血"
+  },
+  "7120400": {
+    "en": "Starting armament inflicts frost",
+    "zh": "出击时的武器，附加异常状态冻伤"
+  },
+  "7120500": {
+    "en": "Starting armament inflicts poison",
+    "zh": "出击时的武器，附加异常状态中毒"
+  },
+  "7120700": {
+    "en": "Starting armament inflicts scarlet rot",
+    "zh": "startingArmamentInflictsScarletRot"
+  },
+  "7120900": {
+    "en": "Stonesword Key in possession at start of expedition",
+    "zh": "出击时，会持有“石剑钥匙”"
+  },
+  "8460500": {
+    "en": "Storm of Red Lightning While Walking",
+    "zh": "stormOfRedLightningWhileWalking"
+  },
+  "7000300": {
+    "en": "Strength +1",
+    "zh": "力气＋１"
+  },
+  "7000301": {
+    "en": "Strength +2",
+    "zh": "力气＋２"
+  },
+  "7000302": {
+    "en": "Strength +3",
+    "zh": "力气＋３"
+  },
+  "7012400": {
+    "en": "Strong Attack Creates Wide Wave of Heat",
+    "zh": "strongAttackCreatesWideWaveOfHeat"
+  },
+  "8320200": {
+    "en": "Strong Attacks Improve Poise",
+    "zh": "strongAttacksImprovePoise"
+  },
+  "8960200": {
+    "en": "Strong Jump Attacks Create Shockwave",
+    "zh": "strongJumpAttacksCreateShockwave"
+  },
+  "8652100": {
+    "en": "Successful Guarding Ups Dmg Negation",
+    "zh": "successfulGuardingUpsDmgNegation"
+  },
+  "8652000": {
+    "en": "Successful Guarding Ups Poise",
+    "zh": "successfulGuardingUpsPoise"
+  },
+  "350400": {
+    "en": "Successive Attack HP Restoration",
+    "zh": "successiveAttackHpRestoration"
+  },
+  "312501": {
+    "en": "Successive Attacks Boost Attack Power",
+    "zh": "successiveAttacksBoostAttackPower"
+  },
+  "320800": {
+    "en": "Successive Attacks Boost Attack Power",
+    "zh": "successiveAttacksBoostAttackPower"
+  },
+  "8610200": {
+    "en": "Successive Attacks Boost Attack Power",
+    "zh": "successiveAttacksBoostAttackPower"
+  },
+  "8610700": {
+    "en": "Successive Attacks Negate Damage",
+    "zh": "successiveAttacksNegateDamage"
+  },
+  "8600300": {
+    "en": "Sudden Enemy Death upon Attacks",
+    "zh": "suddenEnemyDeathUponAttacks"
+  },
+  "7035600": {
+    "en": "Surge Sprint Landings Split Earth",
+    "zh": "surgeSprintLandingsSplitEarth"
+  },
+  "7035700": {
+    "en": "Switching Weapons Adds an Affinity Attack",
+    "zh": "切换武器时，能附加随机的属性攻击力"
+  },
+  "10002": {
+    "en": "Fell Omen Fetish",
+    "zh": "恶兆妖鬼的诅咒物"
+  },
+  "7035900": {
+    "en": "Switching Weapons Boosts Attack Power",
+    "zh": "切换武器时，能提升物理攻击力"
+  },
+  "10001": {
+    "en": "Besmirched Frame",
+    "zh": "肮脏相框"
+  },
+  "100000": {
+    "en": "Taking attacks improves attack power",
+    "zh": "受到攻击时，能提升攻击力"
+  },
+  "7032200": {
+    "en": "Taking attacks improves attack power",
+    "zh": "受到攻击时，能提升攻击力"
+  },
+  "8620100": {
+    "en": "Taking Damage Boosts Damage Negation",
+    "zh": "takingDamageBoostsDamageNegation"
+  },
+  "8620000": {
+    "en": "Taking Damage Restores FP",
+    "zh": "takingDamageRestoresFp"
+  },
+  "7121700": {
+    "en": "Throwing Daggers in possession at start of expedition",
+    "zh": "出击时，会持有“投掷匕首”"
+  },
+  "7070000": {
+    "en": "Treasure marked upon map",
+    "zh": "能显示地图上隐藏宝藏的位置"
+  },
+  "7000900": {
+    "en": "Ultimate Art Gauge +1",
+    "zh": "自然累积绝招量表＋１"
+  },
+  "7000901": {
+    "en": "Ultimate Art Gauge +2",
+    "zh": "自然累积绝招量表＋２"
+  },
+  "7000902": {
+    "en": "Ultimate Art Gauge +3",
+    "zh": "自然累积绝招量表＋３"
+  },
+  "8360000": {
+    "en": "Ultimate Art Gauge Charge Speed Up",
+    "zh": "ultimateArtGaugeChargeSpeedUp"
+  },
+  "8460400": {
+    "en": "Vicious Star Rain Pours While Walking",
+    "zh": "viciousStarRainPoursWhileWalking"
+  },
+  "7000000": {
+    "en": "Vigor +1",
+    "zh": "生命力＋１"
+  },
+  "7000001": {
+    "en": "Vigor +2",
+    "zh": "生命力＋２"
+  },
+  "7000002": {
+    "en": "Vigor +3",
+    "zh": "生命力＋３"
+  },
+  "7122100": {
+    "en": "Wraith Calling Bell in possession at start of expedition",
+    "zh": "出击时，会持有“召咒魂铃”"
+  },
+  "8460300": {
+    "en": "Wraiths While Walking",
+    "zh": "wraithsWhileWalking"
+  },
+  "7332500": {
+    "en": "improvedGreatbowAttackPower",
+    "zh": "Improved Greatbow Attack Power"
+  },
+  "7332600": {
+    "en": "improvedCrossbowAttackPower",
+    "zh": "Improved Crossbow Attack Power"
+  },
+  "7332700": {
+    "en": "improvedBallistaAttackPower",
+    "zh": "Improved Ballista Attack Power"
+  },
+  "7342500": {
+    "en": "hpRestorationUponGreatbowAttacks",
+    "zh": "HP Restoration upon Greatbow Attacks"
+  },
+  "7342600": {
+    "en": "hpRestorationUponCrossbowAttacks",
+    "zh": "HP Restoration upon Crossbow Attacks"
+  },
+  "7342700": {
+    "en": "hpRestorationUponBallistaAttacks",
+    "zh": "HP Restoration upon Ballista Attacks"
+  },
+  "7352500": {
+    "en": "fpRestorationUponGreatbowAttacks",
+    "zh": "FP Restoration upon Greatbow Attacks"
+  },
+  "7352600": {
+    "en": "fpRestorationUponCrossbowAttacks",
+    "zh": "FP Restoration upon Crossbow Attacks"
+  },
+  "7352700": {
+    "en": "fpRestorationUponBallistaAttacks",
+    "zh": "FP Restoration upon Ballista Attacks"
+  },
+  "8760000": {
+    "en": "reducedMaximumHP",
+    "zh": "Reduced Maximum HP"
+  },
+  "8760100": {
+    "en": "reducedMaximumFP",
+    "zh": "Reduced Maximum FP"
+  },
+  "8760200": {
+    "en": "reducedMaximumStamina",
+    "zh": "Reduced Maximum Stamina"
+  },
+  "8770000": {
+    "en": "nightsTideDamageIncreased",
+    "zh": "Night's Tide Damage Increased"
+  },
+  "8771000": {
+    "en": "damageIncreasedByNightsEncroachment",
+    "zh": "Damage Increased by Night's Encroachment"
+  },
+  "8810200": {
+    "en": "slowerArtGaugeWhenBelowMaxHP",
+    "zh": "Slower Art Gauge When Below Max HP"
+  },
+  "8813100": {
+    "en": "lowerStaminaImpairsDmgNegation",
+    "zh": "Lower Stamina Impairs Dmg Negation"
+  },
+  "8821000": {
+    "en": "attacksImpairedOnOccasion",
+    "zh": "Attacks Impaired on Occasion"
+  },
+  "8830000": {
+    "en": "ailmentsCauseIncreasedDamage",
+    "zh": "Ailments Cause Increased Damage"
+  },
+  "8831000": {
+    "en": "nearDeathReducesArtGauge",
+    "zh": "Near Death Reduces Art Gauge"
+  },
+  "8851000": {
+    "en": "allResistancesUp",
+    "zh": "All Resistances Up"
+  },
+  "8851200": {
+    "en": "improvedSorceriesAndIncantations",
+    "zh": "Improved Sorceries & Incantations"
+  },
+  "8851300": {
+    "en": "increasedSorceryAndIncantationDuration",
+    "zh": "Increased Sorcery & Incantation Duration"
+  },
+  "19001": {
+    "en": "noteMyDearSuccessor",
+    "zh": "记录“致继承人”"
+  },
+  "7036300": {
+    "en": "scholarAlliesTargetedByCharacterSkillGainBoostedAttack",
+    "zh": "【学者】使用技艺时，提升目标我方人物的攻击力"
+  },
+  "6500800": {
+    "en": "scholarReducedFpConsumptionWhenUsingCharacterSkillOnSelf",
+    "zh": "【学者】对自己使用技艺时，能减少消耗的专注值"
+  },
+  "6500900": {
+    "en": "undertakerExecutingArtReadiesCharacterSkill",
+    "zh": "【送葬者】发动绝招后，能再次使用技艺"
+  },
+  "6623200": {
+    "en": "greenspillCrystalTearInPossessionAtStartOfExpedition",
+    "zh": "出击时，会持有“涌绿结晶露滴”"
+  },
+  "6647200": {
+    "en": "scholarImprovedMindReducedVigor",
+    "zh": "【学者】提升集中力，但降低生命力"
+  },
+  "6647300": {
+    "en": "scholarImprovedEnduranceAndDexterityReducedIntelligenceAndArcane",
+    "zh": "【学者】提升耐力、灵巧，但降低智力、感应"
+  },
+  "6647400": {
+    "en": "undertakerImprovedDexterityReducedVigorAndFaith",
+    "zh": "【送葬者】提升灵巧，但降低生命力、信仰"
+  },
+  "6647500": {
+    "en": "undertakerImprovedMindAndFaithReducedStrength",
+    "zh": "【送葬者】提升集中力、信仰，但降低力气"
+  },
+  "7006600": {
+    "en": "improvedMeleeAttackPower",
+    "zh": "提升近战攻击力"
+  },
+  "7036200": {
+    "en": "scholarPreventSlowingOfCharacterSkillProgress",
+    "zh": "【学者】减缓技艺进行率的下降幅度"
+  },
+  "7036400": {
+    "en": "scholarContinuousDamageInflictedOnTargetsThreadedByUltimateArt",
+    "zh": "【学者】使用技艺时，提升目标我方人物的攻击力"
+  },
+  "7036500": {
+    "en": "scholarEarnRunesForEachAdditionalSpecimenAcquiredWithCharacterSkill",
+    "zh": "【学者】每次使用技艺增加样本，能获得卢恩"
+  },
+  "7036800": {
+    "en": "undertakerActivatingUltimateArtIncreasesAttackPower",
+    "zh": "【送葬者】发动绝招时，提升攻击力"
+  },
+  "7036900": {
+    "en": "undertakerAttackPowerIncreasedByLandingTheFinalBlowOfAChainAttack",
+    "zh": "【送葬者】连击的最后攻击命中时，提升攻击力"
+  },
+  "7037000": {
+    "en": "undertakerPhysicalAttacksBoostedWhileAssistEffectFromIncantationIsActiveForSelf",
+    "zh": "【送葬者】使用祷告将辅助效果附加在自己身上时提升物理攻击力"
+  },
+  "7037300": {
+    "en": "undertakerContactWithAlliesRestoresTheirHpWhileUltimateArtIsActivated",
+    "zh": "【送葬者】发动绝招时，恢复触碰到的我方人物的血量"
+  },
+  "7037700": {
+    "en": "statusAilmentGaugesSlowlyIncreaseAttackPower",
+    "zh": "出现异常状态量表时，能缓慢提升攻击力"
+  },
+  "7037800": {
+    "en": "occasionallyNullifyAttacksWhenDamageNegationsIsLowered",
+    "zh": "减伤率降低时，偶尔会让敌人攻击失效"
+  },
+  "7170100": {
+    "en": "attacksInflictRotWhenDamageIsTaken",
+    "zh": "受到损伤时，附加异常状态腐败"
+  },
+  "7260900": {
+    "en": "rotInVicinityCausesContinuoushpRecovery",
+    "zh": "周围陷入腐败时，持续恢复血量"
+  },
+  "7360600": {
+    "en": "changesCompatibleArmamentsSorceryToMagicGlintbladeAtStartOfExpedition",
+    "zh": "出击时，武器魔法改为“魔法辉剑”"
+  },
+  "7360900": {
+    "en": "changesCompatibleArmamentsSorceryToCarianGreatswordAtStartOfExpedition",
+    "zh": "出击时，武器魔法改为“卡利亚大剑”"
+  },
+  "7361200": {
+    "en": "changesCompatibleArmamentsSorceryToNightShardAtStartOfExpedition",
+    "zh": "出击时，武器魔法改为“黑夜魔砾”"
+  },
+  "7361300": {
+    "en": "changesCompatibleArmamentsSorceryToMagmaShotAtStartOfExpedition",
+    "zh": "出击时，武器魔法改为“熔岩球”"
+  },
+  "7362100": {
+    "en": "changesCompatibleArmamentsSorceryToBriarsOfPunishmentAtStartOfExpedition",
+    "zh": "出击时，武器魔法改为“责罚荆棘”"
+  },
+  "7370300": {
+    "en": "changesCompatibleArmamentsIncantationToWrathOfGoldAtStartOfExpedition",
+    "zh": "出击时，武器祷告改为“黄金之怒”"
+  },
+  "7370400": {
+    "en": "changesCompatibleArmamentsIncantationToLightningSpearAtStartOfExpedition",
+    "zh": "出击时，武器祷告改为“雷电枪”"
+  },
+  "7370600": {
+    "en": "changesCompatibleArmamentsIncantationToOFlameAtStartOfExpedition",
+    "zh": "出击时，武器祷告改为“火焰啊！”"
+  },
+  "7370900": {
+    "en": "changesCompatibleArmamentsIncantationToBeastClawAtStartOfExpedition",
+    "zh": "出击时，武器祷告改为“兽爪”"
+  },
+  "7371500": {
+    "en": "changesCompatibleArmamentsIncantationToDragonfireAtStartOfExpedition",
+    "zh": "出击时，武器祷告改为“龙焰”"
+  },
+  "8210701": {
+    "en": "allResistanceUp",
+    "zh": "All Resistance Up"
+  },
+  "8500100": {
+    "en": "runeOfTheStrong",
+    "zh": "Rune of the Strong"
+  },
+  "8500101": {
+    "en": "runeOfTheStrong",
+    "zh": "Rune of the Strong"
+  },
+  "15002": {
+    "en": "Black Claw Necklace",
+    "zh": "黑爪项链"
+  },
+  "16000": {
+    "en": "Blade of Night Fragment",
+    "zh": "黑夜刀片"
+  },
+  "18000": {
+    "en": "Blessed Flowers",
+    "zh": "受赐福的花"
+  },
+  "14002": {
+    "en": "Blessed Iron Coin",
+    "zh": "祝福铁币"
+  },
+  "13001": {
+    "en": "Cracked Sealing Wax",
+    "zh": "裂开的封蜡"
+  },
+  "12003": {
+    "en": "Cracked Witch's Brooch",
+    "zh": "碎裂的魔女胸针"
+  },
+  "14001": {
+    "en": "Crown Medal",
+    "zh": "头冠的徽章"
+  },
+  "2011": {
+    "en": "Dark Night of the Baron",
+    "zh": "爵的暗夜"
+  },
+  "2001": {
+    "en": "Dark Night of the Beast",
+    "zh": "野兽的暗夜"
+  },
+  "2051": {
+    "en": "Dark Night of the Champion",
+    "zh": "猎人的暗夜"
+  },
+  "2041": {
+    "en": "Dark Night of the Demon",
+    "zh": "魔的暗夜"
+  },
+  "2031": {
+    "en": "Dark Night of the Fathom",
+    "zh": "深海的暗夜"
+  },
+  "2061": {
+    "en": "Dark Night of the Miasma",
+    "zh": "雾霾的暗夜"
+  },
+  "2021": {
+    "en": "Dark Night of the Wise",
+    "zh": "智的暗夜"
+  },
+  "100": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "103": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "106": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1000": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "11003": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "11004": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "20000": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "20003": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "20006": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1000000": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1000010": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1000020": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1001000": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1001010": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1001020": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1002000": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1002010": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1002020": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1003000": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1003010": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1003020": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1004000": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1004010": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1004020": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1005000": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1005010": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1005020": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1006000": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1006010": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1006020": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1007000": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1007010": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1007020": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "200": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "203": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "206": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1008000": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1008010": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1008020": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1009000": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1009010": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "1009020": {
+    "en": "Delicate Burning Scene",
+    "zh": "细腻的火燃情景"
+  },
+  "109": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "112": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "115": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1010": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "12005": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "12006": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "19080": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "20009": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "20012": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "20015": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "20060": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1000100": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1000110": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1000120": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1001100": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1001110": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1001120": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1002100": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1002110": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1002120": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1003100": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1003110": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1003120": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1004100": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1004110": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1004120": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1005100": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1005110": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1005120": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1006100": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1006110": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1006120": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1007100": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1007110": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1007120": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "209": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "212": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "215": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1008100": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1008110": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1008120": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1009100": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1009110": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "1009120": {
+    "en": "Delicate Drizzly Scene",
+    "zh": "细腻的水滴情景"
+  },
+  "118": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "121": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "124": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1020": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1050": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "12004": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "17160": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "19160": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "20018": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "20021": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "20024": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "21180": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "22180": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1000200": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1000210": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1000220": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1001200": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1001210": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1001220": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1002200": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1002210": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1002220": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1003200": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1003210": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1003220": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1004200": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1004210": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1004220": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1005200": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1005210": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1005220": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1006200": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1006210": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1006220": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1007200": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1007210": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "1007220": {
+    "en": "Delicate Luminous Scene",
+    "zh": "细腻的光耀情景"
+  },
+  "127": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "130": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "133": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1030": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "12007": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "20027": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "20030": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "20033": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1000300": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1000310": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1000320": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1001300": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1001310": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1001320": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1002300": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1002310": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1002320": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1003300": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1003310": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1003320": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1004300": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1004310": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1004320": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1005300": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1005310": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1005320": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1006300": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1006310": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1006320": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1007300": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1007310": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1007320": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "227": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "230": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "233": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1008300": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1008310": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1008320": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1009300": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1009310": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "1009320": {
+    "en": "Delicate Tranquil Scene",
+    "zh": "细腻的幽静情景"
+  },
+  "13002": {
+    "en": "Edge of Order",
+    "zh": "圣律刀"
+  },
+  "13000": {
+    "en": "Fine Arrowhead",
+    "zh": "作工精细的箭头"
+  },
+  "14000": {
+    "en": "Golden Dew",
+    "zh": "金色露珠"
+  },
+  "18001": {
+    "en": "Golden Shell",
+    "zh": "黄金种子壳"
+  },
+  "18002": {
+    "en": "Golden Sprout",
+    "zh": "黄金嫩芽"
+  },
+  "102": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "105": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "108": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1180": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1250": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1260": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1410": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1440": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1480": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1500": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "16962": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "16972": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "16982": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "17962": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "17972": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "17982": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "18962": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "18972": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "18982": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "19962": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "19972": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "19982": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "20002": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "20005": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "20008": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "20962": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "20972": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "20982": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "21962": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "21972": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "21982": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "22972": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "23962": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "23972": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "23982": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1000002": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1000012": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1000022": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1001002": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1001012": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1001022": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1002002": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1002012": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1002022": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1003002": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1003012": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1003022": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1004002": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1004012": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1004022": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1005002": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1005012": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1005022": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1006002": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1006012": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1006022": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1007002": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1007012": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1007022": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "202": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "205": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "208": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1300": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1650": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1660": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1710": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1720": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1850": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1860": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1900": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1008002": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1008012": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1008022": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1009002": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1009012": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "1009022": {
+    "en": "Grand Burning Scene",
+    "zh": "辽阔的火燃情景"
+  },
+  "111": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "114": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "117": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1190": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1230": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1240": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1400": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1460": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1520": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "18072": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "18082": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "19062": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "19072": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "19082": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "20011": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "20014": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "20017": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "20062": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "20072": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "20082": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "21062": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "21072": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "21082": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "22062": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "22072": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "22082": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "23062": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "23072": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "23082": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "24062": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1000102": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1000112": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1000122": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1001102": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1001112": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1001122": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1002102": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1002112": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1002122": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1003102": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1003112": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1003122": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1004102": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1004112": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1004122": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1005102": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1005112": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1005122": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1006102": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1006112": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1006122": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1007102": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1007112": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1007122": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "211": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "214": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "217": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1610": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1680": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1700": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1730": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1820": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1830": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1870": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1910": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1008102": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1008112": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1008122": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1009102": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1009112": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "1009122": {
+    "en": "Grand Drizzly Scene",
+    "zh": "辽阔的水滴情景"
+  },
+  "120": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "123": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "126": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1210": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1220": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1450": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1470": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1510": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "17162": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "17182": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "18162": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "18172": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "18182": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "19162": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "19172": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "19182": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "20020": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "20023": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "20026": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "20162": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "20172": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "21162": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "21172": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "21182": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "22162": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "22172": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "22182": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "24162": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "24172": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "24182": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1000202": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1000212": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1000222": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1001202": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1001212": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1001222": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1002202": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1002212": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1002222": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1003202": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1003212": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1003222": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1004202": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1004212": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1004222": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1005202": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1005212": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1005222": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1006202": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1006212": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1006222": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1007202": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1007212": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1007222": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "220": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "223": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "226": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1600": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1630": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1670": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1740": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1800": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1890": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1920": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1008202": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1008212": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1008222": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1009202": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1009212": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "1009222": {
+    "en": "Grand Luminous Scene",
+    "zh": "辽阔的光耀情景"
+  },
+  "129": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "132": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "135": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1200": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1270": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1420": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1430": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1490": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "17262": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "17272": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "17282": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "18262": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "18272": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "18282": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "19272": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "19282": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "20029": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "20032": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "20035": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "21262": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "21282": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "22262": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "22272": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "22282": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "23262": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "23272": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "23282": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "24262": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "24272": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "24282": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1000302": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1000312": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1000322": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1001302": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1001312": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1001322": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1002302": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1002312": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1002322": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1003302": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1003312": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1003322": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1004302": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1004312": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1004322": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1005302": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1005312": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1005322": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1006302": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1006312": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1006322": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1007302": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1007312": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1007322": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "229": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "232": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "235": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1310": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1620": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1640": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1690": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1750": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1810": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1840": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1880": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1930": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1008302": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1008312": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1008322": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1009302": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1009312": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "1009322": {
+    "en": "Grand Tranquil Scene",
+    "zh": "辽阔的幽静情景"
+  },
+  "30": {
+    "en": "Large Scenic Flatstone",
+    "zh": "大颗情景原石"
+  },
+  "2010": {
+    "en": "Night of the Baron",
+    "zh": "爵的黑夜"
+  },
+  "2000": {
+    "en": "Night of the Beast",
+    "zh": "野兽的黑夜"
+  },
+  "2050": {
+    "en": "Night of the Champion",
+    "zh": "猎人的黑夜"
+  },
+  "2040": {
+    "en": "Night of the Demon",
+    "zh": "魔的黑夜"
+  },
+  "2030": {
+    "en": "Night of the Fathom",
+    "zh": "深海的黑夜"
+  },
+  "2100": {
+    "en": "Night of the Lord",
+    "zh": "王的黑夜"
+  },
+  "2060": {
+    "en": "Night of the Miasma",
+    "zh": "雾霾的黑夜"
+  },
+  "2020": {
+    "en": "Night of the Wise",
+    "zh": "智的黑夜"
+  },
+  "17000": {
+    "en": "Night Shard",
+    "zh": "黑夜碎片"
+  },
+  "101": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "104": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "107": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1040": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1080": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1110": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1120": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "20001": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "20004": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "20007": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1000001": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1000011": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1000021": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1001001": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1001011": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1001021": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1002001": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1002011": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1002021": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1003001": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1003011": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1003021": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1004001": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1004011": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1004021": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1005001": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1005011": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1005021": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1006001": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1006011": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1006021": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1007001": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1007011": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1007021": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "201": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "204": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "207": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1008001": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1008011": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1008021": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1009001": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1009011": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "1009021": {
+    "en": "Polished Burning Scene",
+    "zh": "端正的火燃情景"
+  },
+  "110": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "113": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "116": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1070": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1160": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1170": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "20010": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "20013": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "20016": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1000101": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1000111": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1000121": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1001101": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1001111": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1001121": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1002101": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1002111": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1002121": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1003101": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1003111": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1003121": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1004101": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1004111": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1004121": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1005101": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1005111": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1005121": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1006101": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1006111": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1006121": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1007101": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1007111": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1007121": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "210": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "213": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "216": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1008101": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1008111": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1008121": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1009101": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1009111": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "1009121": {
+    "en": "Polished Drizzly Scene",
+    "zh": "端正的水滴情景"
+  },
+  "119": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "122": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "125": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1140": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1150": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "20019": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "20022": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "20025": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1000201": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1000211": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1000221": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1001201": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1001211": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1001221": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1002201": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1002211": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1002221": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1003201": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1003211": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1003221": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1004201": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1004211": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1004221": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1005201": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1005211": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1005221": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1006201": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1006211": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1006221": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1007201": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1007211": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1007221": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "219": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "222": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "225": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1008201": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1008211": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1008221": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1009201": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1009211": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "1009221": {
+    "en": "Polished Luminous Scene",
+    "zh": "端正的光耀情景"
+  },
+  "128": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "131": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "134": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1060": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1090": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1100": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1130": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "20028": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "20031": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "20034": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1000301": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1000311": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1000321": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1001301": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1001311": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1001321": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1002301": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1002311": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1002321": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1003301": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1003311": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1003321": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1004301": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1004311": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1004321": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1005301": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1005311": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1005321": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1006301": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1006311": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1006321": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1007301": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1007311": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1007321": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "228": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "231": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "234": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1008301": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1008311": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1008321": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1009301": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1009311": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "1009321": {
+    "en": "Polished Tranquil Scene",
+    "zh": "端正的幽静情景"
+  },
+  "20": {
+    "en": "Scenic Flatstone",
+    "zh": "深灰色砥石"
+  },
+  "16001": {
+    "en": "Small Makeup Brush",
+    "zh": "小型化妆工具"
+  },
+  "11": {
+    "en": "Sovereign Sigil",
+    "zh": "为王之证"
+  },
+  "12001": {
+    "en": "Stone Stake",
+    "zh": "石桩"
+  },
+  "11001": {
+    "en": "The Wylder's Earring",
+    "zh": "追踪者的耳环"
+  },
+  "12000": {
+    "en": "Third Volume",
+    "zh": "套书的第三册"
+  },
+  "15000": {
+    "en": "Torn Braided Cord",
+    "zh": "断裂编绳"
+  },
+  "17001": {
+    "en": "Vestige of Night",
+    "zh": "黑夜痕迹"
+  },
+  "30000": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "30003": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "30006": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "2000000": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "2000010": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "2000020": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "2003000": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "2003010": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "2003020": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "2010000": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "2010010": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "2010020": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "2013000": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "2013010": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "2013020": {
+    "en": "deepDelicateBurningScene",
+    "zh": "细腻的火燃暗淡情景"
+  },
+  "30001": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "30004": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "30007": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2000001": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2000011": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2000021": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2001001": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2001011": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2001021": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2003001": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2003011": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2003021": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2010001": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2010011": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2010021": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2011001": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2011011": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2011021": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2013001": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2013011": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "2013021": {
+    "en": "deepPolishedBurningScene",
+    "zh": "端正的火燃暗淡情景"
+  },
+  "30002": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "30005": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "30008": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2000002": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2000012": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2000022": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2001002": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2001012": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2001022": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2002002": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2002012": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2002022": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2003002": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2003012": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2003022": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2010002": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2010012": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2010022": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2011002": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2011012": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2011022": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2012002": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2012012": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2012022": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2013002": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2013012": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "2013022": {
+    "en": "deepGrandBurningScene",
+    "zh": "辽阔的火燃暗淡情景"
+  },
+  "30018": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "30021": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "30024": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "2000200": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "2000210": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "2000220": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "2003200": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "2003210": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "2003220": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "2010200": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "2010210": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "2010220": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "2013200": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "2013210": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "2013220": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "218": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "221": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "224": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "1008200": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "1008210": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "1008220": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "1009200": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "1009210": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "1009220": {
+    "en": "deepDelicateLuminousScene",
+    "zh": "细腻的光耀暗淡情景"
+  },
+  "30020": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "30023": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "30026": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2000202": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2000212": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2000222": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2001202": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2001212": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2001222": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2002202": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2002212": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2002222": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2003202": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2003212": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2003222": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2010202": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2010212": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2010222": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2011202": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2011212": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2011222": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2012202": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2012212": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2012222": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2013202": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2013212": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "2013222": {
+    "en": "deepGrandLuminousScene",
+    "zh": "辽阔的光耀暗淡情景"
+  },
+  "30019": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "30022": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "30025": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2000201": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2000211": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2000221": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2001201": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2001211": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2001221": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2003201": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2003211": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2003221": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2010201": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2010211": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2010221": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2011201": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2011211": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2011221": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2013201": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2013211": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "2013221": {
+    "en": "deepPolishedLuminousScene",
+    "zh": "端正的光耀暗淡情景"
+  },
+  "30009": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "30012": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "30015": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "2000100": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "2000110": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "2000120": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "2003100": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "2003110": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "2003120": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "2010100": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "2010110": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "2010120": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "2013100": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "2013110": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "2013120": {
+    "en": "deepDelicateDrizzlyScene",
+    "zh": "细腻的水滴暗淡情景"
+  },
+  "30011": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "30014": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "30017": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2000102": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2000112": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2000122": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2001102": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2001112": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2001122": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2002102": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2002112": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2002122": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2003102": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2003112": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2003122": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2010102": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2010112": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2010122": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2011102": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2011112": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2011122": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2012102": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2012112": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2012122": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2013102": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2013112": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "2013122": {
+    "en": "deepGrandDrizzlyScene",
+    "zh": "辽阔的水滴暗淡情景"
+  },
+  "30010": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "30013": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "30016": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2000101": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2000111": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2000121": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2001101": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2001111": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2001121": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2003101": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2003111": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2003121": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2010101": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2010111": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2010121": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2011101": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2011111": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2011121": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2013101": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2013111": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "2013121": {
+    "en": "deepPolishedDrizzlyScene",
+    "zh": "端正的水滴暗淡情景"
+  },
+  "30027": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "30030": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "30033": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "2000300": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "2000310": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "2000320": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "2003300": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "2003310": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "2003320": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "2010300": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "2010310": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "2010320": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "2013300": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "2013310": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "2013320": {
+    "en": "deepDelicateTranquilScene",
+    "zh": "细腻的幽静暗淡情景"
+  },
+  "30029": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "30032": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "30035": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2000302": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2000312": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2000322": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2001302": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2001312": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2001322": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2002302": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2002312": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2002322": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2003302": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2003312": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2003322": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2010302": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2010312": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2010322": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2011302": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2011312": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2011322": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2012302": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2012312": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2012322": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2013302": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2013312": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "2013322": {
+    "en": "deepGrandTranquilScene",
+    "zh": "辽阔的幽静暗淡情景"
+  },
+  "30028": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "30031": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "30034": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2000301": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2000311": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2000321": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2001301": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2001311": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2001321": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2003301": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2003311": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2003321": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2010301": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2010311": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2010321": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2011301": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2011311": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2011321": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2013301": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2013311": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2013321": {
+    "en": "deepPolishedTranquilScene",
+    "zh": "端正的幽静暗淡情景"
+  },
+  "2070": {
+    "en": "theWillOfTheBalancers",
+    "zh": "安定者的遗志"
+  },
+  "2080": {
+    "en": "theNightOfDregs",
+    "zh": "废弃物之夜"
+  },
+  "19000": {
+    "en": "cleansingTear",
+    "zh": "清净泪滴"
+  },
+  "6000800": {
+    "en": "CharacterSkillCooldownReductionPlus4",
+    "zh": "缩短技艺的冷却时间＋４"
+  },
+  "6000801": {
+    "en": "CharacterSkillCooldownReductionPlus5",
+    "zh": "缩短技艺的冷却时间＋５"
+  },
+  "6000900": {
+    "en": "UltimateArtAutoChargePlus",
+    "zh": "UltimateArtAutoChargePlus"
+  },
+  "6000901": {
+    "en": "UltimateArtAutoChargePlus",
+    "zh": "UltimateArtAutoChargePlus"
+  },
+  "6001000": {
+    "en": "PoisePlus4",
+    "zh": "强韧度＋４"
+  },
+  "6001001": {
+    "en": "PoisePlus5",
+    "zh": "强韧度＋５"
+  },
+  "6001400": {
+    "en": "PhysicalAttackUpPlus3",
+    "zh": "提升物理攻击力＋３"
+  },
+  "6001401": {
+    "en": "PhysicalAttackUpPlus4",
+    "zh": "提升物理攻击力＋４"
+  },
+  "6001500": {
+    "en": "MagicAttackPowerUpPlus3",
+    "zh": "提升魔力属性攻击力＋３"
+  },
+  "6001501": {
+    "en": "MagicAttackPowerUpPlus4",
+    "zh": "提升魔力属性攻击力＋４"
+  },
+  "6001600": {
+    "en": "FireAttackPowerUpPlus3",
+    "zh": "提升火属性攻击力＋３"
+  },
+  "6001601": {
+    "en": "FireAttackPowerUpPlus4",
+    "zh": "提升火属性攻击力＋４"
+  },
+  "6001700": {
+    "en": "LightningAttackPowerUpPlus3",
+    "zh": "提升雷属性攻击力＋３"
+  },
+  "6001701": {
+    "en": "LightningAttackPowerUpPlus4",
+    "zh": "提升雷属性攻击力＋４"
+  },
+  "6001800": {
+    "en": "HolyAttackPowerUpPlus3",
+    "zh": "提升圣属性攻击力＋３"
+  },
+  "6001801": {
+    "en": "HolyAttackPowerUpPlus4",
+    "zh": "提升圣属性攻击力＋４"
+  },
+  "6002600": {
+    "en": "ImprovedMagicDamageNegationPlus1",
+    "zh": "提升魔力属性减伤率＋１"
+  },
+  "6002601": {
+    "en": "ImprovedMagicDamageNegationPlus2",
+    "zh": "提升魔力属性减伤率＋２"
+  },
+  "6002700": {
+    "en": "ImprovedFireDamageNegationPlus1",
+    "zh": "提升火属性减伤率＋１"
+  },
+  "6002701": {
+    "en": "ImprovedFireDamageNegationPlus2",
+    "zh": "提升火属性减伤率＋２"
+  },
+  "6002800": {
+    "en": "ImprovedLightningDamageNegationPlus1",
+    "zh": "提升雷属性减伤率＋１"
+  },
+  "6002801": {
+    "en": "ImprovedLightningDamageNegationPlus2",
+    "zh": "提升雷属性减伤率＋２"
+  },
+  "6002900": {
+    "en": "ImprovedHolyDamageNegationPlus1",
+    "zh": "提升圣属性减伤率＋１"
+  },
+  "6002901": {
+    "en": "ImprovedHolyDamageNegationPlus2",
+    "zh": "提升圣属性减伤率＋２"
+  },
+  "6003000": {
+    "en": "ImprovedPoisonResistancePlus1",
+    "zh": "提升对中毒的抵抗力＋１"
+  },
+  "6003001": {
+    "en": "ImprovedPoisonResistancePlus2",
+    "zh": "提升对中毒的抵抗力＋２"
+  },
+  "6003100": {
+    "en": "ImprovedBloodLossResistancePlus1",
+    "zh": "提升对出血的抵抗力＋１"
+  },
+  "6003101": {
+    "en": "ImprovedBloodLossResistancePlus2",
+    "zh": "提升对出血的抵抗力＋２"
+  },
+  "6003200": {
+    "en": "ImprovedSleepResistancePlus1",
+    "zh": "提升对催眠的抵抗力＋１"
+  },
+  "6003201": {
+    "en": "ImprovedSleepResistancePlus2",
+    "zh": "提升对催眠的抵抗力＋２"
+  },
+  "6003300": {
+    "en": "ImprovedDeathBlightResistancePlus1",
+    "zh": "提升对骤死的抵抗力＋１"
+  },
+  "6003301": {
+    "en": "ImprovedDeathBlightResistancePlus2",
+    "zh": "提升对骤死的抵抗力＋２"
+  },
+  "6003400": {
+    "en": "ImprovedRotResistancePlus1",
+    "zh": "提升对腐败的抵抗力＋１"
+  },
+  "6003401": {
+    "en": "ImprovedRotResistancePlus2",
+    "zh": "提升对腐败的抵抗力＋２"
+  },
+  "6003500": {
+    "en": "ImprovedFrostResistancePlus1",
+    "zh": "提升对冻伤的抵抗力＋１"
+  },
+  "6003501": {
+    "en": "ImprovedFrostResistancePlus2",
+    "zh": "提升对冻伤的抵抗力＋２"
+  },
+  "6003600": {
+    "en": "ImprovedMadnessResistancePlus1",
+    "zh": "提升对发狂的抵抗力＋１"
+  },
+  "6003601": {
+    "en": "ImprovedMadnessResistancePlus2",
+    "zh": "提升对发狂的抵抗力＋２"
+  },
+  "6005600": {
+    "en": "PartialHPRestorationuponPostDamageAttacksPlus1",
+    "zh": "受到损伤的当下，能通过攻击恢复部分血量＋１"
+  },
+  "6005601": {
+    "en": "PartialHPRestorationuponPostDamageAttacksPlus2",
+    "zh": "受到损伤的当下，能通过攻击恢复部分血量＋２"
+  },
+  "6006000": {
+    "en": "ImprovedStanceBreakingwhenTwoHandingPlus1",
+    "zh": "提升双手共持时，造成失去平衡的能力＋１"
+  },
+  "6006001": {
+    "en": "ImprovedStanceBreakingwhenTwoHandingPlus2",
+    "zh": "提升双手共持时，造成失去平衡的能力＋２"
+  },
+  "6006100": {
+    "en": "ImprovedStanceBreakingwhenWieldingTwoArmamentsPlus1",
+    "zh": "提升双手各持时，造成失去平衡的能力＋１"
+  },
+  "6006101": {
+    "en": "ImprovedStanceBreakingwhenWieldingTwoArmamentsPlus2",
+    "zh": "提升双手各持时，造成失去平衡的能力＋２"
+  },
+  "6012300": {
+    "en": "ImprovedDamageNegationatLowHPPlus1",
+    "zh": "血量偏低时，提升减伤率＋１"
+  },
+  "6012301": {
+    "en": "ImprovedDamageNegationatLowHPPlus2",
+    "zh": "血量偏低时，提升减伤率＋２"
+  },
+  "6030200": {
+    "en": "HPrestoredwhenusingmedicinalbolusesetcPlus1",
+    "zh": "食用苔药等等道具时，能恢复血量＋１"
+  },
+  "6030201": {
+    "en": "HPrestoredwhenusingmedicinalbolusesetcPlus2",
+    "zh": "食用苔药等等道具时，能恢复血量＋２"
+  },
+  "6030600": {
+    "en": "ArtgaugechargedfromsuccessfulguardingPlus1",
+    "zh": "防御成功时，能累积绝招量表＋１"
+  },
+  "6030601": {
+    "en": "ArtgaugechargedfromsuccessfulguardingPlus2",
+    "zh": "防御成功时，能累积绝招量表＋２"
+  },
+  "6030800": {
+    "en": "ArtgaugefillsmoderatelyuponcriticalhitPlus1",
+    "zh": "使出致命一击时，加快累积绝招量表＋１"
+  },
+  "6030801": {
+    "en": "ArtgaugefillsmoderatelyuponcriticalhitPlus2",
+    "zh": "使出致命一击时，加快累积绝招量表＋２"
+  },
+  "6030900": {
+    "en": "PhysicalattackpowerincreasesafterusinggreaseitemsPlus1",
+    "zh": "涂抹油脂类道具时，能额外提升物理攻击力＋１"
+  },
+  "6030901": {
+    "en": "PhysicalattackpowerincreasesafterusinggreaseitemsPlus2",
+    "zh": "涂抹油脂类道具时，能额外提升物理攻击力＋２"
+  },
+  "6031900": {
+    "en": "CriticalHitsEarnRunesPlus1",
+    "zh": "使出致命一击时，能获得卢恩＋１"
+  },
+  "6031901": {
+    "en": "CriticalHitsEarnRunesPlus2",
+    "zh": "使出致命一击时，能获得卢恩＋２"
+  },
+  "6032200": {
+    "en": "TakingattacksimprovesattackpowerPlus1",
+    "zh": "受到攻击时，能提升攻击力＋１"
+  },
+  "6032201": {
+    "en": "TakingattacksimprovesattackpowerPlus2",
+    "zh": "受到攻击时，能提升攻击力＋２"
+  },
+  "6035100": {
+    "en": "CriticalHitBoostsStaminaRecoverySpeedPlus1",
+    "zh": "使出致命一击时，能提升精力的恢复速度＋１"
+  },
+  "6035101": {
+    "en": "CriticalHitBoostsStaminaRecoverySpeedPlus2",
+    "zh": "使出致命一击时，能提升精力的恢复速度＋２"
+  },
+  "6040000": {
+    "en": "ImprovedInitialStandardAttackPlus1",
+    "zh": "强化轻攻击的第一记攻击＋１"
+  },
+  "6040001": {
+    "en": "ImprovedInitialStandardAttackPlus2",
+    "zh": "强化轻攻击的第一记攻击＋２"
+  },
+  "6040100": {
+    "en": "ImprovedGuardCountersPlus1",
+    "zh": "强化防御反击＋１"
+  },
+  "6040101": {
+    "en": "ImprovedGuardCountersPlus2",
+    "zh": "强化防御反击＋２"
+  },
+  "6040300": {
+    "en": "ImprovedThrowingPotDamagePlus1",
+    "zh": "提升投掷壶的攻击力＋１"
+  },
+  "6040301": {
+    "en": "ImprovedThrowingPotDamagePlus2",
+    "zh": "提升投掷壶的攻击力＋２"
+  },
+  "6040400": {
+    "en": "ImprovedThrowingKnifeDamagePlus1",
+    "zh": "提升投掷小刀的攻击力＋１"
+  },
+  "6040401": {
+    "en": "ImprovedThrowingKnifeDamagePlus2",
+    "zh": "提升投掷小刀的攻击力＋２"
+  },
+  "6040500": {
+    "en": "ImprovedGlintstoneandGravityStoneDamagePlus1",
+    "zh": "提升使用辉石、重力石道具的攻击力＋１"
+  },
+  "6040501": {
+    "en": "ImprovedGlintstoneandGravityStoneDamagePlus2",
+    "zh": "提升使用辉石、重力石道具的攻击力＋２"
+  },
+  "6043000": {
+    "en": "ImprovedRoarAndBreathAttacksPlus1",
+    "zh": "强化咆哮与吐息＋１"
+  },
+  "6043001": {
+    "en": "ImprovedRoarAndBreathAttacksPlus2",
+    "zh": "强化咆哮与吐息＋２"
+  },
+  "6043100": {
+    "en": "ImprovedPerfumingArtsPlus1",
+    "zh": "强化调香术＋１"
+  },
+  "6043101": {
+    "en": "ImprovedPerfumingArtsPlus2",
+    "zh": "强化调香术＋２"
+  },
+  "6060300": {
+    "en": "MaxHPincreasedforeachgreatenemydefeatedataGreatChurch",
+    "zh": "每次打倒大教堂的强敌，能提升血量上限"
+  },
+  "6060400": {
+    "en": "RunesandItemDiscoveryincreasedforeachgreatenemydefeatedataFort",
+    "zh": "每次打倒小型要塞的强敌，能增加获得的卢恩、提升观察力"
+  },
+  "6060500": {
+    "en": "ArcaneincreasedforeachgreatenemydefeatedataRuin",
+    "zh": "每次打倒遗迹的强敌，能提升感应"
+  },
+  "6060600": {
+    "en": "MaxstaminaincreasedforeachgreatenemydefeatedataGreatEncampment",
+    "zh": "每次打倒大型营地的强敌，能提升精力上限"
+  },
+  "6090000": {
+    "en": "DefeatingenemiesfillsmoreoftheArtgaugePlus1",
+    "zh": "提升打倒敌人时，绝招量表的累积量＋１"
+  },
+  "6090001": {
+    "en": "DefeatingenemiesfillsmoreoftheArtgaugePlus2",
+    "zh": "提升打倒敌人时，绝招量表的累积量＋２"
+  },
+  "6160000": {
+    "en": "HPRestorationuponThrustingCounterattackPlus1",
+    "zh": "突刺反击成功时，能恢复血量＋１"
+  },
+  "6160001": {
+    "en": "HPRestorationuponThrustingCounterattackPlus2",
+    "zh": "突刺反击成功时，能恢复血量＋２"
+  },
+  "6260000": {
+    "en": "AttackpowerupwhenfacingpoisonafflictedenemyPlus1",
+    "zh": "对陷入中毒的敌人，能强化攻击＋１"
+  },
+  "6260001": {
+    "en": "AttackpowerupwhenfacingpoisonafflictedenemyPlus2",
+    "zh": "对陷入中毒的敌人，能强化攻击＋２"
+  },
+  "6260300": {
+    "en": "AttackpowerupwhenfacingscarletrotafflictedenemyPlus1",
+    "zh": "对陷入猩红腐败的敌人，能强化攻击＋１"
+  },
+  "6260301": {
+    "en": "AttackpowerupwhenfacingscarletrotafflictedenemyPlus2",
+    "zh": "对陷入猩红腐败的敌人，能强化攻击＋２"
+  },
+  "6260400": {
+    "en": "AttackpowerupwhenfacingfrostbiteafflictedenemyPlus1",
+    "zh": "对陷入冻伤的敌人，能强化攻击＋１"
+  },
+  "6260401": {
+    "en": "AttackpowerupwhenfacingfrostbiteafflictedenemyPlus2",
+    "zh": "对陷入冻伤的敌人，能强化攻击＋２"
+  },
+  "6500000": {
+    "en": "WylderCharacterSkillinflictsBloodLoss",
+    "zh": "【追踪者】技艺会附加引发异常状态出血的效果"
+  },
+  "6500100": {
+    "en": "GuardianCharacterSkillBoostsDamageNegationofNearbyAllies",
+    "zh": "【守护者】发动技艺时，能提升周围我方人物的减伤率"
+  },
+  "6500200": {
+    "en": "IroneyeCharacterSkillInflictsHeavyPoisonDamageonPoisonedEnemies",
+    "zh": "【铁之眼】技艺会附加引发异常状态中毒的效果"
+  },
+  "6500300": {
+    "en": "DuchessUseCharacterSkillforBriefInvulnerability",
+    "zh": "【女爵】发动技艺时，能进入短暂无敌状态"
+  },
+  "6500400": {
+    "en": "RaidserHitWithCharacterSkilltoReduceEnemyAttackPower",
+    "zh": "【无赖】技艺命中敌人时，能降低对方的攻击力"
+  },
+  "6500500": {
+    "en": "RevenantIncreasedMaxFPuponAbilityActivation",
+    "zh": "【复仇者】发动能力时，能提升专注值上限"
+  },
+  "6500600": {
+    "en": "RecluseCollectAffinityResidsuestoNegateAffinity",
+    "zh": "【隐士】收集属性痕时，能提升该属性的减伤率"
+  },
+  "6500700": {
+    "en": "ExecutorSlowlyRestoreHPuponAbilityActivation",
+    "zh": "【执行者】发动能力时，能缓慢恢复血量"
+  },
+  "6600000": {
+    "en": "SleepinVicinityImprovesAttackPower",
+    "zh": "周围陷入催眠时，提升攻击力"
+  },
+  "6600001": {
+    "en": "SleepinVicinityImprovesAttackPowerPlus1",
+    "zh": "周围陷入催眠时，提升攻击力＋１"
+  },
+  "6600002": {
+    "en": "SleepinVicinityImprovesAttackPowerPlus2",
+    "zh": "周围陷入催眠时，提升攻击力＋２"
+  },
+  "6600100": {
+    "en": "MadnessinVicinityImprovesAttackPower",
+    "zh": "周围陷入发狂时，提升攻击力"
+  },
+  "6600101": {
+    "en": "MadnessinVicinityImprovesAttackPowerPlus1",
+    "zh": "周围陷入发狂时，提升攻击力＋１"
+  },
+  "6600102": {
+    "en": "MadnessinVicinityImprovesAttackPowerPlus2",
+    "zh": "周围陷入发狂时，提升攻击力＋２"
+  },
+  "6610400": {
+    "en": "IncreasedMaximumHP",
+    "zh": "提升血量上限"
+  },
+  "6610500": {
+    "en": "IncreasedMaximumFP",
+    "zh": "提升专注值上限"
+  },
+  "6610600": {
+    "en": "IncreasedMaximumStamina",
+    "zh": "提升精力上限"
+  },
+  "6610700": {
+    "en": "ReducedFPConsumption",
+    "zh": "减少专注值消耗"
+  },
+  "8010101": {
+    "en": "ReducedFPConsumption",
+    "zh": "减少专注值消耗"
+  },
+  "6610701": {
+    "en": "ReducedFPConsumptionPlus1",
+    "zh": "减少专注值消耗＋１"
+  },
+  "6610702": {
+    "en": "ReducedFPConsumptionPlus2",
+    "zh": "减少专注值消耗＋２"
+  },
+  "6610800": {
+    "en": "ImprovedAffinityAttackPower",
+    "zh": "提升属性攻击力"
+  },
+  "6610801": {
+    "en": "ImprovedAffinityAttackPowerPlus1",
+    "zh": "提升属性攻击力＋１"
+  },
+  "6610802": {
+    "en": "ImprovedAffinityAttackPowerPlus2",
+    "zh": "提升属性攻击力＋２"
+  },
+  "6611000": {
+    "en": "ImprovedPhysicalDamageNegation",
+    "zh": "提升物理减伤率"
+  },
+  "6611001": {
+    "en": "ImprovedPhysicalDamageNegationPlus1",
+    "zh": "提升物理减伤率＋１"
+  },
+  "6611002": {
+    "en": "ImprovedPhysicalDamageNegationPlus2",
+    "zh": "提升物理减伤率＋２"
+  },
+  "6611100": {
+    "en": "ImprovedAffinityDamageNegation",
+    "zh": "提升属性减伤率"
+  },
+  "7006300": {
+    "en": "ImprovedAffinityDamageNegation",
+    "zh": "提升属性减伤率"
+  },
+  "6611101": {
+    "en": "ImprovedAffinityDamageNegationPlus1",
+    "zh": "提升属性减伤率＋１"
+  },
+  "6611102": {
+    "en": "ImprovedAffinityDamageNegationPlus2",
+    "zh": "提升属性减伤率＋２"
+  },
+  "6611200": {
+    "en": "ImprovedSorceries",
+    "zh": "强化魔法"
+  },
+  "6611201": {
+    "en": "ImprovedSorceriesPlus1",
+    "zh": "强化魔法＋１"
+  },
+  "6611202": {
+    "en": "ImprovedSorceriesPlus2",
+    "zh": "强化魔法＋２"
+  },
+  "6611300": {
+    "en": "ImprovedIncantations",
+    "zh": "强化祷告"
+  },
+  "6611301": {
+    "en": "ImprovedIncantationsPlus1",
+    "zh": "强化祷告＋１"
+  },
+  "6611302": {
+    "en": "ImprovedIncantationsPlus2",
+    "zh": "强化祷告＋２"
+  },
+  "6611400": {
+    "en": "ImprovedFlaskHPRestoration",
+    "zh": "提升圣杯瓶恢复量"
+  },
+  "8440001": {
+    "en": "ImprovedFlaskHPRestoration",
+    "zh": "提升圣杯瓶恢复量"
+  },
+  "8851900": {
+    "en": "ImprovedFlaskHPRestoration",
+    "zh": "提升圣杯瓶恢复量"
+  },
+  "6621000": {
+    "en": "CrimsonspillCrystalTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“漫红结晶露滴”"
+  },
+  "6621100": {
+    "en": "CrimsonCrystalTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“红结晶露滴”"
+  },
+  "6621200": {
+    "en": "CeruleanCrystalTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“蓝结晶露滴”"
+  },
+  "6621300": {
+    "en": "SpeckledHardtearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“斑斓硬露滴”"
+  },
+  "6621400": {
+    "en": "CrimsonBubbletearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“红泡状露滴”"
+  },
+  "6621500": {
+    "en": "OpalineBubbletearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“珍珠泡状露滴”"
+  },
+  "6621600": {
+    "en": "CrimsonburstCrystalTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“涌红结晶露滴”"
+  },
+  "6621700": {
+    "en": "GreenburstCrystalTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“涌绿结晶露滴”"
+  },
+  "6621800": {
+    "en": "OpalineHardtearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“珍珠硬露滴”"
+  },
+  "6621900": {
+    "en": "ThornyCrackedTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“连刺破露滴”"
+  },
+  "6622000": {
+    "en": "SpikedCrackedTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“大刺破露滴”"
+  },
+  "6622100": {
+    "en": "WindyCrystalTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“风结晶露滴”"
+  },
+  "6622200": {
+    "en": "RupturedCrystalTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“爆裂结晶露滴”"
+  },
+  "6622300": {
+    "en": "LeadenHardtearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“铅化硬露滴”"
+  },
+  "6622400": {
+    "en": "TwiggyCrackedTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“细枝破露滴”"
+  },
+  "6622500": {
+    "en": "CrimsonwhorlBubbletearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“红漩泡状露滴”"
+  },
+  "6622600": {
+    "en": "CeruleanHidsdenTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“蓝秘密露滴”"
+  },
+  "6622700": {
+    "en": "StonebarbCrackedTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“岩刺破露滴”"
+  },
+  "6622800": {
+    "en": "FlameShroudingCrackedTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“带火破露滴”"
+  },
+  "6622900": {
+    "en": "MagicShroudingCrackedTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“带魔力破露滴”"
+  },
+  "6623000": {
+    "en": "LightningShroudingCrackedTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“带雷破露滴”"
+  },
+  "6623100": {
+    "en": "HolyShroudingCrackedTearinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“带圣破露滴”"
+  },
+  "6624000": {
+    "en": "UpliftingAromaticinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“振奋香”"
+  },
+  "6624100": {
+    "en": "SparkAromaticinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“火花香”"
+  },
+  "6624200": {
+    "en": "IronjarAromaticinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“铁壶香药”"
+  },
+  "6624300": {
+    "en": "BloodboilAromaticinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“狂热香药”"
+  },
+  "6624400": {
+    "en": "PoisonSpraymistinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“毒发喷雾”"
+  },
+  "6624500": {
+    "en": "AcidsSpraymistinpossessionatstartofexpedition",
+    "zh": "出击时，会持有“酸蚀喷雾”"
+  },
+  "6630000": {
+    "en": "DormantPowerHelpsDiscoverDaggers",
+    "zh": "通过潜在能力，能比较容易找到短剑"
+  },
+  "6630100": {
+    "en": "DormantPowerHelpsDiscoverStraightSwords",
+    "zh": "通过潜在能力，能比较容易找到直剑"
+  },
+  "6630200": {
+    "en": "DormantPowerHelpsDiscoverGreatswords",
+    "zh": "通过潜在能力，能比较容易找到大剑"
+  },
+  "6630300": {
+    "en": "DormantPowerHelpsDiscoverColossalSwords",
+    "zh": "通过潜在能力，能比较容易找到特大剑"
+  },
+  "6630400": {
+    "en": "DormantPowerHelpsDiscoverCurvedSwords",
+    "zh": "通过潜在能力，能比较容易找到曲剑"
+  },
+  "6630500": {
+    "en": "DormantPowerHelpsDiscoverCurvedGreatswords",
+    "zh": "通过潜在能力，能比较容易找到大曲剑"
+  },
+  "6630600": {
+    "en": "DormantPowerHelpsDiscoverKatana",
+    "zh": "通过潜在能力，能比较容易找到刀"
+  },
+  "6630700": {
+    "en": "DormantPowerHelpsDiscoverTwinblades",
+    "zh": "通过潜在能力，能比较容易找到双头剑"
+  },
+  "6630800": {
+    "en": "DormantPowerHelpsDiscoverThrustingSwords",
+    "zh": "通过潜在能力，能比较容易找到刺剑"
+  },
+  "6630900": {
+    "en": "DormantPowerHelpsDiscoverHeavyThrustingSwords",
+    "zh": "通过潜在能力，能比较容易找到重刺剑"
+  },
+  "6631000": {
+    "en": "DormantPowerHelpsDiscoverAxes",
+    "zh": "通过潜在能力，能比较容易找到斧"
+  },
+  "6631100": {
+    "en": "DormantPowerHelpsDiscoverGreataxes",
+    "zh": "通过潜在能力，能比较容易找到大斧"
+  },
+  "6631200": {
+    "en": "DormantPowerHelpsDiscoverHammers",
+    "zh": "通过潜在能力，能比较容易找到槌"
+  },
+  "6631300": {
+    "en": "DormantPowerHelpsDiscoverGreatHammers",
+    "zh": "通过潜在能力，能比较容易找到大槌"
+  },
+  "6631400": {
+    "en": "DormantPowerHelpsDiscoverFlails",
+    "zh": "通过潜在能力，能比较容易找到连枷"
+  },
+  "6631500": {
+    "en": "DormantPowerHelpsDiscoverSpears",
+    "zh": "通过潜在能力，能比较容易找到矛"
+  },
+  "6631600": {
+    "en": "DormantPowerHelpsDiscoverGreatSpears",
+    "zh": "通过潜在能力，能比较容易找到大矛"
+  },
+  "6631700": {
+    "en": "DormantPowerHelpsDiscoverHalberds",
+    "zh": "通过潜在能力，能比较容易找到戟"
+  },
+  "6631800": {
+    "en": "DormantPowerHelpsDiscoverReapers",
+    "zh": "通过潜在能力，能比较容易找到镰刀"
+  },
+  "6631900": {
+    "en": "DormantPowerHelpsDiscoverFists",
+    "zh": "通过潜在能力，能比较容易找到拳头"
+  },
+  "6632000": {
+    "en": "DormantPowerHelpsDiscoverClaws",
+    "zh": "通过潜在能力，能比较容易找到钩爪"
+  },
+  "6632100": {
+    "en": "DormantPowerHelpsDiscoverWhips",
+    "zh": "通过潜在能力，能比较容易找到软鞭"
+  },
+  "6632200": {
+    "en": "DormantPowerHelpsDiscoverColossalWeapons",
+    "zh": "通过潜在能力，能比较容易找到特大武器"
+  },
+  "6632300": {
+    "en": "DormantPowerHelpsDiscoverBows",
+    "zh": "通过潜在能力，能比较容易找到弓"
+  },
+  "6632400": {
+    "en": "DormantPowerHelpsDiscoverGreatbows",
+    "zh": "通过潜在能力，能比较容易找到大弓"
+  },
+  "6632500": {
+    "en": "DormantPowerHelpsDiscoverCrossbows",
+    "zh": "通过潜在能力，能比较容易找到弩"
+  },
+  "6632600": {
+    "en": "DormantPowerHelpsDiscoverBallistas",
+    "zh": "通过潜在能力，能比较容易找到弩炮"
+  },
+  "6632700": {
+    "en": "DormantPowerHelpsDiscoverSmallShields",
+    "zh": "通过潜在能力，能比较容易找到小盾"
+  },
+  "6632800": {
+    "en": "DormantPowerHelpsDiscoverMediumShields",
+    "zh": "通过潜在能力，能比较容易找到中盾"
+  },
+  "6632900": {
+    "en": "DormantPowerHelpsDiscoverGreatshields",
+    "zh": "通过潜在能力，能比较容易找到大盾"
+  },
+  "6633000": {
+    "en": "DormantPowerHelpsDiscoverStaves",
+    "zh": "通过潜在能力，能比较容易找到手杖"
+  },
+  "6633100": {
+    "en": "DormantPowerHelpsDiscoverSacredSeals",
+    "zh": "通过潜在能力，能比较容易找到圣印记"
+  },
+  "6633200": {
+    "en": "DormantPowerHelpsDiscoverTorches",
+    "zh": "通过潜在能力，能比较容易找到火把"
+  },
+  "6640000": {
+    "en": "WylderImprovedMindReducedVigor",
+    "zh": "【追踪者】提升集中力，但降低生命力"
+  },
+  "6640100": {
+    "en": "WylderImprovedIntelligenceandFaithReducedStrengthandDexterity",
+    "zh": "【追踪者】提升智力、信仰，但降低力气、灵巧"
+  },
+  "6641000": {
+    "en": "GuardianImprovedStrengthandDexterityReducedVigor",
+    "zh": "【守护者】提升力气、灵巧，但降低生命力"
+  },
+  "6641100": {
+    "en": "GuardianImprovedMindandFaithReducedVigor",
+    "zh": "【守护者】提升集中力、信仰，但降低生命力"
+  },
+  "6642000": {
+    "en": "IroneyeImprovedArcaneReducedDexterity",
+    "zh": "【铁之眼】提升感应，但降低灵巧"
+  },
+  "6642100": {
+    "en": "IroneyeImprovedVigorandStrengthReducedDexterity",
+    "zh": "【铁之眼】提升生命力、力气，但降低灵巧"
+  },
+  "6643000": {
+    "en": "DuchessImprovedVigorandStrengthReducedMind",
+    "zh": "【女爵】提升生命力、力气，但降低集中力"
+  },
+  "6643100": {
+    "en": "DuchessImprovedMindandFaithReducedIntelligence",
+    "zh": "【女爵】提升集中力、信仰，但降低智力"
+  },
+  "6644000": {
+    "en": "RaidserImprovedMindandIntelligenceReducedVigorandEndurance",
+    "zh": "【无赖】提升集中力、智力，但降低生命力、耐力"
+  },
+  "6644100": {
+    "en": "RaidserImprovedArcaneReducedVigor",
+    "zh": "【无赖】提升感应，但降低生命力"
+  },
+  "6645000": {
+    "en": "RevenantImprovedVigorandEnduranceReducedMind",
+    "zh": "【复仇者】提升生命力、耐力，但降低集中力"
+  },
+  "6645100": {
+    "en": "RevenantImprovedStrengthReducedFaith",
+    "zh": "【复仇者】提升力气，但降低信仰"
+  },
+  "6646000": {
+    "en": "RecluseImprovedVigorEnduranceandDexterityReducedIntelligenceandFaith",
+    "zh": "【隐士】提升生命力、耐力、灵巧，但降低智力、信仰"
+  },
+  "6646100": {
+    "en": "RecluseImprovedIntelligenceandFaithReducedMind",
+    "zh": "【隐士】提升智力、信仰，但降低集中力"
+  },
+  "6647000": {
+    "en": "ExecutorImprovedVigorandEnduranceReducedArcane",
+    "zh": "【执行者】提升生命力、耐力，但降低感应"
+  },
+  "6647100": {
+    "en": "ExecutorImprovedDexterityandArcaneReducedVigor",
+    "zh": "【执行者】提升灵巧、感应，但降低生命力"
+  },
+  "6800000": {
+    "en": "ReducedVigor",
+    "zh": "降低生命力"
+  },
+  "6800200": {
+    "en": "ReducedEndurance",
+    "zh": "降低耐力"
+  },
+  "6810100": {
+    "en": "ImpairedDamageNegation",
+    "zh": "降低减伤率"
+  },
+  "6820000": {
+    "en": "TakingDamageCausesPoisonBuildup",
+    "zh": "受到损伤时，会累积中毒量表"
+  },
+  "6820100": {
+    "en": "TakingDamageCausesRotBuildup",
+    "zh": "受到损伤时，会累积猩红腐败量表"
+  },
+  "6820200": {
+    "en": "TakingDamageCausesFrostBuildup",
+    "zh": "受到损伤时，会累积冻伤量表"
+  },
+  "6820300": {
+    "en": "TakingDamageCausesBloodLossBuildup",
+    "zh": "受到损伤时，会累积出血量表"
+  },
+  "6820400": {
+    "en": "TakingDamageCausesMadnessBuildup",
+    "zh": "受到损伤时，会累积发狂量表"
+  },
+  "6820500": {
+    "en": "TakingDamageCausesSleepBuildup",
+    "zh": "受到损伤时，会累积催眠量表"
+  },
+  "6820600": {
+    "en": "TakingDamageCausesDeathBuildup",
+    "zh": "受到损伤时，会累积死亡量表"
+  },
+  "6830000": {
+    "en": "ReducedStrengthandIntelligence",
+    "zh": "降低力气、智力"
+  },
+  "6830100": {
+    "en": "ReducedDexterityandFaith",
+    "zh": "降低灵巧、信仰"
+  },
+  "6830200": {
+    "en": "ReducedIntelligenceandDexterity",
+    "zh": "降低智力、灵巧"
+  },
+  "6830300": {
+    "en": "ReducedFaithandStrength",
+    "zh": "降低信仰、力气"
+  },
+  "6830400": {
+    "en": "ReducedVigorandArcane",
+    "zh": "降低生命力、感应"
+  },
+  "6840000": {
+    "en": "ReducedRuneAcquisition",
+    "zh": "减少获得的卢恩"
+  },
+  "6840100": {
+    "en": "ReducedFlaskHPRestoration",
+    "zh": "降低圣杯瓶恢复量"
+  },
+  "6840200": {
+    "en": "UltimateArtChargingImpaired",
+    "zh": "降低绝招量表累积"
+  },
+  "6850000": {
+    "en": "ImpairedPhysicalDamageNegation",
+    "zh": "降低物理减伤率"
+  },
+  "6850100": {
+    "en": "ImpairedAffinityDamageNegation",
+    "zh": "降低属性减伤率"
+  },
+  "8761100": {
+    "en": "ImpairedAffinityDamageNegation",
+    "zh": "降低属性减伤率"
+  },
+  "6850200": {
+    "en": "AllResistancesDown",
+    "zh": "降低对所有异常状态的抵抗力"
+  },
+  "8762000": {
+    "en": "AllResistancesDown",
+    "zh": "降低对所有异常状态的抵抗力"
+  },
+  "6850300": {
+    "en": "ReducedFlaskHPRestoration",
+    "zh": "降低圣杯瓶恢复量"
+  },
+  "8763000": {
+    "en": "ReducedFlaskHPRestoration",
+    "zh": "降低圣杯瓶恢复量"
+  },
+  "6850400": {
+    "en": "SurgeSprintingDrainsMoreStamina",
+    "zh": "增加急速冲刺的精力消耗"
+  },
+  "370002": {
+    "en": "ContinuousHPLoss",
+    "zh": "持续减少血量"
+  },
+  "6850500": {
+    "en": "ContinuousHPLoss",
+    "zh": "持续减少血量"
+  },
+  "8766000": {
+    "en": "ContinuousHPLoss",
+    "zh": "持续减少血量"
+  },
+  "6850600": {
+    "en": "IncreasedDrainonStaminaforEvasion",
+    "zh": "增加闪避时的精力消耗"
+  },
+  "6850700": {
+    "en": "MoreDamageTakenAfterEvasion",
+    "zh": "闪避后的当下，受伤时损伤加剧"
+  },
+  "8800100": {
+    "en": "MoreDamageTakenAfterEvasion",
+    "zh": "闪避后的当下，受伤时损伤加剧"
+  },
+  "6850800": {
+    "en": "RepeatedEvasionsLowerDamageNegation",
+    "zh": "连续闪避时，降低减伤率"
+  },
+  "8800200": {
+    "en": "RepeatedEvasionsLowerDamageNegation",
+    "zh": "连续闪避时，降低减伤率"
+  },
+  "6850900": {
+    "en": "ReducedDamageNegationforFlaskUsages",
+    "zh": "使用圣杯瓶时，降低减伤率"
+  },
+  "8801000": {
+    "en": "ReducedDamageNegationforFlaskUsages",
+    "zh": "使用圣杯瓶时，降低减伤率"
+  },
+  "6851000": {
+    "en": "SleepBuildupforFlaskUsages",
+    "zh": "使用圣杯瓶时，累积催眠量表"
+  },
+  "6851100": {
+    "en": "MadnessBuildupforFlaskUsages",
+    "zh": "使用圣杯瓶时，累积发狂量表"
+  },
+  "6851200": {
+    "en": "LowerAttackWhenBelowMaxHP",
+    "zh": "血量没有全满时，降低攻击力"
+  },
+  "8810000": {
+    "en": "LowerAttackWhenBelowMaxHP",
+    "zh": "血量没有全满时，降低攻击力"
+  },
+  "6851300": {
+    "en": "PoisonBuildupWhenBelowMaxHP",
+    "zh": "血量没有全满时，累积中毒量表"
+  },
+  "8810300": {
+    "en": "PoisonBuildupWhenBelowMaxHP",
+    "zh": "血量没有全满时，累积中毒量表"
+  },
+  "6851400": {
+    "en": "RotBuildupWhenBelowMaxHP",
+    "zh": "血量没有全满时，累积猩红腐败量表"
+  },
+  "8810400": {
+    "en": "RotBuildupWhenBelowMaxHP",
+    "zh": "血量没有全满时，累积猩红腐败量表"
+  },
+  "6851500": {
+    "en": "MaxHPReducesAttackPower",
+    "zh": "血量全满时，降低攻击力"
+  },
+  "6851600": {
+    "en": "NearDeathSpillsFlask",
+    "zh": "濒死时，翻倒圣杯瓶"
+  },
+  "6851700": {
+    "en": "NearDeathReducesMaxHP",
+    "zh": "濒死时，降低血量上限"
+  },
+  "8831200": {
+    "en": "NearDeathReducesMaxHP",
+    "zh": "濒死时，降低血量上限"
+  }
+}
