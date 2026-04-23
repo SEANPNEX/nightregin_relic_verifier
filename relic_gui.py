@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                              QLabel, QScrollArea, QFrame, QGridLayout, 
                              QFileDialog, QMessageBox, QRadioButton, QButtonGroup)
 from PyQt6.QtCore import Qt, QThread, pyqtSignal
-from PyQt6.QtGui import QFont, QPalette, QColor
+from PyQt6.QtGui import QFont, QPalette, QColor, QIcon
 
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
@@ -400,6 +400,11 @@ class RelicApp(QMainWindow):
     def init_ui(self):
         self.setWindowTitle("Nightreign Relic Inspector")
         self.resize(920, 750)
+        
+        # Set Window Icon
+        icon_path = resource_path("fav.ico")
+        if os.path.exists(icon_path):
+            self.setWindowIcon(QIcon(icon_path))
 
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
