@@ -1,9 +1,15 @@
-import tkinter as tk
-from tkinter import ttk, filedialog, messagebox
+import sys
 import json
 import os
 import struct
-import pandas as pd
+import csv
+from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, 
+                             QHBoxLayout, QPushButton, QComboBox, QCheckBox, 
+                             QLabel, QScrollArea, QFrame, QGridLayout, 
+                             QFileDialog, QMessageBox, QRadioButton, QButtonGroup)
+from PyQt6.QtCore import Qt, QThread, pyqtSignal
+from PyQt6.QtGui import QFont, QPalette, QColor
+
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
 
@@ -37,7 +43,8 @@ UI_TEXT = {
         "status": "Status",
         "no_relics": "No relics found.",
         "no_illegal": "No illegal relics found.",
-        "slot": "Slot"
+        "slot": "Slot",
+        "processing": "Processing..."
     },
     "zh": {
         "title": "Nightreign 遗物合法性查询工具",
@@ -47,7 +54,8 @@ UI_TEXT = {
         "status": "状态",
         "no_relics": "未发现遗物。",
         "no_illegal": "未发现不合法遗物。",
-        "slot": "角色槽位"
+        "slot": "角色槽位",
+        "processing": "正在处理..."
     }
 }
 
@@ -56,15 +64,20 @@ class RelicLegalityChecker:
     def __init__(self, data_dir: str = "."):
         self.enabled = False
         self.official_map = {}
+        self.equip_param = {}
+        self.pool1_map = []
+        self.lottery_pools = {}
+        self.exclusivity_map = {}
         
         # Load official whitelist
         off_file = os.path.join(data_dir, "official_relics.csv")
         if os.path.exists(off_file):
             try:
-                df = pd.read_csv(off_file)
-                for _, row in df.iterrows():
-                    effs = [int(row['Effect_1']), int(row['Effect_2']), int(row['Effect_3'])]
-                    self.official_map[int(row['Base_ID'])] = sorted([e for e in effs if e > 0])
+                with open(off_file, 'r', encoding='utf-8') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        effs = [int(row['Effect_1']), int(row['Effect_2']), int(row['Effect_3'])]
+                        self.official_map[int(row['Base_ID'])] = sorted([e for e in effs if e > 0])
             except Exception as e:
                 print(f"[WARN] Failed to load official_relics.csv: {e}")
 
@@ -72,16 +85,42 @@ class RelicLegalityChecker:
         files = ["EquipParamAntique.csv", "AttachEffectTableParam.csv", "AttachEffectParam.csv"]
         if all(os.path.exists(os.path.join(data_dir, f)) for f in files):
             try:
-                self.equip_param = pd.read_csv("EquipParamAntique.csv", usecols=[
-                    "ID", "attachEffectTableId_1", "attachEffectTableId_2", "attachEffectTableId_3",
-                    "attachEffectTableId_curse1", "attachEffectTableId_curse2", "attachEffectTableId_curse3", "isDeepRelic"
-                ])
-                self.equip_param.columns = self.equip_param.columns.str.strip()
-                self.equip_param = self.equip_param.set_index("ID").fillna(-1).apply(pd.to_numeric, errors='coerce').fillna(-1).astype(int)
+                # Load EquipParamAntique
+                with open("EquipParamAntique.csv", 'r', encoding='utf-8') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        row = {k.strip(): v for k, v in row.items()}
+                        item_id = int(row['ID'])
+                        rule = {
+                            "attachEffectTableId_1": int(row.get("attachEffectTableId_1", -1) or -1),
+                            "attachEffectTableId_2": int(row.get("attachEffectTableId_2", -1) or -1),
+                            "attachEffectTableId_3": int(row.get("attachEffectTableId_3", -1) or -1),
+                            "attachEffectTableId_curse1": int(row.get("attachEffectTableId_curse1", -1) or -1),
+                            "attachEffectTableId_curse2": int(row.get("attachEffectTableId_curse2", -1) or -1),
+                            "attachEffectTableId_curse3": int(row.get("attachEffectTableId_curse3", -1) or -1),
+                            "isDeepRelic": int(row.get("isDeepRelic", 0) or 0)
+                        }
+                        self.equip_param[item_id] = rule
+                        rule_with_id = rule.copy(); rule_with_id['ID'] = item_id
+                        self.pool1_map.append(rule_with_id)
                 
-                self.pool1_map = self.equip_param.reset_index().to_dict('records')
-                self.lottery_pools = pd.read_csv("AttachEffectTableParam.csv", usecols=["ID", "attachEffectId"]).apply(pd.to_numeric, errors='coerce').fillna(-1).astype(int).groupby("ID")["attachEffectId"].apply(set).to_dict()
-                self.exclusivity_map = pd.read_csv("AttachEffectParam.csv", usecols=["ID", "exclusivityId"]).set_index("ID").apply(pd.to_numeric, errors='coerce').fillna(-1).astype(int)["exclusivityId"].to_dict()
+                # Load AttachEffectTableParam (Lottery Pools)
+                with open("AttachEffectTableParam.csv", 'r', encoding='utf-8') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        tid = int(row['ID'])
+                        eid = int(row['attachEffectId'])
+                        if tid not in self.lottery_pools: self.lottery_pools[tid] = set()
+                        self.lottery_pools[tid].add(eid)
+
+                # Load AttachEffectParam (Exclusivity)
+                with open("AttachEffectParam.csv", 'r', encoding='utf-8') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        eid = int(row['ID'])
+                        ex_id = int(row.get('exclusivityId', -1) or -1)
+                        if ex_id != -1: self.exclusivity_map[eid] = ex_id
+                
                 self.enabled = True
             except Exception as e:
                 print(f"[ERROR] Engine init failed: {e}")
@@ -100,7 +139,7 @@ class RelicLegalityChecker:
         if not self.enabled: return {"status": "Unknown", "reason": "Missing Params"}
         
         # 2. Random Relic Rule Row Lookup
-        rules = self.equip_param.loc[item_id] if item_id in self.equip_param.index else None
+        rules = self.equip_param.get(item_id)
         if rules is None:
             for r in self.pool1_map:
                 if raw_slots[0]['pos'] > 0 and raw_slots[0]['pos'] in self.lottery_pools.get(r['attachEffectTableId_1'], set()):
@@ -176,16 +215,22 @@ def read_int_le(data):
 
 def parse_save(file_path, checker):
     with open(file_path, 'rb') as f:
-        f.seek(12); count = struct.unpack('<I', f.read(4))[0]
-        entries = []
-        f.seek(64)
-        for _ in range(count):
-            h = f.read(32); entries.append({'size': struct.unpack('<I', h[8:12])[0], 'off': struct.unpack('<I', h[16:20])[0]})
+        file_data = f.read()
+    
+    mv = memoryview(file_data)
+    count = struct.unpack('<I', mv[12:16])[0]
+    entries = []
+    for j in range(count):
+        h_off = 64 + j * 32
+        h = mv[h_off:h_off+32]
+        entries.append({
+            'size': struct.unpack('<I', h[8:12])[0], 
+            'off': struct.unpack('<I', h[16:20])[0]
+        })
 
-    with open(file_path, 'rb') as f:
-        f.seek(entries[10]['off'])
-        e10_data = f.read(entries[10]['size'])
-        name_data = decrypt_data(e10_data[16:], AES_KEY, e10_data[:16])[4:]
+    e10 = entries[10]
+    e10_data = file_data[e10['off']:e10['off']+e10['size']]
+    name_data = decrypt_data(e10_data[16:], AES_KEY, e10_data[:16])[4:]
     
     results = []
     i = 0
@@ -199,119 +244,288 @@ def parse_save(file_path, checker):
         
         slot_idx = len(results)
         if slot_idx >= 10: break
-        with open(file_path, 'rb') as f:
-            f.seek(entries[slot_idx]['off'])
-            slot_raw = f.read(entries[slot_idx]['size'])
-            dec = decrypt_data(slot_raw[16:], AES_KEY, slot_raw[:16])[4:]
+        
+        slot_e = entries[slot_idx]
+        slot_raw = file_data[slot_e['off']:slot_e['off']+slot_e['size']]
+        dec_raw = decrypt_data(slot_raw[16:], AES_KEY, slot_raw[:16])[4:]
+        dec = memoryview(dec_raw)
         
         relics = []
-        n_pos = dec.find(n_b)
+        n_pos = dec_raw.find(n_b)
         if n_pos != -1:
-            ffff = dec.find(BLOCK_END_MARKER, n_pos+1000)
+            ffff = dec_raw.find(BLOCK_END_MARKER, n_pos+1000)
             off = 32
             while off < n_pos - 100:
-                if dec[off+2] in VALID_BYTE2 and dec[off+3] in VALID_BYTE3:
-                    sz = 72 if dec[off+3] == 192 else (16 if dec[off+3] == 144 else 80)
-                    if off + sz <= len(dec) and dec[off+3] == 192:
+                b3 = dec[off+3]
+                if dec[off+2] in VALID_BYTE2 and b3 in VALID_BYTE3:
+                    sz = 72 if b3 == 192 else (16 if b3 == 144 else 80)
+                    if off + sz <= len(dec) and b3 == 192:
                         chunk = dec[off:off+sz]
                         raw_slots = []
-                        for j in range(4): raw_slots.append({'pos': read_int_le(chunk[16+j*4:20+j*4]), 'neg': read_int_le(chunk[56+j*4:60+j*4])})
-                        if dec.find(chunk[0:4] + b'\x01\x00\x00\x00', ffff) != -1:
+                        for j in range(4): 
+                            raw_slots.append({
+                                'pos': read_int_le(chunk[16+j*4:20+j*4]), 
+                                'neg': read_int_le(chunk[56+j*4:60+j*4])
+                            })
+                        # Check magic/footer pattern efficiently
+                        if dec_raw.find(dec_raw[off:off+4] + b'\x01\x00\x00\x00', ffff) != -1:
                             item_id = read_int_le(chunk[4:7])
-                            relics.append({'id': item_id, 'slots': raw_slots, 'legality': checker.check(item_id, raw_slots)})
+                            relics.append({
+                                'id': item_id, 
+                                'slots': raw_slots, 
+                                'legality': checker.check(item_id, raw_slots)
+                            })
                     off += sz or 1
-                else: off += 8 if (dec[off:off+4] == b'\x00'*4 and dec[off+4:off+8] == b'\xff'*4) else 1
+                else: 
+                    if dec[off:off+4] == b'\x00'*4 and dec[off+4:off+8] == b'\xff'*4:
+                        off += 8
+                    else:
+                        off += 1
         results.append({'name': char_name, 'relics': relics})
     return results
 
-# --- UI APPLICATION ---
-class RelicApp:
-    def __init__(self, root):
-        self.root = root
+# --- PYQT6 UI ---
+
+class ParseWorker(QThread):
+    finished = pyqtSignal(list)
+    error = pyqtSignal(str)
+
+    def __init__(self, file_path, checker):
+        super().__init__()
+        self.file_path = file_path
+        self.checker = checker
+
+    def run(self):
+        try:
+            results = parse_save(self.file_path, self.checker)
+            self.finished.emit(results)
+        except Exception as e:
+            self.error.emit(str(e))
+
+class RelicCard(QFrame):
+    def __init__(self, relic, app_instance):
+        super().__init__()
+        self.relic = relic
+        self.app = app_instance
+        self.init_ui()
+
+    def init_ui(self):
+        stat = self.relic['legality']['status']
+        colors = {
+            "Illegal": ("#fff8f8", "#d32f2f"), 
+            "Official": ("#faf5ff", "#7b1fa2")
+        }.get(stat, ("#ffffff", "#e0e0e0"))
+
+        self.setFrameShape(QFrame.Shape.StyledPanel)
+        self.setLineWidth(1)
+        self.setFixedSize(280, 180)
+        self.setStyleSheet(f"""
+            RelicCard {{
+                background-color: {colors[0]};
+                border: 1px solid {colors[1]};
+                border-radius: 4px;
+            }}
+            QLabel {{
+                background-color: transparent;
+            }}
+        """)
+
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(12, 12, 12, 12)
+        layout.setSpacing(4)
+
+        # Title
+        title = QLabel(self.app.get_n(self.relic['id']))
+        title.setFont(QFont("Segoe UI Semibold", 10))
+        title.setWordWrap(True)
+        layout.addWidget(title)
+
+        # Status
+        txt = UI_TEXT[self.app.lang_var]
+        stat_text = f"{txt['status']}: {stat}"
+        if stat == "Illegal":
+            stat_text += f" ({self.relic['legality']['reason']})"
+        
+        status_lbl = QLabel(stat_text)
+        status_lbl.setFont(QFont("Segoe UI", 8, QFont.Weight.Normal, True))
+        status_lbl.setStyleSheet(f"color: {colors[1] if stat != 'Legal' else '#666666'};")
+        status_lbl.setWordWrap(True)
+        layout.addWidget(status_lbl)
+
+        # Divider
+        line = QFrame()
+        line.setFrameShape(QFrame.Shape.HLine)
+        line.setFrameShadow(QFrame.Shadow.Plain)
+        line.setStyleSheet("color: #eeeeee;")
+        layout.addWidget(line)
+
+        # Slot Info
+        slot_info = []
+        for idx, s in enumerate(self.relic['slots']):
+            if s['pos'] > 0 or s['neg'] > 0:
+                pos_n = self.app.get_n(s['pos'])
+                neg_n = self.app.get_n(s['neg'])
+                slot_info.append(f"[{idx+1}] {pos_n}\n    \u21b3 {neg_n}")
+        
+        slots_lbl = QLabel("\n".join(slot_info))
+        slots_lbl.setFont(QFont("Segoe UI", 8))
+        slots_lbl.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignLeft)
+        slots_lbl.setWordWrap(True)
+        layout.addWidget(slots_lbl)
+        layout.addStretch()
+
+class RelicApp(QMainWindow):
+    def __init__(self):
+        super().__init__()
         self.checker = RelicLegalityChecker()
         self.dict = json.load(open('dictionary.json', 'r', encoding='utf-8')) if os.path.exists('dictionary.json') else {}
         self.data = []
-        self.lang_var = tk.StringVar(value="zh")
-        
-        top = ttk.Frame(root, padding=10); top.pack(fill=tk.X)
-        self.btn_load = ttk.Button(top, text="", command=self.load_file); self.btn_load.pack(side=tk.LEFT)
-        self.char_selector = ttk.Combobox(top, state="readonly", width=22); self.char_selector.pack(side=tk.LEFT, padx=10)
-        self.char_selector.bind("<<ComboboxSelected>>", self.display_relics)
-        self.show_illegal_only = tk.BooleanVar(value=False)
-        self.check_illegal = ttk.Checkbutton(top, text="", variable=self.show_illegal_only, command=self.display_relics); self.check_illegal.pack(side=tk.LEFT, padx=5)
-        self.lbl_lang = ttk.Label(top, text="")
-        self.lbl_lang.pack(side=tk.LEFT, padx=(10, 2))
-        ttk.Radiobutton(top, text="ZH", value="zh", variable=self.lang_var, command=self.change_language).pack(side=tk.LEFT)
-        ttk.Radiobutton(top, text="EN", value="en", variable=self.lang_var, command=self.change_language).pack(side=tk.LEFT)
-        
-        self.canvas = tk.Canvas(root, background="#f8f8f8")
-        self.scroll = ttk.Scrollbar(root, orient="vertical", command=self.canvas.yview)
-        self.grid_frame = tk.Frame(self.canvas, background="#f8f8f8")
-        self.grid_frame.bind("<Configure>", lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all")))
-        self.canvas.create_window((0, 0), window=self.grid_frame, anchor="nw")
-        self.canvas.configure(yscrollcommand=self.scroll.set)
-        self.canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True); self.scroll.pack(side=tk.RIGHT, fill=tk.Y)
-        self.update_ui_labels()
+        self.lang_var = "zh"
+        self.init_ui()
 
-    def change_language(self):
+    def init_ui(self):
+        self.setWindowTitle("Nightreign Relic Inspector")
+        self.resize(920, 750)
+
+        central_widget = QWidget()
+        self.setCentralWidget(central_widget)
+        main_layout = QVBoxLayout(central_widget)
+
+        # Top Bar
+        top_bar = QHBoxLayout()
+        self.btn_load = QPushButton()
+        self.btn_load.setFixedWidth(150)
+        self.btn_load.clicked.connect(self.load_file)
+        top_bar.addWidget(self.btn_load)
+
+        self.char_selector = QComboBox()
+        self.char_selector.setFixedWidth(250)
+        self.char_selector.currentIndexChanged.connect(self.display_relics)
+        top_bar.addWidget(self.char_selector)
+
+        self.check_illegal = QCheckBox()
+        self.check_illegal.toggled.connect(self.display_relics)
+        top_bar.addWidget(self.check_illegal)
+
+        top_bar.addStretch()
+
+        self.lbl_lang = QLabel()
+        top_bar.addWidget(self.lbl_lang)
+
+        self.lang_group = QButtonGroup(self)
+        self.rb_zh = QRadioButton("ZH")
+        self.rb_en = QRadioButton("EN")
+        self.lang_group.addButton(self.rb_zh)
+        self.lang_group.addButton(self.rb_en)
+        self.rb_zh.setChecked(True)
+        self.rb_zh.toggled.connect(lambda: self.change_language("zh"))
+        self.rb_en.toggled.connect(lambda: self.change_language("en"))
+        top_bar.addWidget(self.rb_zh)
+        top_bar.addWidget(self.rb_en)
+
+        main_layout.addLayout(top_bar)
+
+        # Scroll Area
+        self.scroll = QScrollArea()
+        self.scroll.setWidgetResizable(True)
+        self.scroll.setStyleSheet("QScrollArea { border: none; background-color: white; }")
+        
+        self.grid_container = QWidget()
+        self.grid_container.setStyleSheet("background-color: white;")
+        self.grid_layout = QGridLayout(self.grid_container)
+        self.grid_layout.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignLeft)
+        self.grid_layout.setSpacing(15)
+        
+        self.scroll.setWidget(self.grid_container)
+        main_layout.addWidget(self.scroll)
+
         self.update_ui_labels()
-        if self.data:
-            current = self.char_selector.current()
-            self.char_selector['values'] = [f"{UI_TEXT[self.lang_var.get()]['slot']} {i}: {c['name']}" for i, c in enumerate(self.data)]
-            if current >= 0: self.char_selector.current(current)
-            self.display_relics()
 
     def update_ui_labels(self):
-        txt = UI_TEXT[self.lang_var.get()]
-        self.root.title(txt["title"])
-        self.btn_load.config(text=txt["load"])
-        self.check_illegal.config(text=txt["show_illegal"])
-        self.lbl_lang.config(text=txt["lang"])
+        txt = UI_TEXT[self.lang_var]
+        self.setWindowTitle(txt["title"])
+        self.btn_load.setText(txt["load"])
+        self.check_illegal.setText(txt["show_illegal"])
+        self.lbl_lang.setText(txt["lang"])
 
     def get_n(self, idx):
         if idx is None or idx <= 0: return "-"
-        lang = self.lang_var.get()
         e = self.dict.get(str(idx), {})
-        return e.get(lang, e.get('en', str(idx))) if isinstance(e, dict) else str(idx)
+        return e.get(self.lang_var, e.get('en', str(idx))) if isinstance(e, dict) else str(idx)
+
+    def change_language(self, lang):
+        if self.lang_var == lang: return
+        self.lang_var = lang
+        self.update_ui_labels()
+        if self.data:
+            current = self.char_selector.currentIndex()
+            txt_slot = UI_TEXT[self.lang_var]['slot']
+            self.char_selector.blockSignals(True)
+            self.char_selector.clear()
+            self.char_selector.addItems([f"{txt_slot} {i}: {c['name']}" for i, c in enumerate(self.data)])
+            self.char_selector.setCurrentIndex(current)
+            self.char_selector.blockSignals(False)
+            self.display_relics()
 
     def load_file(self):
-        path = filedialog.askopenfilename(filetypes=[("Save Files", "*.sl2")])
+        path, _ = QFileDialog.getOpenFileName(self, "Open Save File", "", "Save Files (*.sl2)")
         if path:
-            try:
-                self.data = parse_save(path, self.checker)
-                self.change_language() 
-            except Exception as e:
-                messagebox.showerror("Error", f"Failed to parse: {e}")
+            self.btn_load.setEnabled(False)
+            self.btn_load.setText(UI_TEXT[self.lang_var]["processing"])
+            
+            self.worker = ParseWorker(path, self.checker)
+            self.worker.finished.connect(self._on_parse_complete)
+            self.worker.error.connect(self._on_parse_error)
+            self.worker.start()
 
-    def display_relics(self, event=None):
-        for w in self.grid_frame.winfo_children(): w.destroy()
-        sel = self.char_selector.current()
-        if sel < 0: return
-        relics = self.data[sel]['relics']
-        txt = UI_TEXT[self.lang_var.get()]
-        if self.show_illegal_only.get(): relics = [r for r in relics if r['legality']['status'] == "Illegal"]
+    def _on_parse_error(self, err_msg):
+        QMessageBox.critical(self, "Error", f"Failed to parse: {err_msg}")
+        self.btn_load.setEnabled(True)
+        self.btn_load.setText(UI_TEXT[self.lang_var]["load"])
+
+    def _on_parse_complete(self, results):
+        self.data = results
+        self.btn_load.setEnabled(True)
+        self.btn_load.setText(UI_TEXT[self.lang_var]["load"])
         
-        if not relics:
-            tk.Label(self.grid_frame, text=txt["no_illegal"] if self.show_illegal_only.get() else txt["no_relics"], background="#f8f8f8", font=("Arial", 12)).pack(pady=40)
+        txt_slot = UI_TEXT[self.lang_var]['slot']
+        self.char_selector.blockSignals(True)
+        self.char_selector.clear()
+        self.char_selector.addItems([f"{txt_slot} {i}: {c['name']}" for i, c in enumerate(self.data)])
+        self.char_selector.setCurrentIndex(0)
+        self.char_selector.blockSignals(False)
+        self.display_relics()
+
+    def display_relics(self):
+        # Clear current grid
+        while self.grid_layout.count():
+            item = self.grid_layout.takeAt(0)
+            if item.widget():
+                item.widget().deleteLater()
+
+        sel = self.char_selector.currentIndex()
+        if sel < 0 or not self.data: return
+        
+        all_relics = self.data[sel]['relics']
+        txt = UI_TEXT[self.lang_var]
+        if self.check_illegal.isChecked():
+            all_relics = [r for r in all_relics if r['legality']['status'] == "Illegal"]
+        
+        if not all_relics:
+            lbl = QLabel(txt["no_illegal"] if self.check_illegal.isChecked() else txt["no_relics"])
+            lbl.setFont(QFont("Segoe UI", 12))
+            lbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
+            self.grid_layout.addWidget(lbl, 0, 0, 1, 3)
             return
 
-        for i, r in enumerate(relics):
-            stat = r['legality']['status']
-            # Color Coding: Red = Illegal, Purple = Official, White/Gray = Legal Random Relic
-            colors = {"Illegal": ("#ffebee", "#f44336"), "Official": ("#f3e5f5", "#9c27b0")}.get(stat, ("white", "#e0e0e0"))
-            frame = tk.Frame(self.grid_frame, bg=colors[0], highlightbackground=colors[1], highlightthickness=2, padx=10, pady=10)
-            frame.grid(row=i//3, column=i%3, padx=10, pady=10, sticky="nsew")
-            
-            tk.Label(frame, text=self.get_n(r['id']), font=("Arial", 10, "bold"), bg=colors[0], wraplength=250, justify=tk.LEFT).pack(anchor="w")
-            tk.Label(frame, text=f"{txt['status']}: {stat}" + (f" ({r['legality']['reason']})" if stat == "Illegal" else ""), fg=colors[1], bg=colors[0], font=("Arial", 8, "italic"), wraplength=250, justify=tk.LEFT).pack(anchor="w")
-            tk.Frame(frame, height=1, bg="#bdbdbd").pack(fill=tk.X, pady=5)
-            
-            for idx, s in enumerate(r['slots']):
-                if s['pos'] > 0 or s['neg'] > 0:
-                    tk.Label(frame, text=f"[{idx+1}] {self.get_n(s['pos'])}\n    ↳ {self.get_n(s['neg'])}", bg=colors[0], font=("Arial", 8), justify=tk.LEFT, wraplength=250).pack(anchor="w", pady=2)
+        for i, r in enumerate(all_relics):
+            card = RelicCard(r, self)
+            self.grid_layout.addWidget(card, i // 3, i % 3)
 
 if __name__ == "__main__":
-    root = tk.Tk()
-    root.geometry("900x700")  # Set a nice default window size
-    app = RelicApp(root)
-    root.mainloop()
+    app = QApplication(sys.argv)
+    # Set app-wide font for better look
+    app.setFont(QFont("Segoe UI", 9))
+    window = RelicApp()
+    window.show()
+    sys.exit(app.exec())
