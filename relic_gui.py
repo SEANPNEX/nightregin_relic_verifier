@@ -59,6 +59,15 @@ UI_TEXT = {
     }
 }
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
 # --- BACKEND LOGIC ---
 class RelicLegalityChecker:
     def __init__(self, data_dir: str = "."):
@@ -69,8 +78,13 @@ class RelicLegalityChecker:
         self.lottery_pools = {}
         self.exclusivity_map = {}
         
+        # Resolve paths using resource_path
+        off_file = resource_path("official_relics.csv")
+        equip_file = resource_path("EquipParamAntique.csv")
+        table_file = resource_path("AttachEffectTableParam.csv")
+        param_file = resource_path("AttachEffectParam.csv")
+
         # Load official whitelist
-        off_file = os.path.join(data_dir, "official_relics.csv")
         if os.path.exists(off_file):
             try:
                 with open(off_file, 'r', encoding='utf-8') as f:
@@ -82,11 +96,10 @@ class RelicLegalityChecker:
                 print(f"[WARN] Failed to load official_relics.csv: {e}")
 
         # Load game parameters
-        files = ["EquipParamAntique.csv", "AttachEffectTableParam.csv", "AttachEffectParam.csv"]
-        if all(os.path.exists(os.path.join(data_dir, f)) for f in files):
+        if all(os.path.exists(f) for f in [equip_file, table_file, param_file]):
             try:
                 # Load EquipParamAntique
-                with open("EquipParamAntique.csv", 'r', encoding='utf-8') as f:
+                with open(equip_file, 'r', encoding='utf-8') as f:
                     reader = csv.DictReader(f)
                     for row in reader:
                         row = {k.strip(): v for k, v in row.items()}
@@ -105,7 +118,7 @@ class RelicLegalityChecker:
                         self.pool1_map.append(rule_with_id)
                 
                 # Load AttachEffectTableParam (Lottery Pools)
-                with open("AttachEffectTableParam.csv", 'r', encoding='utf-8') as f:
+                with open(table_file, 'r', encoding='utf-8') as f:
                     reader = csv.DictReader(f)
                     for row in reader:
                         tid = int(row['ID'])
@@ -114,7 +127,7 @@ class RelicLegalityChecker:
                         self.lottery_pools[tid].add(eid)
 
                 # Load AttachEffectParam (Exclusivity)
-                with open("AttachEffectParam.csv", 'r', encoding='utf-8') as f:
+                with open(param_file, 'r', encoding='utf-8') as f:
                     reader = csv.DictReader(f)
                     for row in reader:
                         eid = int(row['ID'])
@@ -378,7 +391,8 @@ class RelicApp(QMainWindow):
     def __init__(self):
         super().__init__()
         self.checker = RelicLegalityChecker()
-        self.dict = json.load(open('dictionary.json', 'r', encoding='utf-8')) if os.path.exists('dictionary.json') else {}
+        dict_path = resource_path('dictionary.json')
+        self.dict = json.load(open(dict_path, 'r', encoding='utf-8')) if os.path.exists(dict_path) else {}
         self.data = []
         self.lang_var = "zh"
         self.init_ui()

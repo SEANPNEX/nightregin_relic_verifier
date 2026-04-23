@@ -13,19 +13,22 @@ echo Installing dependencies...
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 
-:: 4. Run PyInstaller
-echo Building executable...
-pyinstaller --noconsole --onefile --name "NightreignRelicInspector" relic_gui.py
+:: 4. Run PyInstaller with Bundled Assets
+echo Building standalone executable...
+pyinstaller --noconsole --onefile --clean ^
+    --name "NightreignRelicInspector" ^
+    --add-data "dictionary.json;." ^
+    --add-data "official_relics.csv;." ^
+    --add-data "EquipParamAntique.csv;." ^
+    --add-data "AttachEffectTableParam.csv;." ^
+    --add-data "AttachEffectParam.csv;." ^
+    relic_gui.py
 
 :: 5. Instructions
 echo -------------------------------------------------------
 echo DONE! Your file is located in: dist\NightreignRelicInspector.exe
 echo.
-echo CRITICAL: Before running the app, copy these files into the 'dist\' folder:
-echo  - dictionary.json
-echo  - official_relics.csv
-echo  - EquipParamAntique.csv
-echo  - AttachEffectTableParam.csv
-echo  - AttachEffectParam.csv
+echo NOTE: All assets (CSV/JSON) are now bundled INSIDE the executable.
+echo You can move the .exe anywhere and it will work standalone.
 echo -------------------------------------------------------
 pause
