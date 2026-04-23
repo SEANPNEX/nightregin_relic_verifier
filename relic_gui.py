@@ -8,7 +8,11 @@ from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                              QLabel, QScrollArea, QFrame, QGridLayout, 
                              QFileDialog, QMessageBox, QRadioButton, QButtonGroup)
 from PyQt6.QtCore import Qt, QThread, pyqtSignal
-from PyQt6.QtGui import QFont, QPalette, QColor, QIcon
+from PyQt6.QtGui import QFont, QPalette, QColor, QIcon, QGuiApplication
+
+def is_dark_mode():
+    palette = QGuiApplication.palette()
+    return palette.color(QPalette.ColorRole.Window).lightness() < 128
 
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
@@ -39,10 +43,12 @@ UI_TEXT = {
         "title": "Nightreign Relic Legality Inspector",
         "load": "Load .sl2 Save",
         "show_illegal": "Show Illegal Only",
+        "show_official": "Show Official Only",
         "lang": "Lang:",
         "status": "Status",
         "no_relics": "No relics found.",
         "no_illegal": "No illegal relics found.",
+        "no_official": "No official relics found.",
         "slot": "Slot",
         "processing": "Processing..."
     },
@@ -50,10 +56,12 @@ UI_TEXT = {
         "title": "Nightreign 遗物合法性查询工具",
         "load": "加载 .sl2 存档",
         "show_illegal": "只显示不合法",
+        "show_official": "只显示官方预设",
         "lang": "语言:",
         "status": "状态",
         "no_relics": "未发现遗物。",
         "no_illegal": "未发现不合法遗物。",
+        "no_official": "未发现官方预设遗物。",
         "slot": "角色槽位",
         "processing": "正在处理..."
     }
@@ -324,10 +332,22 @@ class RelicCard(QFrame):
 
     def init_ui(self):
         stat = self.relic['legality']['status']
-        colors = {
-            "Illegal": ("#fff8f8", "#d32f2f"), 
-            "Official": ("#faf5ff", "#7b1fa2")
-        }.get(stat, ("#ffffff", "#e0e0e0"))
+        dark = is_dark_mode()
+        
+        # Adaptive color selection
+        if stat == "Illegal":
+            # Dark: Deep Red background, Bright Red border
+            # Light: Pale Pink background, Deep Red border
+            colors = ("#3d1313", "#ff4d4d") if dark else ("#fff8f8", "#d32f2f")
+        elif stat == "Official":
+            # Dark: Deep Purple background, Bright Purple border
+            # Light: Pale Purple background, Deep Purple border
+            colors = ("#20132a", "#bb86fc") if dark else ("#faf5ff", "#7b1fa2")
+        else:
+            # Legal/Standard
+            # Dark: Slate background, Gray border
+            # Light: White background, Light Gray border
+            colors = ("#1e1e1e", "#333333") if dark else ("#ffffff", "#e0e0e0")
 
         self.setFrameShape(QFrame.Shape.StyledPanel)
         self.setLineWidth(1)
@@ -336,10 +356,11 @@ class RelicCard(QFrame):
             RelicCard {{
                 background-color: {colors[0]};
                 border: 1px solid {colors[1]};
-                border-radius: 4px;
+                border-radius: 6px;
             }}
             QLabel {{
                 background-color: transparent;
+                color: { "#ffffff" if dark else "#000000" };
             }}
         """)
 
@@ -361,7 +382,16 @@ class RelicCard(QFrame):
         
         status_lbl = QLabel(stat_text)
         status_lbl.setFont(QFont("Segoe UI", 8, QFont.Weight.Normal, True))
-        status_lbl.setStyleSheet(f"color: {colors[1] if stat != 'Legal' else '#666666'};")
+        
+        # Adjust status color for visibility
+        if stat == "Illegal":
+            status_color = "#ff4d4d" if dark else "#d32f2f"
+        elif stat == "Official":
+            status_color = "#bb86fc" if dark else "#7b1fa2"
+        else:
+            status_color = "#aaaaaa" if dark else "#666666"
+            
+        status_lbl.setStyleSheet(f"color: {status_color};")
         status_lbl.setWordWrap(True)
         layout.addWidget(status_lbl)
 
@@ -369,7 +399,7 @@ class RelicCard(QFrame):
         line = QFrame()
         line.setFrameShape(QFrame.Shape.HLine)
         line.setFrameShadow(QFrame.Shadow.Plain)
-        line.setStyleSheet("color: #eeeeee;")
+        line.setStyleSheet(f"background-color: { '#333333' if dark else '#eeeeee' };")
         layout.addWidget(line)
 
         # Slot Info
@@ -384,6 +414,8 @@ class RelicCard(QFrame):
         slots_lbl.setFont(QFont("Segoe UI", 8))
         slots_lbl.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignLeft)
         slots_lbl.setWordWrap(True)
+        # Lighter gray for slots in dark mode
+        slots_lbl.setStyleSheet(f"color: { '#cccccc' if dark else '#333333' };")
         layout.addWidget(slots_lbl)
         layout.addStretch()
 
@@ -423,8 +455,12 @@ class RelicApp(QMainWindow):
         top_bar.addWidget(self.char_selector)
 
         self.check_illegal = QCheckBox()
-        self.check_illegal.toggled.connect(self.display_relics)
+        self.check_illegal.toggled.connect(self._on_illegal_toggled)
         top_bar.addWidget(self.check_illegal)
+
+        self.check_official = QCheckBox()
+        self.check_official.toggled.connect(self._on_official_toggled)
+        top_bar.addWidget(self.check_official)
 
         top_bar.addStretch()
 
@@ -447,10 +483,9 @@ class RelicApp(QMainWindow):
         # Scroll Area
         self.scroll = QScrollArea()
         self.scroll.setWidgetResizable(True)
-        self.scroll.setStyleSheet("QScrollArea { border: none; background-color: white; }")
+        self.scroll.setFrameShape(QFrame.Shape.NoFrame)
         
         self.grid_container = QWidget()
-        self.grid_container.setStyleSheet("background-color: white;")
         self.grid_layout = QGridLayout(self.grid_container)
         self.grid_layout.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignLeft)
         self.grid_layout.setSpacing(15)
@@ -465,12 +500,27 @@ class RelicApp(QMainWindow):
         self.setWindowTitle(txt["title"])
         self.btn_load.setText(txt["load"])
         self.check_illegal.setText(txt["show_illegal"])
+        self.check_official.setText(txt["show_official"])
         self.lbl_lang.setText(txt["lang"])
 
     def get_n(self, idx):
         if idx is None or idx <= 0: return "-"
         e = self.dict.get(str(idx), {})
         return e.get(self.lang_var, e.get('en', str(idx))) if isinstance(e, dict) else str(idx)
+
+    def _on_illegal_toggled(self, checked):
+        if checked:
+            self.check_official.blockSignals(True)
+            self.check_official.setChecked(False)
+            self.check_official.blockSignals(False)
+        self.display_relics()
+
+    def _on_official_toggled(self, checked):
+        if checked:
+            self.check_illegal.blockSignals(True)
+            self.check_illegal.setChecked(False)
+            self.check_illegal.blockSignals(False)
+        self.display_relics()
 
     def change_language(self, lang):
         if self.lang_var == lang: return
@@ -527,12 +577,21 @@ class RelicApp(QMainWindow):
         
         all_relics = self.data[sel]['relics']
         txt = UI_TEXT[self.lang_var]
+        
+        # Filtering
         if self.check_illegal.isChecked():
             all_relics = [r for r in all_relics if r['legality']['status'] == "Illegal"]
+            no_results_text = txt["no_illegal"]
+        elif self.check_official.isChecked():
+            all_relics = [r for r in all_relics if r['legality']['status'] == "Official"]
+            no_results_text = txt["no_official"]
+        else:
+            no_results_text = txt["no_relics"]
         
         if not all_relics:
-            lbl = QLabel(txt["no_illegal"] if self.check_illegal.isChecked() else txt["no_relics"])
+            lbl = QLabel(no_results_text)
             lbl.setFont(QFont("Segoe UI", 12))
+            lbl.setStyleSheet(f"color: { '#ffffff' if is_dark_mode() else '#000000' };")
             lbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
             self.grid_layout.addWidget(lbl, 0, 0, 1, 3)
             return
