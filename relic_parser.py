@@ -37,6 +37,7 @@ class RelicLegalityChecker:
         self.lottery_pools = {}
         self.exclusivity_map = {}
         self.compatibility_map = {}
+        self.enforce_order_check = True
         
         # Load translation dictionary for category/order detection
         dict_path = os.path.join(data_dir, "dictionary.json") if os.path.exists(os.path.join(data_dir, "dictionary.json")) else "dictionary.json"
@@ -223,6 +224,14 @@ class RelicLegalityChecker:
                 if g in seen: return {"status": "Illegal", "reason": "Exclusivity Conflict (Stacking duplicate effect types)"}
                 seen.add(g)
                 
+        # 4. Category Order Check (Excluding presets/saves if enforce_order_check is disabled)
+        if getattr(self, 'enforce_order_check', True):
+            cats = [self.get_effect_category(pid) for pid in pos_ids]
+            norm_cats = [1 if c == 0 else c for c in cats]
+            for idx in range(len(norm_cats) - 1):
+                if norm_cats[idx] > norm_cats[idx + 1]:
+                    return {"status": "Illegal", "reason": "Illegal (Negative effects are not in the correct game order)"}
+
         return {"status": "Legal", "reason": "Verified"}
 
     def get_effect_category(self, eid):
@@ -462,6 +471,7 @@ def read_int_le(data):
     return v - 0x100000000 if len(data) == 4 and (v & 0x80000000) else v
 
 def parse_save(file_path, checker):
+    checker.enforce_order_check = False
     with open(file_path, 'rb') as f:
         file_data = f.read()
     

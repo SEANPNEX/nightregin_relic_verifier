@@ -98,6 +98,27 @@ def run_tests():
             [7010700, 7031300, 7220000],
             [],
             "Illegal"
+        ),
+        (
+            "Test 12: Wrong order for first level classification (Should be Illegal)",
+            2010112,
+            [6610802, 6090000, 7043300],
+            [],
+            "Illegal"
+        ),
+        (
+            "Test 13: Wrong order for first level classification (Should be Illegal)",
+            2010112,
+            [6610802, 7043300, 6090000],
+            [],
+            "Illegal"
+        ),
+        (
+            "Test 14: Correct order for first level classification (Should be Legal)",
+            2010112,
+            [7043300, 7090000, 6610802],
+            [],
+            "Legal"
         )
     ]
 

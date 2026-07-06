@@ -259,6 +259,7 @@ def read_int_le(data):
     return v - 0x100000000 if len(data) == 4 and (v & 0x80000000) else v
 
 def parse_save(file_path, checker):
+    checker.enforce_order_check = False
     with open(file_path, 'rb') as f:
         file_data = f.read()
     
