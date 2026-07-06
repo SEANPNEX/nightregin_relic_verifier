@@ -14,8 +14,8 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 
 :: 4. Run PyInstaller with Bundled Assets and Icon
-echo Building Save File Inspector executable...
-pyinstaller --noconsole --onefile --clean ^
+echo Building standalone executable...
+pyinstaller --noconfirm --noconsole --onefile --clean ^
     --name "NightreignRelicInspector" ^
     --icon "fav.ico" ^
     --add-data "fav.ico;." ^
@@ -27,7 +27,7 @@ pyinstaller --noconsole --onefile --clean ^
     relic_gui.py
 
 echo Building Single Relic Simulator executable...
-pyinstaller --noconsole --onefile --clean ^
+pyinstaller --noconfirm --noconsole --onefile --clean ^
     --name "NightreignRelicSingle" ^
     --icon "fav.ico" ^
     --add-data "fav.ico;." ^
@@ -40,7 +40,7 @@ pyinstaller --noconsole --onefile --clean ^
 
 :: 5. Instructions
 echo -------------------------------------------------------
-echo DONE! Your files are located in: dist\
+echo DONE! Your files are located in dist\:
 echo  - dist\NightreignRelicInspector.exe
 echo  - dist\NightreignRelicSingle.exe
 echo.
