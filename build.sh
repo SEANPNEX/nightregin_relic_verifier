@@ -13,7 +13,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # 4. Run PyInstaller with Bundled Assets and Icon
-echo "Building standalone executable..."
+echo "Building Save File Inspector executable..."
 pyinstaller --noconsole --onefile --clean \
     --name "NightreignRelicInspector" \
     --icon "fav.ico" \
@@ -25,10 +25,24 @@ pyinstaller --noconsole --onefile --clean \
     --add-data "AttachEffectParam.csv:." \
     relic_gui.py
 
+echo "Building Single Relic Simulator executable..."
+pyinstaller --noconsole --onefile --clean \
+    --name "NightreignRelicSingle" \
+    --icon "fav.ico" \
+    --add-data "fav.ico:." \
+    --add-data "dictionary.json:." \
+    --add-data "official_relics.csv:." \
+    --add-data "EquipParamAntique.csv:." \
+    --add-data "AttachEffectTableParam.csv:." \
+    --add-data "AttachEffectParam.csv:." \
+    relic_single.py
+
 # 5. Instructions
 echo "-------------------------------------------------------"
-echo "DONE! Your file is located in: dist/NightreignRelicInspector"
+echo "DONE! Your files are located in dist/:"
+echo " - dist/NightreignRelicInspector"
+echo " - dist/NightreignRelicSingle"
 echo ""
-echo "NOTE: All assets and icon are now bundled INSIDE the executable."
-echo "You can move the binary anywhere and it will work standalone."
+echo "NOTE: All assets and icon are now bundled INSIDE the executables."
+echo "You can move the binaries anywhere and they will work standalone."
 echo "-------------------------------------------------------"
