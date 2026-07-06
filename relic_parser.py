@@ -39,8 +39,18 @@ class RelicLegalityChecker:
         self.compatibility_map = {}
         self.enforce_order_check = True
         
+        # Path resolver helper supporting PyInstaller _MEIPASS fallback
+        def get_path(filename):
+            p = os.path.join(data_dir, filename)
+            if not os.path.exists(p):
+                try:
+                    p = os.path.join(sys._MEIPASS, filename)
+                except Exception:
+                    pass
+            return p
+
         # Load translation dictionary for category/order detection
-        dict_path = os.path.join(data_dir, "dictionary.json") if os.path.exists(os.path.join(data_dir, "dictionary.json")) else "dictionary.json"
+        dict_path = get_path("dictionary.json")
         self.dictionary = {}
         if os.path.exists(dict_path):
             try:
@@ -50,7 +60,7 @@ class RelicLegalityChecker:
                 pass
 
         # Load Official Relics
-        off_file = os.path.join(data_dir, "official_relics.csv")
+        off_file = get_path("official_relics.csv")
         if os.path.exists(off_file):
             try:
                 with open(off_file, 'r', encoding='utf-8') as f:
@@ -62,9 +72,9 @@ class RelicLegalityChecker:
                 print(f"[WARN] Failed to load official_relics.csv: {e}")
 
         # Load Game Params
-        equip_file = os.path.join(data_dir, "EquipParamAntique.csv")
-        table_file = os.path.join(data_dir, "AttachEffectTableParam.csv")
-        param_file = os.path.join(data_dir, "AttachEffectParam.csv")
+        equip_file = get_path("EquipParamAntique.csv")
+        table_file = get_path("AttachEffectTableParam.csv")
+        param_file = get_path("AttachEffectParam.csv")
         
         if all(os.path.exists(f) for f in [equip_file, table_file, param_file]):
             try:

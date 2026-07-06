@@ -491,9 +491,24 @@ def main():
     
     args = parser.parse_args()
 
+    # Resolve dictionary.json path with PyInstaller fallback
+    dict_path = args.dict
+    if not os.path.exists(dict_path):
+        try:
+            dict_path = os.path.join(sys._MEIPASS, args.dict)
+        except Exception:
+            pass
+
+    dictionary = {}
+    if os.path.exists(dict_path):
+        try:
+            with open(dict_path, 'r', encoding='utf-8') as f:
+                dictionary = json.load(f)
+        except Exception:
+            pass
+
     # Load legality checker
     checker = RelicLegalityChecker(data_dir=args.data_dir)
-    dictionary = json.load(open(args.dict, 'r', encoding='utf-8')) if os.path.exists(args.dict) else {}
 
     if args.api:
         # Start API server
