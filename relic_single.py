@@ -180,8 +180,8 @@ class RelicSingleApp(QMainWindow):
             eff_ids.update(self.checker.exclusivity_map.keys())
         eff_ids.update(VALID_DEEP_DEBUFFS)
         
-        # Sort effect_items by category, then by ID
-        self.effect_items = sorted(list(eff_ids), key=lambda x: (self.checker.get_effect_category(x), x))
+        # Sort effect_items by sub_category (1-49 game order), then by ID
+        self.effect_items = sorted(list(eff_ids), key=lambda x: (self.checker.get_effect_sub_category(x), x))
 
     def init_ui(self):
         self.resize(700, 390)

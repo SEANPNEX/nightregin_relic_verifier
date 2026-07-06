@@ -231,6 +231,199 @@ class RelicLegalityChecker:
             return e["category"]
         return self._classify_inline(eid)
 
+    def get_effect_sub_category(self, eid):
+        e = self.dictionary.get(str(eid)) if hasattr(self, 'dictionary') and self.dictionary else None
+        if e and "sub_category" in e:
+            return e["sub_category"]
+        return self._classify_sub_inline(eid)
+
+    def _classify_sub_inline(self, eid):
+        e = self.dictionary.get(str(eid), {}) if hasattr(self, 'dictionary') and self.dictionary else {}
+        en = e.get('en', '')
+        zh = e.get('zh', '')
+        
+        char_en = ['[Revenant]', '[Recluse]', '[Wylder]', '[Ironeye]', '[Duchess]', '[Executor]', '[Guardian]', '[Raider]']
+        char_zh = ['【复仇者】', '【隐士】', '【追踪者】', '【铁之眼】', '【女爵】', '【守护者】', '【执行者】', '【学者】', '【无赖】', '【送葬者】']
+        if any(x in en for x in char_en) or any(x in zh for x in char_zh) or eid == 7220000:
+            return 1
+
+        if eid < 7000000 or eid > 7400000:
+            return 999
+
+        # 3武器
+        if 7080000 <= eid <= 7082300:
+            return 2
+        if 7082500 <= eid <= 7082600:
+            return 3
+        if 7082700 <= eid <= 7082900:
+            return 4
+
+        # Weapon specific Attack Power
+        if '提升' in zh and '攻击力' in zh and any(w in zh for w in ['短剑', '直剑', '大剑', '特大剑', '曲剑', '大曲剑', '刀', '双头剑', '刺剑', '重刺剑', '斧', '大斧', '槌', '大槌', '连枷', '矛', '大矛', '戟', '镰刀', '拳套', '钩爪', '软鞭', '特大型武器', '弓']):
+            return 6
+        if 7330000 <= eid <= 7339900:
+            return 6
+
+        # Weapon specific HP recovery
+        if ('攻击' in zh or '命中' in zh) and ('恢复HP' in zh or '恢复血量' in zh or '部分恢复' in zh) and any(w in zh for w in ['短剑', '直剑', '大剑', '特大剑', '曲剑', '大曲剑', '刀', '双头剑', '刺剑', '重刺剑', '斧', '大斧', '槌', '大槌', '连枷', '矛', '大矛', '戟', '镰刀', '拳套', '钩爪', '软鞭', '特大型武器', '弓']):
+            return 7
+        if 7340000 <= eid <= 7349900:
+            return 7
+
+        # Weapon specific FP recovery
+        if ('攻击' in zh or '命中' in zh) and ('恢复专注' in zh or '恢复蓝' in zh) and any(w in zh for w in ['短剑', '直剑', '大剑', '特大剑', '曲剑', '大曲剑', '刀', '双头剑', '刺剑', '重刺剑', '斧', '大斧', '槌', '大槌', '连枷', '矛', '大矛', '戟', '镰刀', '拳套', '钩爪', '软鞭', '特大型武器', '弓']):
+            return 8
+        if 7350000 <= eid <= 7359900:
+            return 8
+
+        # Recover HP on hit general
+        if eid in (7005600, 7001100, 7030200, 7036100, 7090300):
+            return 5
+
+        # Hands/Stance
+        if eid in (7006000, 7006001):
+            return 10
+        if eid in (7006100, 7006101):
+            return 11
+
+        # Item heal allies
+        if eid == 7010200:
+            return 12
+
+        # Low health heal / defense
+        if eid in (7012200, 7012300):
+            return 13
+
+        # Aggressive/Defensive
+        if eid == 7030600:
+            return 14
+        if eid == 7030000 or eid == 7030700:
+            return 15
+        if eid == 7030800:
+            return 16
+
+        # Grease
+        if eid == 7030900:
+            return 17
+
+        # Receive attack
+        if eid == 7032200:
+            return 18
+
+        # Critical recovery stamina
+        if eid == 7035100:
+            return 19
+
+        # Enhance light/critical/throwables
+        if 7040000 <= eid <= 7043100:
+            return 20
+
+        # Spells
+        if 7043200 <= eid <= 7043800:
+            return 21
+        if 7044000 <= eid <= 7044600:
+            return 22
+
+        # Ally buffs
+        if eid == 7050000:
+            return 23
+        if eid == 7050100:
+            return 24
+
+        # Rise/Invader
+        if eid == 7060000:
+            return 25
+        if eid == 7060100:
+            return 26
+        if eid == 7060200:
+            return 27
+
+        # Treasure / discovery
+        if eid == 7070000 or '潜在能力' in zh or 'DormantPower' in en:
+            return 28
+
+        # Kill rewards
+        if eid == 7090000:
+            return 29
+        if eid == 7090100:
+            return 30
+
+        # Attack recovery stamina
+        if 7100100 <= eid <= 7100110:
+            return 31
+
+        # Runes
+        if eid == 7110000:
+            return 32
+
+        # Spawn with items & skills
+        if 7120000 <= eid <= 7126002:
+            return 34
+
+        # Spawn with skills (incant/magic overrides)
+        if 7360000 <= eid <= 7379900:
+            return 35
+        if '改为' in zh:
+            return 35
+
+        # Counter counter
+        if eid == 7150000:
+            return 36
+
+        # Pierce counter
+        if eid == 7160000:
+            return 37
+
+        # Shop discount
+        if 7230000 <= eid <= 7230001:
+            return 38
+
+        # Poise/Reduction on hit
+        if eid == 7240000:
+            return 39
+
+        # Status attack power
+        if eid == 7037700 or (7260000 <= eid <= 7269900):
+            return 40
+
+        # Runes on critical
+        if eid == 7031900:
+            return 41
+
+        # Attributes (Vigor/Mind/Endurance)
+        if 7000000 <= eid <= 7000290:
+            return 42
+
+        # Attributes (Strength/Dex/Int/Faith/Arcane)
+        if 7000300 <= eid <= 7000702:
+            return 43
+
+        # Cooldowns
+        if 7000800 <= eid <= 7000802:
+            return 44
+
+        # Ultimate
+        if 7000900 <= eid <= 7000902:
+            return 45
+
+        # Poise
+        if 7001000 <= eid <= 7001002:
+            return 46
+
+        # Elements AP
+        if 7001400 <= eid <= 7001802:
+            return 47
+
+        # Elements Def
+        if 7002600 <= eid <= 7002900:
+            return 48
+
+        # Resistances
+        if 7003000 <= eid <= 7003600:
+            return 49
+
+        return 999
+
     def _classify_inline(self, eid):
         e = self.dictionary.get(str(eid), {}) if hasattr(self, 'dictionary') and self.dictionary else {}
         en = e.get('en', '')
