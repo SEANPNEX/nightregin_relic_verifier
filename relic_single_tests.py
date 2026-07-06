@@ -53,7 +53,7 @@ def run_tests():
         (
             "Test 5: Deep Relic with Valid Deep Curse (Should be Legal)",
             2000000, 
-            [7005600], 
+            [7000090], 
             [8760000],  # Valid deep relic curse
             "Legal"
         ),
@@ -102,28 +102,28 @@ def run_tests():
         (
             "Test 12: Wrong order for first level classification (Should be Illegal)",
             2010112,
-            [6610802, 6090000, 7043300],
+            [7001402, 7090000, 7043300],
             [],
             "Illegal"
         ),
         (
             "Test 13: Wrong order for first level classification (Should be Illegal)",
             2010112,
-            [6610802, 7043300, 6090000],
+            [7001402, 7043300, 7090000],
             [],
             "Illegal"
         ),
         (
             "Test 14: Correct order for first level classification (Should be Legal)",
             2010112,
-            [7043300, 7090000, 6610802],
+            [7043300, 7090000, 7001402],
             [],
             "Legal"
         ),
         (
             "Test 15: Wrong order for first level classification",
             2010112,
-            [6647500, 6001401, 7000090],
+            [7002600, 7001402, 7000000],
             [],
             "Illegal"
         ),
@@ -136,15 +136,15 @@ def run_tests():
         ),
         (
             "Test 17: Deep Relic with valid Curse (Should be Legal)",
-            2000000,
-            [7005600],
-            [8760000],
+            2010112,
+            [7000090, 7002600],
+            [8760000, -1],
             "Legal"
         ),
         (
             "Test 18: Deep Relic with duplicate Curses (Should be Illegal)",
             2000000,
-            [7005600],
+            [7000090, 7000090],
             [8760000, 8760000],
             "Illegal"
         ),
@@ -160,6 +160,13 @@ def run_tests():
             2000000,
             [7000000],
             [8760000],
+            "Illegal"
+        ),
+        (
+            "Test 21: Paired Buff without Curse (Should be Illegal)",
+            2000000,
+            [7000090],
+            [],
             "Illegal"
         )
     ]
