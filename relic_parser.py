@@ -226,6 +226,15 @@ class RelicLegalityChecker:
         return {"status": "Legal", "reason": "Verified"}
 
     def get_effect_category(self, eid):
+        sub = self.get_effect_sub_category(eid)
+        if sub == 1: return 0
+        if sub in (2, 3, 4, 6, 7, 8, 20, 21, 22, 35): return 1
+        if sub in (5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 34, 36, 37, 38, 39, 40, 41): return 2
+        if sub in (42, 43): return 3
+        if sub in (44, 45): return 4
+        if sub == 47: return 5
+        if sub in (46, 48, 49): return 6
+
         e = self.dictionary.get(str(eid)) if hasattr(self, 'dictionary') and self.dictionary else None
         if e and "category" in e:
             return e["category"]
@@ -233,7 +242,7 @@ class RelicLegalityChecker:
 
     def get_effect_sub_category(self, eid):
         e = self.dictionary.get(str(eid)) if hasattr(self, 'dictionary') and self.dictionary else None
-        if e and "sub_category" in e:
+        if e and "sub_category" in e and e["sub_category"] != 999:
             return e["sub_category"]
         return self._classify_sub_inline(eid)
 
@@ -243,9 +252,18 @@ class RelicLegalityChecker:
         zh = e.get('zh', '')
         
         char_en = ['[Revenant]', '[Recluse]', '[Wylder]', '[Ironeye]', '[Duchess]', '[Executor]', '[Guardian]', '[Raider]']
-        char_zh = ['【复仇者】', '【隐士】', '【追踪者】', '【铁之眼】', '【女爵】', '【守护者】', '【执行者】', '【学者】', '【无赖】', '【送葬者】']
-        if any(x in en for x in char_en) or any(x in zh for x in char_zh) or eid == 7220000:
+        char_zh = ['【复仇者】', '【隐士】', '【追踪者】', '【铁之眼】', '【女爵】', '【学者】', '【无赖】', '【送葬者】']
+        if any(x in en for x in char_en) or any(x in zh for x in char_zh) or eid in (7220000, 6220000):
             return 1
+
+        eid_str = str(eid)
+        if eid_str.startswith('661') and len(eid_str) == 7:
+            return 47
+        if eid_str.startswith('663') and len(eid_str) == 7:
+            return 28
+
+        if eid_str.startswith('6') and len(eid_str) == 7:
+            eid = int('7' + eid_str[1:])
 
         if eid < 7000000 or eid > 7400000:
             return 999

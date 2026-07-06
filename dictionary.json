@@ -10023,139 +10023,139 @@
     "en": "CharacterSkillCooldownReductionPlus4",
     "zh": "缩短技艺的冷却时间＋４",
     "category": 4,
-    "sub_category": 999
+    "sub_category": 44
   },
   "6000801": {
     "en": "CharacterSkillCooldownReductionPlus5",
     "zh": "缩短技艺的冷却时间＋５",
     "category": 4,
-    "sub_category": 999
+    "sub_category": 44
   },
   "6000900": {
     "en": "UltimateArtAutoChargePlus",
     "zh": "加快累积绝招量表＋４",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 45
   },
   "6000901": {
     "en": "UltimateArtAutoChargePlus",
     "zh": "加快累积绝招量表＋５",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 45
   },
   "6001000": {
     "en": "PoisePlus4",
     "zh": "强韧度＋４",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 46
   },
   "6001001": {
     "en": "PoisePlus5",
     "zh": "强韧度＋５",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 46
   },
   "6001400": {
     "en": "PhysicalAttackUpPlus3",
     "zh": "提升物理攻击力＋４",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6001401": {
     "en": "PhysicalAttackUpPlus4",
     "zh": "提升物理攻击力＋４",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6001500": {
     "en": "MagicAttackPowerUpPlus3",
     "zh": "提升魔力属性攻击力＋３",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6001501": {
     "en": "MagicAttackPowerUpPlus4",
     "zh": "提升魔力属性攻击力＋４",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6001600": {
     "en": "FireAttackPowerUpPlus3",
     "zh": "提升火属性攻击力＋３",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6001601": {
     "en": "FireAttackPowerUpPlus4",
     "zh": "提升火属性攻击力＋４",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6001700": {
     "en": "LightningAttackPowerUpPlus3",
     "zh": "提升雷属性攻击力＋３",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6001701": {
     "en": "LightningAttackPowerUpPlus4",
     "zh": "提升雷属性攻击力＋４",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6001800": {
     "en": "HolyAttackPowerUpPlus3",
     "zh": "提升圣属性攻击力＋３",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6001801": {
     "en": "HolyAttackPowerUpPlus4",
     "zh": "提升圣属性攻击力＋４",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6002600": {
     "en": "ImprovedMagicDamageNegationPlus1",
     "zh": "提升魔力属性减伤率＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 48
   },
   "6002601": {
     "en": "ImprovedMagicDamageNegationPlus2",
     "zh": "提升魔力属性减伤率＋２",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 48
   },
   "6002700": {
     "en": "ImprovedFireDamageNegationPlus1",
     "zh": "提升火属性减伤率＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 48
   },
   "6002701": {
     "en": "ImprovedFireDamageNegationPlus2",
     "zh": "提升火属性减伤率＋２",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 48
   },
   "6002800": {
     "en": "ImprovedLightningDamageNegationPlus1",
     "zh": "提升雷属性减伤率＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 48
   },
   "6002801": {
     "en": "ImprovedLightningDamageNegationPlus2",
     "zh": "提升雷属性减伤率＋２",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 48
   },
   "6002900": {
     "en": "ImprovedHolyDamageNegationPlus1",
     "zh": "提升圣属性减伤率＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 48
   },
   "6002901": {
     "en": "ImprovedHolyDamageNegationPlus2",
@@ -10167,79 +10167,79 @@
     "en": "ImprovedPoisonResistancePlus1",
     "zh": "提升对中毒的抵抗力＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003001": {
     "en": "ImprovedPoisonResistancePlus2",
     "zh": "提升对中毒的抵抗力＋２",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003100": {
     "en": "ImprovedBloodLossResistancePlus1",
     "zh": "提升对出血的抵抗力＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003101": {
     "en": "ImprovedBloodLossResistancePlus2",
     "zh": "提升对出血的抵抗力＋２",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003200": {
     "en": "ImprovedSleepResistancePlus1",
     "zh": "提升对催眠的抵抗力＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003201": {
     "en": "ImprovedSleepResistancePlus2",
     "zh": "提升对催眠的抵抗力＋２",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003300": {
     "en": "ImprovedDeathBlightResistancePlus1",
     "zh": "提升对骤死的抵抗力＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003301": {
     "en": "ImprovedDeathBlightResistancePlus2",
     "zh": "提升对骤死的抵抗力＋２",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003400": {
     "en": "ImprovedRotResistancePlus1",
     "zh": "提升对腐败的抵抗力＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003401": {
     "en": "ImprovedRotResistancePlus2",
     "zh": "提升对腐败的抵抗力＋２",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003500": {
     "en": "ImprovedFrostResistancePlus1",
     "zh": "提升对冻伤的抵抗力＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003501": {
     "en": "ImprovedFrostResistancePlus2",
     "zh": "提升对冻伤的抵抗力＋２",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003600": {
     "en": "ImprovedMadnessResistancePlus1",
     "zh": "提升对发狂的抵抗力＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 49
   },
   "6003601": {
     "en": "ImprovedMadnessResistancePlus2",
@@ -10251,7 +10251,7 @@
     "en": "PartialHPRestorationuponPostDamageAttacksPlus1",
     "zh": "受到损伤的当下，能通过攻击恢复部分血量＋１",
     "category": 3,
-    "sub_category": 999
+    "sub_category": 5
   },
   "6005601": {
     "en": "PartialHPRestorationuponPostDamageAttacksPlus2",
@@ -10263,31 +10263,31 @@
     "en": "ImprovedStanceBreakingwhenTwoHandingPlus1",
     "zh": "提升双手共持时，造成失去平衡的能力＋１",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 10
   },
   "6006001": {
     "en": "ImprovedStanceBreakingwhenTwoHandingPlus2",
     "zh": "提升双手共持时，造成失去平衡的能力＋２",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 10
   },
   "6006100": {
     "en": "ImprovedStanceBreakingwhenWieldingTwoArmamentsPlus1",
     "zh": "提升双手各持时，造成失去平衡的能力＋１",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 11
   },
   "6006101": {
     "en": "ImprovedStanceBreakingwhenWieldingTwoArmamentsPlus2",
     "zh": "提升双手各持时，造成失去平衡的能力＋２",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 11
   },
   "6012300": {
     "en": "ImprovedDamageNegationatLowHPPlus1",
     "zh": "血量偏低时，提升减伤率＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 13
   },
   "6012301": {
     "en": "ImprovedDamageNegationatLowHPPlus2",
@@ -10299,7 +10299,7 @@
     "en": "HPrestoredwhenusingmedicinalbolusesetcPlus1",
     "zh": "食用苔药等等道具时，能恢复血量＋１",
     "category": 3,
-    "sub_category": 999
+    "sub_category": 5
   },
   "6030201": {
     "en": "HPrestoredwhenusingmedicinalbolusesetcPlus2",
@@ -10311,7 +10311,7 @@
     "en": "ArtgaugechargedfromsuccessfulguardingPlus1",
     "zh": "防御成功时，能累积绝招量表＋１",
     "category": 4,
-    "sub_category": 999
+    "sub_category": 14
   },
   "6030601": {
     "en": "ArtgaugechargedfromsuccessfulguardingPlus2",
@@ -10323,7 +10323,7 @@
     "en": "ArtgaugefillsmoderatelyuponcriticalhitPlus1",
     "zh": "使出致命一击时，加快累积绝招量表＋１",
     "category": 4,
-    "sub_category": 999
+    "sub_category": 16
   },
   "6030801": {
     "en": "ArtgaugefillsmoderatelyuponcriticalhitPlus2",
@@ -10335,7 +10335,7 @@
     "en": "PhysicalattackpowerincreasesafterusinggreaseitemsPlus1",
     "zh": "涂抹油脂类道具时，能额外提升物理攻击力＋１",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 17
   },
   "6030901": {
     "en": "PhysicalattackpowerincreasesafterusinggreaseitemsPlus2",
@@ -10347,7 +10347,7 @@
     "en": "CriticalHitsEarnRunesPlus1",
     "zh": "使出致命一击时，能获得卢恩＋１",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 41
   },
   "6031901": {
     "en": "CriticalHitsEarnRunesPlus2",
@@ -10359,7 +10359,7 @@
     "en": "TakingattacksimprovesattackpowerPlus1",
     "zh": "受到攻击时，能提升攻击力＋１",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 18
   },
   "6032201": {
     "en": "TakingattacksimprovesattackpowerPlus2",
@@ -10371,7 +10371,7 @@
     "en": "CriticalHitBoostsStaminaRecoverySpeedPlus1",
     "zh": "使出致命一击时，能提升精力的恢复速度＋１",
     "category": 3,
-    "sub_category": 999
+    "sub_category": 19
   },
   "6035101": {
     "en": "CriticalHitBoostsStaminaRecoverySpeedPlus2",
@@ -10383,79 +10383,79 @@
     "en": "ImprovedInitialStandardAttackPlus1",
     "zh": "强化轻攻击的第一记攻击＋１",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 20
   },
   "6040001": {
     "en": "ImprovedInitialStandardAttackPlus2",
     "zh": "强化轻攻击的第一记攻击＋２",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 20
   },
   "6040100": {
     "en": "ImprovedGuardCountersPlus1",
     "zh": "强化防御反击＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 20
   },
   "6040101": {
     "en": "ImprovedGuardCountersPlus2",
     "zh": "强化防御反击＋２",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 20
   },
   "6040300": {
     "en": "ImprovedThrowingPotDamagePlus1",
     "zh": "提升投掷壶的攻击力＋１",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 20
   },
   "6040301": {
     "en": "ImprovedThrowingPotDamagePlus2",
     "zh": "提升投掷壶的攻击力＋２",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 20
   },
   "6040400": {
     "en": "ImprovedThrowingKnifeDamagePlus1",
     "zh": "提升投掷小刀的攻击力＋１",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 6
   },
   "6040401": {
     "en": "ImprovedThrowingKnifeDamagePlus2",
     "zh": "提升投掷小刀的攻击力＋２",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 6
   },
   "6040500": {
     "en": "ImprovedGlintstoneandGravityStoneDamagePlus1",
     "zh": "提升使用辉石、重力石道具的攻击力＋１",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 20
   },
   "6040501": {
     "en": "ImprovedGlintstoneandGravityStoneDamagePlus2",
     "zh": "提升使用辉石、重力石道具的攻击力＋２",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 20
   },
   "6043000": {
     "en": "ImprovedRoarAndBreathAttacksPlus1",
     "zh": "强化咆哮与吐息＋１",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 20
   },
   "6043001": {
     "en": "ImprovedRoarAndBreathAttacksPlus2",
     "zh": "强化咆哮与吐息＋２",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 20
   },
   "6043100": {
     "en": "ImprovedPerfumingArtsPlus1",
     "zh": "强化调香术＋１",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 20
   },
   "6043101": {
     "en": "ImprovedPerfumingArtsPlus2",
@@ -10491,7 +10491,7 @@
     "en": "DefeatingenemiesfillsmoreoftheArtgaugePlus1",
     "zh": "提升打倒敌人时，绝招量表的累积量＋１",
     "category": 4,
-    "sub_category": 999
+    "sub_category": 29
   },
   "6090001": {
     "en": "DefeatingenemiesfillsmoreoftheArtgaugePlus2",
@@ -10503,7 +10503,7 @@
     "en": "HPRestorationuponThrustingCounterattackPlus1",
     "zh": "突刺反击成功时，能恢复血量＋１",
     "category": 3,
-    "sub_category": 999
+    "sub_category": 37
   },
   "6160001": {
     "en": "HPRestorationuponThrustingCounterattackPlus2",
@@ -10515,37 +10515,37 @@
     "en": "AttackpowerupwhenfacingpoisonafflictedenemyPlus1",
     "zh": "对陷入中毒的敌人，能强化攻击＋１",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 40
   },
   "6260001": {
     "en": "AttackpowerupwhenfacingpoisonafflictedenemyPlus2",
     "zh": "对陷入中毒的敌人，能强化攻击＋２",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 40
   },
   "6260300": {
     "en": "AttackpowerupwhenfacingscarletrotafflictedenemyPlus1",
     "zh": "对陷入猩红腐败的敌人，能强化攻击＋１",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 40
   },
   "6260301": {
     "en": "AttackpowerupwhenfacingscarletrotafflictedenemyPlus2",
     "zh": "对陷入猩红腐败的敌人，能强化攻击＋２",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 40
   },
   "6260400": {
     "en": "AttackpowerupwhenfacingfrostbiteafflictedenemyPlus1",
     "zh": "对陷入冻伤的敌人，能强化攻击＋１",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 40
   },
   "6260401": {
     "en": "AttackpowerupwhenfacingfrostbiteafflictedenemyPlus2",
     "zh": "对陷入冻伤的敌人，能强化攻击＋２",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 40
   },
   "6500000": {
     "en": "WylderCharacterSkillinflictsBloodLoss",
@@ -10635,25 +10635,25 @@
     "en": "IncreasedMaximumHP",
     "zh": "提升血量上限",
     "category": 3,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6610500": {
     "en": "IncreasedMaximumFP",
     "zh": "提升专注值上限",
     "category": 3,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6610600": {
     "en": "IncreasedMaximumStamina",
     "zh": "提升精力上限",
     "category": 3,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6610700": {
     "en": "ReducedFPConsumption",
     "zh": "减少专注值消耗",
     "category": 3,
-    "sub_category": 999
+    "sub_category": 47
   },
   "8010101": {
     "en": "ReducedFPConsumption",
@@ -10665,55 +10665,55 @@
     "en": "ReducedFPConsumptionPlus1",
     "zh": "减少专注值消耗＋１",
     "category": 3,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6610702": {
     "en": "ReducedFPConsumptionPlus2",
     "zh": "减少专注值消耗＋２",
     "category": 3,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6610800": {
     "en": "ImprovedAffinityAttackPower",
     "zh": "提升属性攻击力",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6610801": {
     "en": "ImprovedAffinityAttackPowerPlus1",
     "zh": "提升属性攻击力＋１",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6610802": {
     "en": "ImprovedAffinityAttackPowerPlus2",
     "zh": "提升属性攻击力＋２",
     "category": 5,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6611000": {
     "en": "ImprovedPhysicalDamageNegation",
     "zh": "提升物理减伤率",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6611001": {
     "en": "ImprovedPhysicalDamageNegationPlus1",
     "zh": "提升物理减伤率＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6611002": {
     "en": "ImprovedPhysicalDamageNegationPlus2",
     "zh": "提升物理减伤率＋２",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6611100": {
     "en": "ImprovedAffinityDamageNegation",
     "zh": "提升属性减伤率",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 47
   },
   "7006300": {
     "en": "ImprovedAffinityDamageNegation",
@@ -10725,55 +10725,55 @@
     "en": "ImprovedAffinityDamageNegationPlus1",
     "zh": "提升属性减伤率＋１",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6611102": {
     "en": "ImprovedAffinityDamageNegationPlus2",
     "zh": "提升属性减伤率＋２",
     "category": 6,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6611200": {
     "en": "ImprovedSorceries",
     "zh": "强化魔法",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6611201": {
     "en": "ImprovedSorceriesPlus1",
     "zh": "强化魔法＋１",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6611202": {
     "en": "ImprovedSorceriesPlus2",
     "zh": "强化魔法＋２",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6611300": {
     "en": "ImprovedIncantations",
     "zh": "强化祷告",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6611301": {
     "en": "ImprovedIncantationsPlus1",
     "zh": "强化祷告＋１",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6611302": {
     "en": "ImprovedIncantationsPlus2",
     "zh": "强化祷告＋２",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 47
   },
   "6611400": {
     "en": "ImprovedFlaskHPRestoration",
     "zh": "提升圣杯瓶恢复量",
     "category": 3,
-    "sub_category": 999
+    "sub_category": 47
   },
   "8440001": {
     "en": "ImprovedFlaskHPRestoration",
@@ -10959,199 +10959,199 @@
     "en": "DormantPowerHelpsDiscoverDaggers",
     "zh": "通过潜在能力，能比较容易找到短剑",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6630100": {
     "en": "DormantPowerHelpsDiscoverStraightSwords",
     "zh": "通过潜在能力，能比较容易找到直剑",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6630200": {
     "en": "DormantPowerHelpsDiscoverGreatswords",
     "zh": "通过潜在能力，能比较容易找到大剑",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6630300": {
     "en": "DormantPowerHelpsDiscoverColossalSwords",
     "zh": "通过潜在能力，能比较容易找到特大剑",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6630400": {
     "en": "DormantPowerHelpsDiscoverCurvedSwords",
     "zh": "通过潜在能力，能比较容易找到曲剑",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6630500": {
     "en": "DormantPowerHelpsDiscoverCurvedGreatswords",
     "zh": "通过潜在能力，能比较容易找到大曲剑",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6630600": {
     "en": "DormantPowerHelpsDiscoverKatana",
     "zh": "通过潜在能力，能比较容易找到刀",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6630700": {
     "en": "DormantPowerHelpsDiscoverTwinblades",
     "zh": "通过潜在能力，能比较容易找到双头剑",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6630800": {
     "en": "DormantPowerHelpsDiscoverThrustingSwords",
     "zh": "通过潜在能力，能比较容易找到刺剑",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6630900": {
     "en": "DormantPowerHelpsDiscoverHeavyThrustingSwords",
     "zh": "通过潜在能力，能比较容易找到重刺剑",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6631000": {
     "en": "DormantPowerHelpsDiscoverAxes",
     "zh": "通过潜在能力，能比较容易找到斧",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6631100": {
     "en": "DormantPowerHelpsDiscoverGreataxes",
     "zh": "通过潜在能力，能比较容易找到大斧",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6631200": {
     "en": "DormantPowerHelpsDiscoverHammers",
     "zh": "通过潜在能力，能比较容易找到槌",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6631300": {
     "en": "DormantPowerHelpsDiscoverGreatHammers",
     "zh": "通过潜在能力，能比较容易找到大槌",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6631400": {
     "en": "DormantPowerHelpsDiscoverFlails",
     "zh": "通过潜在能力，能比较容易找到连枷",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6631500": {
     "en": "DormantPowerHelpsDiscoverSpears",
     "zh": "通过潜在能力，能比较容易找到矛",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6631600": {
     "en": "DormantPowerHelpsDiscoverGreatSpears",
     "zh": "通过潜在能力，能比较容易找到大矛",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6631700": {
     "en": "DormantPowerHelpsDiscoverHalberds",
     "zh": "通过潜在能力，能比较容易找到戟",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6631800": {
     "en": "DormantPowerHelpsDiscoverReapers",
     "zh": "通过潜在能力，能比较容易找到镰刀",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6631900": {
     "en": "DormantPowerHelpsDiscoverFists",
     "zh": "通过潜在能力，能比较容易找到拳头",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6632000": {
     "en": "DormantPowerHelpsDiscoverClaws",
     "zh": "通过潜在能力，能比较容易找到钩爪",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6632100": {
     "en": "DormantPowerHelpsDiscoverWhips",
     "zh": "通过潜在能力，能比较容易找到软鞭",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6632200": {
     "en": "DormantPowerHelpsDiscoverColossalWeapons",
     "zh": "通过潜在能力，能比较容易找到特大武器",
     "category": 1,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6632300": {
     "en": "DormantPowerHelpsDiscoverBows",
     "zh": "通过潜在能力，能比较容易找到弓",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6632400": {
     "en": "DormantPowerHelpsDiscoverGreatbows",
     "zh": "通过潜在能力，能比较容易找到大弓",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6632500": {
     "en": "DormantPowerHelpsDiscoverCrossbows",
     "zh": "通过潜在能力，能比较容易找到弩",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6632600": {
     "en": "DormantPowerHelpsDiscoverBallistas",
     "zh": "通过潜在能力，能比较容易找到弩炮",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6632700": {
     "en": "DormantPowerHelpsDiscoverSmallShields",
     "zh": "通过潜在能力，能比较容易找到小盾",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6632800": {
     "en": "DormantPowerHelpsDiscoverMediumShields",
     "zh": "通过潜在能力，能比较容易找到中盾",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6632900": {
     "en": "DormantPowerHelpsDiscoverGreatshields",
     "zh": "通过潜在能力，能比较容易找到大盾",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6633000": {
     "en": "DormantPowerHelpsDiscoverStaves",
     "zh": "通过潜在能力，能比较容易找到手杖",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6633100": {
     "en": "DormantPowerHelpsDiscoverSacredSeals",
     "zh": "通过潜在能力，能比较容易找到圣印记",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6633200": {
     "en": "DormantPowerHelpsDiscoverTorches",
     "zh": "通过潜在能力，能比较容易找到火把",
     "category": 2,
-    "sub_category": 999
+    "sub_category": 28
   },
   "6640000": {
     "en": "WylderImprovedMindReducedVigor",

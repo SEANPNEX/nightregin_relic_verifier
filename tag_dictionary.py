@@ -39,8 +39,17 @@ def tag_dictionary():
 
         char_en = ['[Revenant]', '[Recluse]', '[Wylder]', '[Ironeye]', '[Duchess]', '[Executor]', '[Guardian]', '[Raider]']
         char_zh = ['【复仇者】', '【隐士】', '【追踪者】', '【铁之眼】', '【女爵】', '【守护者】', '【执行者】', '【学者】', '【无赖】', '【送葬者】']
-        if any(x in en for x in char_en) or any(x in zh for x in char_zh) or k == 7220000:
+        if any(x in en for x in char_en) or any(x in zh for x in char_zh) or k == 7220000 or k == 6220000:
             return 1
+
+        k_str = str(k)
+        if k_str.startswith('661') and len(k_str) == 7:
+            return 47
+        if k_str.startswith('663') and len(k_str) == 7:
+            return 28
+
+        if k_str.startswith('6') and len(k_str) == 7:
+            k = int('7' + k_str[1:])
 
         if k < 7000000 or k > 7400000:
             return 999
