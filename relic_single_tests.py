@@ -119,6 +119,34 @@ def run_tests():
             [7043300, 7090000, 6610802],
             [],
             "Legal"
+        ),
+        (
+            "Test 15: Wrong order for first level classification",
+            2010112,
+            [6647500, 6001401, 7000090],
+            [],
+            "Illegal"
+        ),
+        (
+            "Test 16: Standard Relic with Curses (Should be Illegal)",
+            100,
+            [7000000],
+            [8760000],
+            "Illegal"
+        ),
+        (
+            "Test 17: Deep Relic with valid Curse (Should be Legal)",
+            2000000,
+            [7000000],
+            [8760000],
+            "Legal"
+        ),
+        (
+            "Test 18: Deep Relic with duplicate Curses (Should be Illegal)",
+            2000000,
+            [7000000],
+            [8760000, 8760000],
+            "Illegal"
         )
     ]
 

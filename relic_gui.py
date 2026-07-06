@@ -220,21 +220,12 @@ class RelicLegalityChecker:
                 return {"status": "Illegal", "reason": f"Buff {pos} cannot roll on this Relic tier/color."}
 
         # --- DEBUFF CHECKS ---
-        if is_deep:
-            for neg in neg_ids:
-                if neg not in VALID_DEEP_DEBUFFS:
-                    return {"status": "Illegal", "reason": f"Invalid Deep Relic Curse: {neg}"}
-        else:
-            if len(neg_ids) > len(curse_pools):
-                return {"status": "Illegal", "reason": "Too many debuff effects for this item tier"}
-                
-            allowed_neg_effects = set()
-            for pool in curse_pools:
-                allowed_neg_effects.update(self.lottery_pools.get(pool, set()))
-                
-            for neg in neg_ids:
-                if neg not in allowed_neg_effects:
-                    return {"status": "Illegal", "reason": f"Debuff {neg} cannot roll on this Relic tier/color."}
+        if not is_deep and len(neg_ids) > 0:
+            return {"status": "Illegal", "reason": "Only deep relics can have negative effects"}
+
+        for neg in neg_ids:
+            if neg not in VALID_DEEP_DEBUFFS:
+                return {"status": "Illegal", "reason": f"Invalid Deep Relic Curse: {neg}"}
 
         # 3. Exclusivity
         seen = set()

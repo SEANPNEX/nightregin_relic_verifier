@@ -178,10 +178,15 @@ class RelicSingleApp(QMainWindow):
             for pool_set in self.checker.lottery_pools.values():
                 eff_ids.update(pool_set)
             eff_ids.update(self.checker.exclusivity_map.keys())
-        eff_ids.update(VALID_DEEP_DEBUFFS)
+        
+        # Exclude curses from positive effects
+        eff_ids.difference_update(VALID_DEEP_DEBUFFS)
         
         # Sort effect_items by sub_category (1-49 game order), then by ID
         self.effect_items = sorted(list(eff_ids), key=lambda x: (self.checker.get_effect_sub_category(x), x))
+        
+        # Store sorted curses (no classification needed)
+        self.curse_items = sorted(list(VALID_DEEP_DEBUFFS))
 
     def init_ui(self):
         self.resize(700, 390)
@@ -362,7 +367,9 @@ class RelicSingleApp(QMainWindow):
             for eid in self.effect_items:
                 cat_lbl = f"[{self.get_cat_name(eid)}]"
                 ui["cb_buff"].addItem(f"{cat_lbl} {self.get_n(eid)} ({eid})", eid)
-                ui["cb_curse"].addItem(f"{cat_lbl} {self.get_n(eid)} ({eid})", eid)
+                
+            for eid in self.curse_items:
+                ui["cb_curse"].addItem(f"{self.get_n(eid)} ({eid})", eid)
 
         # Restore combos to match saved values
         for i, ui in enumerate(self.slots_ui):
