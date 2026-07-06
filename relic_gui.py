@@ -85,6 +85,17 @@ class RelicLegalityChecker:
         self.pool1_map = []
         self.lottery_pools = {}
         self.exclusivity_map = {}
+        self.compatibility_map = {}
+        
+        # Load dictionary.json
+        dict_file = resource_path("dictionary.json")
+        self.dictionary = {}
+        if os.path.exists(dict_file):
+            try:
+                with open(dict_file, 'r', encoding='utf-8') as f:
+                    self.dictionary = json.load(f)
+            except Exception:
+                pass
         
         # Resolve paths using resource_path
         off_file = resource_path("official_relics.csv")
@@ -134,13 +145,20 @@ class RelicLegalityChecker:
                         if tid not in self.lottery_pools: self.lottery_pools[tid] = set()
                         self.lottery_pools[tid].add(eid)
 
-                # Load AttachEffectParam (Exclusivity)
+                # Load AttachEffectParam (Exclusivity & Compatibility)
                 with open(param_file, 'r', encoding='utf-8') as f:
                     reader = csv.DictReader(f)
                     for row in reader:
                         eid = int(row['ID'])
+                        comp_id = int(row.get('compatibilityId', -1) or -1)
                         ex_id = int(row.get('exclusivityId', -1) or -1)
-                        if ex_id != -1: self.exclusivity_map[eid] = ex_id
+                        
+                        group_id = comp_id if comp_id > 0 else (ex_id if ex_id > 0 else -1)
+                        if group_id > 0:
+                            self.exclusivity_map[eid] = group_id
+                            
+                        if comp_id > 0:
+                            self.compatibility_map[eid] = comp_id
                 
                 self.enabled = True
             except Exception as e:
@@ -179,6 +197,10 @@ class RelicLegalityChecker:
         if raw_slots[3]['pos'] > 0 or raw_slots[3]['neg'] > 0:
             return {"status": "Illegal", "reason": "Slot 4 must be empty"}
 
+        # Duplicate Buff check
+        if len(pos_ids) != len(set(pos_ids)):
+            return {"status": "Illegal", "reason": "Exclusivity Conflict (Stacking duplicate effect types)"}
+
         # Duplicate Debuff check
         if len(neg_ids) != len(set(neg_ids)):
             return {"status": "Illegal", "reason": "Duplicate debuff IDs"}
@@ -187,12 +209,14 @@ class RelicLegalityChecker:
             return {"status": "Illegal", "reason": "Too many positive effects for this item tier"}
 
         # --- UNIFIED POOL MATCHING (Accounts for RNG Fallbacks) ---
-        allowed_pos_effects = set()
+        allowed_pos_compat = set()
         for pool in buff_pools:
-            allowed_pos_effects.update(self.lottery_pools.get(pool, set()))
+            for eid in self.lottery_pools.get(pool, set()):
+                allowed_pos_compat.add(self.compatibility_map.get(eid, eid))
             
         for pos in pos_ids:
-            if pos not in allowed_pos_effects:
+            pos_compat = self.compatibility_map.get(pos, pos)
+            if pos_compat not in allowed_pos_compat:
                 return {"status": "Illegal", "reason": f"Buff {pos} cannot roll on this Relic tier/color."}
 
         # --- DEBUFF CHECKS ---
