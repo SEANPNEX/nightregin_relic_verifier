@@ -53,7 +53,7 @@ def run_tests():
         (
             "Test 5: Deep Relic with Valid Deep Curse (Should be Legal)",
             2000000, 
-            [7000000], 
+            [7005600], 
             [8760000],  # Valid deep relic curse
             "Legal"
         ),
@@ -137,14 +137,14 @@ def run_tests():
         (
             "Test 17: Deep Relic with valid Curse (Should be Legal)",
             2000000,
-            [7000000],
+            [7005600],
             [8760000],
             "Legal"
         ),
         (
             "Test 18: Deep Relic with duplicate Curses (Should be Illegal)",
             2000000,
-            [7000000],
+            [7005600],
             [8760000, 8760000],
             "Illegal"
         ),
@@ -154,6 +154,13 @@ def run_tests():
             [7240000, 6001500, 7002600],
             [-1,6820200,-1],
             "Legal"
+        ),
+        (
+            "Test 20: Standard HP Buff paired with Curse (Should be Illegal)",
+            2000000,
+            [7000000],
+            [8760000],
+            "Illegal"
         )
     ]
 

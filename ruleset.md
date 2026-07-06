@@ -45,5 +45,6 @@ Positive effects are categorized into first-level categories (0-6) based on thei
 ### E. Negative Effect (Curse) Rules
 * **Only for Deep Relics**: Curses are strictly restricted to Deep Relics (`isDeepRelic = 1`). Standard relics (`isDeepRelic = 0`) **cannot** have negative effects.
 * **Curse Pool Restrictions**: If a relic is a Deep Relic, all curses must belong to the flat, pre-defined `VALID_DEEP_DEBUFFS` pool.
+* **Allowed Pairing Buffs**: Curses can **only** be paired with specific positive effects from the approved pairing pool (containing 272 verified game buffs, such as dynamic attack adjustments, weapon overrides, element increments, and health recovery). Pairing a standard attribute buff (e.g. basic HP/FP/stamina increases) with negative effects is **Illegal**.
 * **No Order Requirement**: Curses do not follow any slot ordering sequence.
 * **No Duplication**: Multiple slot curses on a deep relic must be unique (duplicate debuff IDs are **Illegal**).
