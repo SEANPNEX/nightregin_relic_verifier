@@ -182,8 +182,8 @@ class RelicSingleApp(QMainWindow):
         # Exclude curses from positive effects
         eff_ids.difference_update(VALID_DEEP_DEBUFFS)
         
-        # Sort effect_items by sub_category (1-49 game order), then by ID
-        self.effect_items = sorted(list(eff_ids), key=lambda x: (self.checker.get_effect_sub_category(x), x))
+        # Sort effect_items by overrideBaseEffectId, then by ID
+        self.effect_items = sorted(list(eff_ids), key=lambda x: (self.checker.get_override_base_effect_id(x), x))
         
         # Store sorted curses (no classification needed)
         self.curse_items = sorted(list(VALID_DEEP_DEBUFFS))

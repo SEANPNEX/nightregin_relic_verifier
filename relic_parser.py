@@ -74,7 +74,8 @@ class RelicLegalityChecker:
                             'Name': row.get('Name', ''),
                             'requiresDebuff': int(row.get('requiresDebuff', 0) or 0),
                             'isDebuff': int(row.get('isDebuff', 0) or 0),
-                            'overrideBaseEffectId': int(row.get('overrideBaseEffectId', -1) or -1)
+                            'overrideBaseEffectId': int(row.get('overrideBaseEffectId', -1) or -1),
+                            'compatibilityId': int(row.get('compatibilityId', -1) or -1)
                         }
                 # Update global VALID_DEEP_DEBUFFS dynamically
                 global VALID_DEEP_DEBUFFS
@@ -245,9 +246,13 @@ class RelicLegalityChecker:
             neg = slot['neg']
             if pos > 0:
                 pos_rule = self.relic_rules.get(pos)
-                if pos_rule and pos_rule['requiresDebuff'] == 1:
+                req_debuff = pos_rule['requiresDebuff'] if pos_rule else 0
+                if req_debuff == 1:
                     if neg <= 0:
                         return {"status": "Illegal", "reason": f"Buff {pos} in slot {i+1} must be paired with a curse"}
+                else:
+                    if neg > 0:
+                        return {"status": "Illegal", "reason": f"Buff {pos} in slot {i+1} cannot be paired with a curse"}
             else:
                 if neg > 0:
                     return {"status": "Illegal", "reason": f"Slot {i+1} cannot have a curse without a positive effect"}
@@ -256,16 +261,19 @@ class RelicLegalityChecker:
             if neg not in VALID_DEEP_DEBUFFS:
                 return {"status": "Illegal", "reason": f"Invalid Deep Relic Curse: {neg}"}
 
-        # 3. Exclusivity
+        # 3. Exclusivity: Relic effects with the same compatibilityId cannot be in the same relic
         seen = set()
         for eid in pos_ids + neg_ids:
-            g = self.exclusivity_map.get(eid, -1)
-            if g != -1:
-                if g in seen: return {"status": "Illegal", "reason": "Exclusivity Conflict (Stacking duplicate effect types)"}
-                seen.add(g)
+            rule = self.relic_rules.get(eid)
+            if rule:
+                compat_id = rule['compatibilityId']
+                if compat_id != -1:
+                    if compat_id in seen:
+                        return {"status": "Illegal", "reason": "Exclusivity Conflict (Stacking duplicate effect types)"}
+                    seen.add(compat_id)
                 
         # 4. Sorting Order Check: Order by overrideBaseEffectId first, then by ID (Excluding presets/saves if enforce_order_check is disabled)
-        if getattr(self, 'enforce_order_check', True):
+        if is_deep and getattr(self, 'enforce_order_check', True):
             keys = []
             for pid in pos_ids:
                 keys.append((self.get_override_base_effect_id(pid), pid))

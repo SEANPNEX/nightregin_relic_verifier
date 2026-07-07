@@ -95,6 +95,7 @@ class RelicLegalityChecker:
         self.lottery_pools = {}
         self.exclusivity_map = {}
         self.compatibility_map = {}
+        self.enforce_order_check = True
         
         # Load dictionary.json
         dict_file = resource_path("dictionary.json")
@@ -106,6 +107,32 @@ class RelicLegalityChecker:
             except Exception:
                 pass
         
+        # Load relic_list.csv rules
+        self.relic_rules = {}
+        relic_list_file = resource_path("relic_list.csv")
+        if os.path.exists(relic_list_file):
+            try:
+                with open(relic_list_file, 'r', encoding='gb18030') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        eid = int(row['ID'])
+                        self.relic_rules[eid] = {
+                            'ID': eid,
+                            'Name': row.get('Name', ''),
+                            'requiresDebuff': int(row.get('requiresDebuff', 0) or 0),
+                            'isDebuff': int(row.get('isDebuff', 0) or 0),
+                            'overrideBaseEffectId': int(row.get('overrideBaseEffectId', -1) or -1),
+                            'compatibilityId': int(row.get('compatibilityId', -1) or -1)
+                        }
+                # Update global VALID_DEEP_DEBUFFS dynamically
+                global VALID_DEEP_DEBUFFS
+                VALID_DEEP_DEBUFFS.clear()
+                for r in self.relic_rules.values():
+                    if r['isDebuff'] == 1:
+                        VALID_DEEP_DEBUFFS.add(r['ID'])
+            except Exception as e:
+                print(f"[WARN] Failed to load relic_list.csv: {e}")
+
         # Resolve paths using resource_path
         off_file = resource_path("official_relics.csv")
         equip_file = resource_path("EquipParamAntique.csv")
@@ -237,8 +264,10 @@ class RelicLegalityChecker:
             pos = slot['pos']
             neg = slot['neg']
             if pos > 0:
-                if pos in ALLOWED_DEEP_PAIRED_BUFFS:
-                    if neg == 0:
+                pos_rule = self.relic_rules.get(pos)
+                req_debuff = pos_rule['requiresDebuff'] if pos_rule else 0
+                if req_debuff == 1:
+                    if neg <= 0:
                         return {"status": "Illegal", "reason": f"Buff {pos} in slot {i+1} must be paired with a curse"}
                 else:
                     if neg > 0:
@@ -251,15 +280,33 @@ class RelicLegalityChecker:
             if neg not in VALID_DEEP_DEBUFFS:
                 return {"status": "Illegal", "reason": f"Invalid Deep Relic Curse: {neg}"}
 
-        # 3. Exclusivity
+        # 3. Exclusivity: Relic effects with the same compatibilityId cannot be in the same relic
         seen = set()
         for eid in pos_ids + neg_ids:
-            g = self.exclusivity_map.get(eid, -1)
-            if g != -1:
-                if g in seen: return {"status": "Illegal", "reason": "Exclusivity Conflict (Stacking duplicate effect types)"}
-                seen.add(g)
-                
+            rule = self.relic_rules.get(eid)
+            if rule:
+                compat_id = rule['compatibilityId']
+                if compat_id != -1:
+                    if compat_id in seen:
+                        return {"status": "Illegal", "reason": "Exclusivity Conflict (Stacking duplicate effect types)"}
+                    seen.add(compat_id)
+
+        # 4. Sorting Order Check: Order by overrideBaseEffectId first, then by ID (Excluding presets/saves if enforce_order_check is disabled)
+        if is_deep and getattr(self, 'enforce_order_check', True):
+            keys = []
+            for pid in pos_ids:
+                keys.append((self.get_override_base_effect_id(pid), pid))
+            for idx in range(len(keys) - 1):
+                if keys[idx] > keys[idx + 1]:
+                    return {"status": "Illegal", "reason": "Illegal (Negative effects are not in the correct game order)"}
+
         return {"status": "Legal", "reason": "Verified"}
+
+    def get_override_base_effect_id(self, eid):
+        rule = self.relic_rules.get(eid)
+        if rule:
+            return rule['overrideBaseEffectId']
+        return -1
 
 
 # --- SAVE FILE PARSER ---

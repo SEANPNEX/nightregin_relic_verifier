@@ -21,6 +21,7 @@ pyinstaller --noconfirm --noconsole --onefile --clean ^
     --add-data "fav.ico;." ^
     --add-data "dictionary.json;." ^
     --add-data "official_relics.csv;." ^
+    --add-data "relic_list.csv;." ^
     --add-data "EquipParamAntique.csv;." ^
     --add-data "AttachEffectTableParam.csv;." ^
     --add-data "AttachEffectParam.csv;." ^
@@ -33,6 +34,7 @@ pyinstaller --noconfirm --noconsole --onefile --clean ^
     --add-data "fav.ico;." ^
     --add-data "dictionary.json;." ^
     --add-data "official_relics.csv;." ^
+    --add-data "relic_list.csv;." ^
     --add-data "EquipParamAntique.csv;." ^
     --add-data "AttachEffectTableParam.csv;." ^
     --add-data "AttachEffectParam.csv;." ^
