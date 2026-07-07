@@ -28,15 +28,6 @@ VALID_DEEP_DEBUFFS = {
     8821050, 8830000, 8830050, 8831000, 8831050, 8831200, 8831250
 }
 
-# Positive effects allowed to be paired with negative effects (curses)
-ALLOWED_DEEP_PAIRED_BUFFS = {
-    6001400, 6001401, 6001500, 6001501, 6001600, 6001601, 6001700, 6001701, 6001800, 6001801, 6002600,
-    6002601, 6002700, 6002701, 6002800, 6002801, 6002900, 6002901, 6005600, 6005601, 6030600, 6030800,
-    6030900, 6030901, 6040100, 6040101, 6090000, 6160000, 6260000, 6260001, 6260300, 6260301, 6260400,
-    6260401, 6600001, 6600101, 6610400, 6610500, 6610600, 6610801, 6610802, 6611001, 6611002, 6611101,
-    6611102, 6611201, 6611202, 6611301, 6611302, 7000090, 7120900
-}
-
 # --- LEGALITY ENGINE ---
 class RelicLegalityChecker:
     def __init__(self, data_dir: str = "."):
@@ -68,6 +59,31 @@ class RelicLegalityChecker:
                     self.dictionary = json.load(f)
             except Exception:
                 pass
+
+        # Load relic_list.csv rules
+        self.relic_rules = {}
+        relic_list_file = get_path("relic_list.csv")
+        if os.path.exists(relic_list_file):
+            try:
+                with open(relic_list_file, 'r', encoding='gb18030') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        eid = int(row['ID'])
+                        self.relic_rules[eid] = {
+                            'ID': eid,
+                            'Name': row.get('Name', ''),
+                            'requiresDebuff': int(row.get('requiresDebuff', 0) or 0),
+                            'isDebuff': int(row.get('isDebuff', 0) or 0),
+                            'overrideBaseEffectId': int(row.get('overrideBaseEffectId', -1) or -1)
+                        }
+                # Update global VALID_DEEP_DEBUFFS dynamically
+                global VALID_DEEP_DEBUFFS
+                VALID_DEEP_DEBUFFS.clear()
+                for r in self.relic_rules.values():
+                    if r['isDebuff'] == 1:
+                        VALID_DEEP_DEBUFFS.add(r['ID'])
+            except Exception as e:
+                print(f"[WARN] Failed to load relic_list.csv: {e}")
 
         # Load Official Relics
         off_file = get_path("official_relics.csv")
@@ -228,12 +244,10 @@ class RelicLegalityChecker:
             pos = slot['pos']
             neg = slot['neg']
             if pos > 0:
-                if pos in ALLOWED_DEEP_PAIRED_BUFFS:
-                    if neg == 0:
+                pos_rule = self.relic_rules.get(pos)
+                if pos_rule and pos_rule['requiresDebuff'] == 1:
+                    if neg <= 0:
                         return {"status": "Illegal", "reason": f"Buff {pos} in slot {i+1} must be paired with a curse"}
-                else:
-                    if neg > 0:
-                        return {"status": "Illegal", "reason": f"Buff {pos} in slot {i+1} cannot be paired with a curse"}
             else:
                 if neg > 0:
                     return {"status": "Illegal", "reason": f"Slot {i+1} cannot have a curse without a positive effect"}
@@ -250,36 +264,28 @@ class RelicLegalityChecker:
                 if g in seen: return {"status": "Illegal", "reason": "Exclusivity Conflict (Stacking duplicate effect types)"}
                 seen.add(g)
                 
-        # 4. Category Order Check (Excluding presets/saves if enforce_order_check is disabled)
+        # 4. Sorting Order Check: Order by overrideBaseEffectId first, then by ID (Excluding presets/saves if enforce_order_check is disabled)
         if getattr(self, 'enforce_order_check', True):
-            cats = [self.get_effect_category(pid) for pid in pos_ids]
-            norm_cats = [1 if c == 0 else c for c in cats]
-            for idx in range(len(norm_cats) - 1):
-                if norm_cats[idx] > norm_cats[idx + 1]:
+            keys = []
+            for pid in pos_ids:
+                keys.append((self.get_override_base_effect_id(pid), pid))
+            for idx in range(len(keys) - 1):
+                if keys[idx] > keys[idx + 1]:
                     return {"status": "Illegal", "reason": "Illegal (Negative effects are not in the correct game order)"}
 
         return {"status": "Legal", "reason": "Verified"}
 
-    def get_effect_category(self, eid):
-        sub = self.get_effect_sub_category(eid)
-        if sub == 1: return 0
-        if sub in (2, 3, 4, 6, 7, 8, 20, 21, 22, 35): return 1
-        if sub in (5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 34, 36, 37, 38, 39, 40, 41): return 2
-        if sub in (42, 43): return 3
-        if sub in (44, 45): return 4
-        if sub == 47: return 5
-        if sub in (46, 48, 49): return 6
+    def get_override_base_effect_id(self, eid):
+        rule = self.relic_rules.get(eid)
+        if rule:
+            return rule['overrideBaseEffectId']
+        return -1
 
-        e = self.dictionary.get(str(eid)) if hasattr(self, 'dictionary') and self.dictionary else None
-        if e and "category" in e:
-            return e["category"]
-        return self._classify_inline(eid)
+    def get_effect_category(self, eid):
+        return self.get_override_base_effect_id(eid)
 
     def get_effect_sub_category(self, eid):
-        e = self.dictionary.get(str(eid)) if hasattr(self, 'dictionary') and self.dictionary else None
-        if e and "sub_category" in e and e["sub_category"] != 999:
-            return e["sub_category"]
-        return self._classify_sub_inline(eid)
+        return self.get_override_base_effect_id(eid)
 
     def _classify_sub_inline(self, eid):
         e = self.dictionary.get(str(eid), {}) if hasattr(self, 'dictionary') and self.dictionary else {}
