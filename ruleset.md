@@ -13,38 +13,30 @@ Official presets are hardcoded by the game (defined in `official_relics.csv`).
 ---
 
 ## 2. Randomized Relics
-Randomized relics (e.g., dynamic rolls with base IDs $\ge 2000000$ or custom rolls) follow strict generation rules mapped from `EquipParamAntique.csv`, `AttachEffectTableParam.csv`, and `AttachEffectParam.csv`.
+Randomized relics (e.g., dynamic rolls with base IDs $\ge 2000000$ or custom rolls) follow rules mapped from `EquipParamAntique.csv`, `AttachEffectTableParam.csv`, and `AttachEffectParam.csv`.
 
 ### A. Slot Restrictions
 * All relics have **4 slots** of combined positive (Buff) and negative (Curse) effects.
-* **Slot 4 Check**: According to game engine logic, **Slot 4 must always be empty** (`pos = 0, neg = 0`). Any effect placed in Slot 4 is **Illegal**.
+* **Slot 4 Check**: Slot 4 must always be empty (`pos = 0, neg = 0`). Any effect placed in Slot 4 is **Illegal**.
 
-### B. Positive Effect (Buff) Pool Matching
-* **Tier-Specific Pools**: Each relic tier (e.g. Standard, Deep) defines up to three lottery tables (`attachEffectTableId_1`, `attachEffectTableId_2`, and `attachEffectTableId_3`).
-* **Slot Pool Validation**: Positive effects in Slot $i$ must belong to the lottery pool corresponding to that slot.
-* **RNG Compatibility Fallbacks**: If a slot rolled an equivalent tier-compatible override, it is mapped using compatibility groups in `AttachEffectParam.csv`.
+### B. Exclusivity Rules (Stacking Limits)
+* **Compatibility ID Stacking**: Stacking effects sharing the same non-negative `compatibilityId` ($\neq -1$) inside `relic_list.csv` is forbidden.
+* Stacking duplicate compatibility types renders the relic **Illegal**.
 
-### C. Exclusivity Rules (Stacking Limits)
-* **Duplicate Group Exclusion**: Relics cannot contain multiple positive effects from the same exclusivity group (e.g., having two physical attack buffs, or two distinct active-combat art overrides).
-* Stacking duplicate effect classes renders the relic **Illegal**.
+### C. Positive Effect Ordering Check
+Active positive effects on Deep Relics must follow an ascending sequence of:
+1. `overrideBaseEffectId` (ascending)
+2. `ID` (ascending, as secondary key)
 
-### D. Category Ordering Check
-Positive effects are categorized into first-level categories (0-6) based on their internal gameplay tags (sub-categories 1-49):
-* `0` (Character Specific) / `1` (Combat Action / Spell)
-* `2` (Utility / Gameplay Modifiers)
-* `3` (Basic Attributes)
-* `4` (Cooldowns / Ultimate Charge Speed)
-* `5` (Attack Power / Element Buffs)
-* `6` (Defense / Resistances)
+* **Standard Relic Bypass**: Standard relics (`isDeepRelic == 0`) do not enforce ordering.
+* **Save File Bypass**: Because the game places rolled rewards into slot indices randomly when pulling multiple rewards from overlapping pools, the category ordering check is skipped during full save file checks (`parse_save`) to avoid false-positives, but is strictly enforced on deep relics during individual simulated relic configurations.
 
-* **Combat Action Equivalence**: Category 0 and Category 1 are treated as equivalent (both represent combat actions) and can sit interchangeably in Slot 1 and Slot 2.
-* **Ascending Category Sort**: The categories of the slots must follow an ascending sequence:
-  $$\text{Slot } 1 \le \text{Slot } 2 \le \text{Slot } 3$$
-* **Save File Randomization Bypass**: Because the game places rolled rewards into slot indices randomly when pulling multiple rewards from overlapping pools, the category ordering check is skipped during full save file checks (`parse_save`) to avoid false-positives, but is strictly enforced during simulated/individual relic configurations.
-
-### E. Negative Effect (Curse) Rules
-* **Only for Deep Relics**: Curses are strictly restricted to Deep Relics (`isDeepRelic = 1`). Standard relics (`isDeepRelic = 0`) **cannot** have negative effects.
-* **Curse Pool Restrictions**: If a relic is a Deep Relic, all curses must belong to the flat, pre-defined `VALID_DEEP_DEBUFFS` pool.
-* **Allowed Pairing Buffs**: Curses can **only** be paired with specific positive effects from the approved same-slot pairing pool (containing 51 verified game buffs, such as physical/elemental attack power up plus 3/4, poise, guard counters, status attack power boosts, and specific enchants). If a slot contains a positive effect from this pool, it **must** have a paired curse in the same slot. If a slot contains any other positive effect, it **must not** have a paired curse in that slot. Pairing standard attributes with curses or having curses in empty positive slots is **Illegal**.
+### D. Negative Effect (Curse) Rules
+* **Only for Deep Relics**: Curses are strictly restricted to Deep Relics (`isDeepRelic == 1`). Standard relics (`isDeepRelic == 0`) **cannot** have negative effects.
+* **Curse Pool Restrictions**: If a relic is a Deep Relic, all curses must have `isDebuff == 1` in `relic_list.csv`.
+* **Pairing Rules**: 
+  - Curses can **only** be paired in the same slot with positive effects that require curses (`requiresDebuff == 1` in `relic_list.csv`), with a whitelist exception for `7000090` and `7120900` to support compatible deep rolls in save files.
+  - Pairing curses with other standard positive effects is **Illegal**.
+  - Placing a curse in an empty positive slot is **Illegal**.
 * **No Order Requirement**: Curses do not follow any slot ordering sequence.
 * **No Duplication**: Multiple slot curses on a deep relic must be unique (duplicate debuff IDs are **Illegal**).
