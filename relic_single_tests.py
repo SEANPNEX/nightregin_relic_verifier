@@ -168,7 +168,36 @@ def run_tests():
             [6001500],
             [],
             "Illegal"
+        ),
+        (
+            "Test 22: Wrong order under new rule",
+            2010112,
+            [6630000, 7331000, 7340100],
+            [],
+            "Illegal"
+        ),
+        (
+            "Test 23: Correct order under new rule",
+            2010112,
+            [7331000, 7340100, 6630000],
+            [],
+            "Legal"
+        ),
+        (
+            "Test 24: Auto-discovery mode with wrong order of deep-only buffs",
+            0,
+            [7331000, 7340100, 6640000],
+            [],
+            "Illegal"
+        ),
+        (
+            "Test 25: Auto-discovery mode with correct order of deep-only buffs",
+            0,
+            [6640000, 7331000, 7340100],
+            [],
+            "Legal"
         )
+        
     ]
 
     print("\nRunning test cases...")

@@ -172,21 +172,18 @@ class RelicSingleApp(QMainWindow):
         self.populate_dropdowns()
 
     def init_data(self):
-        # Gather all effect types (buffs & curses)
+        # Gather all effect types (buffs & curses) from ruleset
         eff_ids = set()
-        if self.checker.enabled:
-            for pool_set in self.checker.lottery_pools.values():
-                eff_ids.update(pool_set)
-            eff_ids.update(self.checker.exclusivity_map.keys())
-        
-        # Exclude curses from positive effects
-        eff_ids.difference_update(VALID_DEEP_DEBUFFS)
+        curse_ids = set()
+        for eid, r in self.checker.relic_rules.items():
+            if r['isDebuff'] == 1:
+                curse_ids.add(eid)
+            else:
+                eff_ids.add(eid)
         
         # Sort effect_items by overrideBaseEffectId, then by ID
         self.effect_items = sorted(list(eff_ids), key=lambda x: (self.checker.get_override_base_effect_id(x), x))
-        
-        # Store sorted curses (no classification needed)
-        self.curse_items = sorted(list(VALID_DEEP_DEBUFFS))
+        self.curse_items = sorted(list(curse_ids))
 
     def init_ui(self):
         self.resize(700, 390)
@@ -218,6 +215,21 @@ class RelicSingleApp(QMainWindow):
         top_bar.addWidget(self.rb_zh)
         top_bar.addWidget(self.rb_en)
         main_layout.addLayout(top_bar)
+
+        # Relic Type row
+        relic_type_layout = QHBoxLayout()
+        self.lbl_relic_type = QLabel()
+        self.lbl_relic_type.setFont(QFont("Segoe UI Semibold", 9))
+        self.cb_relic_type = QComboBox()
+        self.cb_relic_type.setEditable(True)
+        self.cb_relic_type.setInsertPolicy(QComboBox.InsertPolicy.NoInsert)
+        self.cb_relic_type.completer().setFilterMode(Qt.MatchFlag.MatchContains)
+        self.cb_relic_type.completer().setCompletionMode(QCompleter.CompletionMode.PopupCompletion)
+        self.cb_relic_type.setFixedHeight(28)
+        
+        relic_type_layout.addWidget(self.lbl_relic_type)
+        relic_type_layout.addWidget(self.cb_relic_type, 1)
+        main_layout.addLayout(relic_type_layout)
 
         # Slots Panel (Grid Layout)
         slots_frame = QFrame()
@@ -319,6 +331,7 @@ class RelicSingleApp(QMainWindow):
         self.setWindowTitle(txt["title"])
         self.lbl_title_header.setText(txt["title"])
         self.lbl_lang.setText(txt["lang"])
+        self.lbl_relic_type.setText(txt["relic_type"])
         self.btn_check.setText(txt["check"])
         self.btn_reset.setText(txt["reset"])
         self.lbl_res_title.setText(txt["result_title"])
@@ -343,9 +356,27 @@ class RelicSingleApp(QMainWindow):
 
     def populate_dropdowns(self):
         # Block signals to prevent events
+        self.cb_relic_type.blockSignals(True)
         for ui in self.slots_ui:
             ui["cb_buff"].blockSignals(True)
             ui["cb_curse"].blockSignals(True)
+
+        # Relic Type Combo
+        active_relic_type = self.cb_relic_type.itemData(self.cb_relic_type.currentIndex()) if self.cb_relic_type.currentIndex() >= 0 else 0
+        if active_relic_type is None: active_relic_type = 0
+        self.cb_relic_type.clear()
+        auto_label = "Auto-detect (ID: 0)" if self.lang_var == "en" else "自动检测 (ID: 0)"
+        self.cb_relic_type.addItem(auto_label, 0)
+        relic_ids = sorted(list(set(list(self.checker.equip_param.keys()) + list(self.checker.official_map.keys()))))
+        for rid in relic_ids:
+            e = self.dict.get(str(rid), {})
+            name = e.get(self.lang_var, e.get('en', f"Relic {rid}")) if isinstance(e, dict) else f"Relic {rid}"
+            is_deep = int(self.checker.equip_param.get(rid, {}).get("isDeepRelic", 0)) == 1 if rid in self.checker.equip_param else False
+            prefix = "[DEEP] " if is_deep else ""
+            self.cb_relic_type.addItem(f"{prefix}{name} ({rid})", rid)
+        idx = self.cb_relic_type.findData(active_relic_type)
+        self.cb_relic_type.setCurrentIndex(idx if idx >= 0 else 0)
+        self.cb_relic_type.blockSignals(False)
 
         # Save active selected IDs
         active_slots = []
@@ -365,11 +396,40 @@ class RelicSingleApp(QMainWindow):
             ui["cb_curse"].addItem(f"-- Empty / None --", 0)
             
             for eid in self.effect_items:
-                cat_lbl = f"[{self.get_cat_name(eid)}]"
-                ui["cb_buff"].addItem(f"{cat_lbl} {self.get_n(eid)} ({eid})", eid)
+                rule = self.checker.relic_rules.get(eid)
+                tags = []
+                if rule:
+                    normal = rule.get('canAppearNormal', 0)
+                    deep = rule.get('canAppearDeep', 0)
+                    req_curse = rule.get('requiresDebuff', 0)
+                    if self.lang_var == "zh":
+                        if normal == 1 and deep == 1:
+                            tags.append("普通与深渊")
+                        elif normal == 1:
+                            tags.append("普通")
+                        elif deep == 1:
+                            tags.append("深渊")
+                        else:
+                            tags.append("预设")
+                        if req_curse == 1:
+                            tags.append("需诅咒")
+                    else:
+                        if normal == 1 and deep == 1:
+                            tags.append("Normal & Deep")
+                        elif normal == 1:
+                            tags.append("Normal")
+                        elif deep == 1:
+                            tags.append("Deep")
+                        else:
+                            tags.append("Preset")
+                        if req_curse == 1:
+                            tags.append("Req Curse")
+                tag_lbl = f"[{', '.join(tags)}] " if tags else ""
+                ui["cb_buff"].addItem(f"{tag_lbl}{self.get_n(eid)} ({eid})", eid)
                 
             for eid in self.curse_items:
-                ui["cb_curse"].addItem(f"{self.get_n(eid)} ({eid})", eid)
+                curse_lbl = "[诅咒] " if self.lang_var == "zh" else "[Curse] "
+                ui["cb_curse"].addItem(f"{curse_lbl}{self.get_n(eid)} ({eid})", eid)
 
         # Restore combos to match saved values
         for i, ui in enumerate(self.slots_ui):
@@ -385,30 +445,6 @@ class RelicSingleApp(QMainWindow):
         for ui in self.slots_ui:
             ui["cb_buff"].blockSignals(False)
             ui["cb_curse"].blockSignals(False)
-
-    def get_cat_name(self, eid):
-        cat = self.checker.get_effect_category(eid)
-        cats_trans = {
-            "en": {
-                0: "Ability",
-                1: "Combat",
-                2: "Utility",
-                3: "Attribute",
-                4: "Cooldown",
-                5: "Attack",
-                6: "Defense"
-            },
-            "zh": {
-                0: "专属",
-                1: "战斗",
-                2: "辅助",
-                3: "属性",
-                4: "冷却",
-                5: "增伤",
-                6: "防护"
-            }
-        }
-        return cats_trans[self.lang_var].get(cat, "Unknown")
 
     def set_result_ui(self, stat, reason):
         dark = is_dark_mode()
@@ -461,10 +497,15 @@ class RelicSingleApp(QMainWindow):
         # Pad slots to 4 to satisfy checker expectations
         raw_slots.append({'pos': 0, 'neg': 0})
 
-        res = self.checker.check(0, raw_slots)
+        r_idx = self.cb_relic_type.currentIndex()
+        relic_id = self.cb_relic_type.itemData(r_idx) if r_idx >= 0 else 0
+        if relic_id is None: relic_id = 0
+
+        res = self.checker.check(relic_id, raw_slots)
         self.set_result_ui(res["status"], res["reason"])
 
     def reset_inputs(self):
+        self.cb_relic_type.setCurrentIndex(0)
         for ui in self.slots_ui:
             ui["cb_buff"].setCurrentIndex(0)
             ui["cb_curse"].setCurrentIndex(0)

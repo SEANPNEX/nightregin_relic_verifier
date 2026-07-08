@@ -122,7 +122,9 @@ class RelicLegalityChecker:
                             'requiresDebuff': int(row.get('requiresDebuff', 0) or 0),
                             'isDebuff': int(row.get('isDebuff', 0) or 0),
                             'overrideBaseEffectId': int(row.get('overrideBaseEffectId', -1) or -1),
-                            'compatibilityId': int(row.get('compatibilityId', -1) or -1)
+                            'compatibilityId': int(row.get('compatibilityId', -1) or -1),
+                            'canAppearNormal': int(row.get('canAppearNormal', 0) or 0),
+                            'canAppearDeep': int(row.get('canAppearDeep', 0) or 0)
                         }
                 # Update global VALID_DEEP_DEBUFFS dynamically
                 global VALID_DEEP_DEBUFFS
@@ -224,10 +226,16 @@ class RelicLegalityChecker:
 
         buff_pools = [int(rules[f"attachEffectTableId_{i}"]) for i in [1, 2, 3] if int(rules[f"attachEffectTableId_{i}"]) > 0]
         curse_pools = [int(rules[f"attachEffectTableId_curse{i}"]) for i in [1, 2, 3] if int(rules[f"attachEffectTableId_curse{i}"]) > 0]
-        is_deep = int(rules.get("isDeepRelic", 0)) == 1
-        
         pos_ids = [s['pos'] for s in raw_slots[:3] if s['pos'] > 0]
         neg_ids = [s['neg'] for s in raw_slots[:3] if s['neg'] > 0]
+
+        is_deep = (int(rules.get("isDeepRelic", 0)) == 1) or (len(neg_ids) > 0)
+        if not is_deep:
+            for pos in pos_ids:
+                pos_rule = self.relic_rules.get(pos)
+                if pos_rule and pos_rule.get('canAppearDeep', 0) == 1 and pos_rule.get('canAppearNormal', 0) == 0:
+                    is_deep = True
+                    break
         
         # Check Slot 4 (Must always be empty)
         if raw_slots[3]['pos'] > 0 or raw_slots[3]['neg'] > 0:
@@ -241,20 +249,6 @@ class RelicLegalityChecker:
         if len(neg_ids) != len(set(neg_ids)):
             return {"status": "Illegal", "reason": "Duplicate debuff IDs"}
 
-        if len(pos_ids) > len(buff_pools):
-            return {"status": "Illegal", "reason": "Too many positive effects for this item tier"}
-
-        # --- UNIFIED POOL MATCHING (Accounts for RNG Fallbacks) ---
-        allowed_pos_compat = set()
-        for pool in buff_pools:
-            for eid in self.lottery_pools.get(pool, set()):
-                allowed_pos_compat.add(self.compatibility_map.get(eid, eid))
-            
-        for pos in pos_ids:
-            pos_compat = self.compatibility_map.get(pos, pos)
-            if pos_compat not in allowed_pos_compat:
-                return {"status": "Illegal", "reason": f"Buff {pos} cannot roll on this Relic tier/color."}
-
         # --- DEBUFF CHECKS ---
         if not is_deep and len(neg_ids) > 0:
             return {"status": "Illegal", "reason": "Only deep relics can have negative effects"}
@@ -265,13 +259,15 @@ class RelicLegalityChecker:
             neg = slot['neg']
             if pos > 0:
                 pos_rule = self.relic_rules.get(pos)
+                if pos_rule and pos_rule['isDebuff'] == 1:
+                    return {"status": "Illegal", "reason": "Curse cannot be placed in a positive slot"}
                 req_debuff = pos_rule['requiresDebuff'] if pos_rule else 0
+                can_pair = (req_debuff == 1) or (pos in (7000090, 7120900))
                 if req_debuff == 1:
                     if neg <= 0:
                         return {"status": "Illegal", "reason": f"Buff {pos} in slot {i+1} must be paired with a curse"}
-                else:
-                    if neg > 0:
-                        return {"status": "Illegal", "reason": f"Buff {pos} in slot {i+1} cannot be paired with a curse"}
+                if neg > 0 and not can_pair:
+                    return {"status": "Illegal", "reason": f"Buff {pos} in slot {i+1} cannot be paired with a curse"}
             else:
                 if neg > 0:
                     return {"status": "Illegal", "reason": f"Slot {i+1} cannot have a curse without a positive effect"}
@@ -298,7 +294,13 @@ class RelicLegalityChecker:
                 keys.append((self.get_override_base_effect_id(pid), pid))
             for idx in range(len(keys) - 1):
                 if keys[idx] > keys[idx + 1]:
-                    return {"status": "Illegal", "reason": "Illegal (Negative effects are not in the correct game order)"}
+                    sorted_pos_ids = sorted(pos_ids, key=lambda pid: (self.get_override_base_effect_id(pid), pid))
+                    correct_names = []
+                    for pid in sorted_pos_ids:
+                        rule = self.relic_rules.get(pid)
+                        name = rule['Name'] if rule else str(pid)
+                        correct_names.append(f"{name} ({pid})")
+                    return {"status": "Illegal", "reason": f"Wrong order of possitive effect. Correct: {', '.join(correct_names)}"}
 
         return {"status": "Legal", "reason": "Verified"}
 
@@ -495,9 +497,48 @@ class RelicCard(QFrame):
             if s['pos'] > 0 or s['neg'] > 0:
                 pos_n = self.app.get_n(s['pos'])
                 neg_n = self.app.get_n(s['neg'])
-                slot_info.append(f"[{idx+1}] {pos_n}\n    \u21b3 {neg_n}")
+                
+                # Build tags for buff
+                pos_tags = []
+                rule_pos = self.app.checker.relic_rules.get(s['pos'])
+                if rule_pos:
+                    normal = rule_pos.get('canAppearNormal', 0)
+                    deep = rule_pos.get('canAppearDeep', 0)
+                    req_curse = rule_pos.get('requiresDebuff', 0)
+                    if self.app.lang_var == "zh":
+                        if normal == 1 and deep == 1:
+                            pos_tags.append("<font color='#4caf50'>[普通与深渊]</font>")
+                        elif normal == 1:
+                            pos_tags.append("<font color='#2196f3'>[普通]</font>")
+                        elif deep == 1:
+                            pos_tags.append("<font color='#9c27b0'>[深渊]</font>")
+                        else:
+                            pos_tags.append("<font color='#ff9800'>[预设]</font>")
+                        if req_curse == 1:
+                            pos_tags.append("<font color='#e91e63'>[需诅咒]</font>")
+                    else:
+                        if normal == 1 and deep == 1:
+                            pos_tags.append("<font color='#4caf50'>[Normal & Deep]</font>")
+                        elif normal == 1:
+                            pos_tags.append("<font color='#2196f3'>[Normal]</font>")
+                        elif deep == 1:
+                            pos_tags.append("<font color='#9c27b0'>[Deep]</font>")
+                        else:
+                            pos_tags.append("<font color='#ff9800'>[Preset]</font>")
+                        if req_curse == 1:
+                            pos_tags.append("<font color='#e91e63'>[Req Curse]</font>")
+                pos_tag_str = "".join(pos_tags) + " " if pos_tags else ""
+                
+                # Build tags for curse
+                neg_tag_str = ""
+                if s['neg'] > 0:
+                    curse_tag = "<font color='#f44336'>[诅咒]</font>" if self.app.lang_var == "zh" else "<font color='#f44336'>[Curse]</font>"
+                    neg_tag_str = curse_tag + " "
+
+                slot_info.append(f"[{idx+1}] {pos_tag_str}{pos_n}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u21b3 {neg_tag_str}{neg_n}")
         
-        slots_lbl = QLabel("\n".join(slot_info))
+        slots_lbl = QLabel("<br>".join(slot_info))
+        slots_lbl.setTextFormat(Qt.TextFormat.RichText)
         slots_lbl.setFont(QFont("Segoe UI", 8))
         slots_lbl.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignLeft)
         slots_lbl.setWordWrap(True)
