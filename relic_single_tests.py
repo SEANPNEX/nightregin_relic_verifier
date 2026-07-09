@@ -60,23 +60,23 @@ def run_tests():
         (
             "Test 6: Effect-only automatic discovery of 3-slot combination (Should be Legal)",
             0, 
-            [7220000, 7370900, 7060200], 
+            [7220000, 7060200, 7370900], 
             [], 
             "Legal"
         ),
         (
             "Test 7: Grand Tranquil Scene with 3 Buffs (Should be Legal)",
             229, 
-            [7220000, 7370900, 7060200], 
+            [7220000, 7060200, 7370900], 
             [], 
             "Legal"
         ),
         (
-            "Test 8: Grand Tranquil Scene with 3 Buffs with wrong order (Should be Legal)",
+            "Test 8: Grand Tranquil Scene with 3 Buffs with wrong order (Should be Illegal)",
             229, 
             [7370900, 7220000, 7060200], 
             [], 
-            "Legal"
+            "Illegal"
         ),
         (
             "Test 9: Deep Grand Tranquil Scene with Out-of-Pool Buff (Should be Illegal)",

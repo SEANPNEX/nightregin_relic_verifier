@@ -269,7 +269,7 @@ class RelicLegalityChecker:
                     seen.add(compat_id)
                 
         # 4. Sorting Order Check: Order by overrideBaseEffectId first, then by ID (Excluding presets/saves if enforce_order_check is disabled)
-        if is_deep and getattr(self, 'enforce_order_check', True):
+        if getattr(self, 'enforce_order_check', True):
             keys = []
             for pid in pos_ids:
                 keys.append((self.get_override_base_effect_id(pid), pid))
