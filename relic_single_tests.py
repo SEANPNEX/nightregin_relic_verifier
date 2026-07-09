@@ -224,6 +224,34 @@ def run_tests():
             [7060000, 7090000, 7010700],
             [],
             "Illegal"
+        ),
+        (
+            "Test 30: Save file candidate 102 (Standard) correct order",
+            102,
+            [7310000, 7082500, 7012200],
+            [],
+            "Legal"
+        ),
+        (
+            "Test 31: Save file candidate 102 (Standard) wrong order",
+            102,
+            [7082500, 7310000, 7012200],
+            [],
+            "Illegal"
+        ),
+        (
+            "Test 32: Save file candidate 2010112 (Deep) correct order",
+            2010112,
+            [6500700, 6611201, 7090000],
+            [-1, 6851400, -1],
+            "Legal"
+        ),
+        (
+            "Test 33: Save file candidate 2010112 (Deep) wrong order",
+            2010112,
+            [6500700, 7090000, 6611201],
+            [-1, -1, 6851400],
+            "Illegal"
         )
         
     ]
