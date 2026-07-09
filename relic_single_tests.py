@@ -196,6 +196,34 @@ def run_tests():
             [6640000, 7331000, 7340100],
             [],
             "Legal"
+        ),
+        (
+            "Test 26: User combination with correct order",
+            0,
+            [7010700, 7060000, 7090000],
+            [],
+            "Legal"
+        ),
+        (
+            "Test 27: User combination with wrong order (swap 7090000 and 7060000)",
+            0,
+            [7010700, 7090000, 7060000],
+            [],
+            "Illegal"
+        ),
+        (
+            "Test 28: User combination with wrong order (7090000 first)",
+            0,
+            [7090000, 7010700, 7060000],
+            [],
+            "Illegal"
+        ),
+        (
+            "Test 29: User combination with wrong order (7010700 last)",
+            0,
+            [7060000, 7090000, 7010700],
+            [],
+            "Illegal"
         )
         
     ]
